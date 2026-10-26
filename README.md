@@ -10,6 +10,10 @@ observable:
 - **OpenTelemetry traces in Jaeger**: one span per model call, with the GenAI attributes (model, tokens) plus user and cost
 - **A ledger**: one JSON line per request. It's the source of truth for cost per user, and what I checked against the bill.
 
+Why the API and not the `claude` CLI, as in the other episodes? The CLI wraps every call in its own context: the same
+tiny request billed 9,607 prompt tokens through `claude -p` and 60 through the API (`harness/cli_vs_api.py`). For a
+cost measurement, that wrapper would be most of the bill.
+
 Then 60 simulated users (40 light, 14 regular, 6 heavy) replayed **18 real failed GitHub Actions runs** from this
 channel's repos: 292 requests per run, seeded, identical every time.
 
@@ -111,7 +115,7 @@ k8s/          the app (v1, v2, v3), Prometheus, Grafana, Jaeger
 grafana/      the dashboard as code (make_dashboard.py -> ai-cost.json)
 loadtest/     60 seeded users and the 18 real failed CI runs they replay
 ledger/       every request of v1, v2 and v3 (tokens, cost, stop reason, user)
-harness/      report, compare, cache_key_test, sample answers, session export
+harness/      report, compare, cache_key_test, cli_vs_api, sample answers, session export
 samples/      the same 5 requests answered by v1 and v3
 sessions/     the two live Claude Code sessions (exported: messages and tool calls only)
 cost-desk/    what Claude Code was given for those sessions
