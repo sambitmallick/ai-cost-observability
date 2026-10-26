@@ -1,0 +1,15 @@
+build	Type-check and build	﻿2026-08-31T17:03:04.3161438Z ##[group]Run npm run build
+build	Type-check and build	2026-08-31T17:03:04.3161925Z ^[[36;1mnpm run build^[[0m
+build	Type-check and build	2026-08-31T17:03:04.3202740Z shell: /usr/bin/bash -e {0}
+build	Type-check and build	2026-08-31T17:03:04.3203054Z ##[endgroup]
+build	Type-check and build	2026-08-31T17:03:04.4360802Z 
+build	Type-check and build	2026-08-31T17:03:04.4361502Z > taskkit@1.0.0 build
+build	Type-check and build	2026-08-31T17:03:04.4362307Z > tsc
+build	Type-check and build	2026-08-31T17:03:04.4362734Z 
+build	Type-check and build	2026-08-31T17:03:05.2037133Z ##[error]src/report.ts(10,22): error TS2304: Cannot find name 'usd'.
+build	Type-check and build	2026-08-31T17:03:05.2048209Z ##[error]src/report.ts(13,9): error TS6133: 'draftCount' is declared but its value is never read.
+build	Type-check and build	2026-08-31T17:03:05.2050393Z ##[error]src/report.ts(16,16): error TS2304: Cannot find name 'add'.
+build	Type-check and build	2026-08-31T17:03:05.2052262Z ##[error]src/report.ts(16,34): error TS2304: Cannot find name 'usd'.
+build	Type-check and build	2026-08-31T17:03:05.2054937Z ##[error]src/report.ts(17,28): error TS18048: 'top' is possibly 'undefined'.
+build	Type-check and build	2026-08-31T17:03:05.2057149Z ##[error]src/report.ts(17,43): error TS2552: Cannot find name 'format'. Did you mean 'FormData'?
+build	Type-check and build	2026-08-31T17:03:05.2183016Z ##[error]Process completed with exit code 2.

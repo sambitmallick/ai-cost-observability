@@ -1,0 +1,23 @@
+# Jaeger v2 all-in-one: receives the app's traces over OTLP (4318), keeps them in memory, UI on 16686.
+apiVersion: apps/v1
+kind: Deployment
+metadata: { name: jaeger, namespace: ai-cost }
+spec:
+  replicas: 1
+  selector: { matchLabels: { app: jaeger } }
+  template:
+    metadata: { labels: { app: jaeger } }
+    spec:
+      containers:
+        - name: jaeger
+          image: docker.io/jaegertracing/jaeger:2.22.0
+          imagePullPolicy: Never
+          ports: [{ containerPort: 4318 }, { containerPort: 16686 }]
+          resources: { limits: { memory: 1Gi } }
+---
+apiVersion: v1
+kind: Service
+metadata: { name: jaeger, namespace: ai-cost }
+spec:
+  selector: { app: jaeger }
+  ports: [{ name: otlp-http, port: 4318 }, { name: ui, port: 16686 }]

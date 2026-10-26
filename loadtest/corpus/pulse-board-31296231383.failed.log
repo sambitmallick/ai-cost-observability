@@ -1,0 +1,156 @@
+build	UNKNOWN STEP	﻿2026-08-09T05:14:02.7302127Z Current runner version: '2.336.0'
+build	UNKNOWN STEP	2026-08-09T05:14:02.7330064Z ##[group]Runner Image Provisioner
+build	UNKNOWN STEP	2026-08-09T05:14:02.7331121Z Hosted Compute Agent
+build	UNKNOWN STEP	2026-08-09T05:14:02.7331721Z Version: 20260707.563
+build	UNKNOWN STEP	2026-08-09T05:14:02.7332456Z Commit: 02667638d2b423fbc733a8e32a88b44996a3ba6e
+build	UNKNOWN STEP	2026-08-09T05:14:02.7333198Z Build Date: 2026-07-07T19:33:50Z
+build	UNKNOWN STEP	2026-08-09T05:14:02.7333881Z Worker ID: {3cecca85-7cfb-4579-80e0-d0a260e5ad31}
+build	UNKNOWN STEP	2026-08-09T05:14:02.7334679Z Azure Region: centralus
+build	UNKNOWN STEP	2026-08-09T05:14:02.7335276Z ##[endgroup]
+build	UNKNOWN STEP	2026-08-09T05:14:02.7336763Z ##[group]Operating System
+build	UNKNOWN STEP	2026-08-09T05:14:02.7337450Z Ubuntu
+build	UNKNOWN STEP	2026-08-09T05:14:02.7337982Z 24.04.4
+build	UNKNOWN STEP	2026-08-09T05:14:02.7338568Z LTS
+build	UNKNOWN STEP	2026-08-09T05:14:02.7339099Z ##[endgroup]
+build	UNKNOWN STEP	2026-08-09T05:14:02.7339801Z ##[group]Runner Image
+build	UNKNOWN STEP	2026-08-09T05:14:02.7340499Z Image: ubuntu-24.04
+build	UNKNOWN STEP	2026-08-09T05:14:02.7341071Z Version: 20260720.247.2
+build	UNKNOWN STEP	2026-08-09T05:14:02.7342375Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260720.247/images/ubuntu/Ubuntu2404-Readme.md
+build	UNKNOWN STEP	2026-08-09T05:14:02.7343896Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260720.247
+build	UNKNOWN STEP	2026-08-09T05:14:02.7344947Z ##[endgroup]
+build	UNKNOWN STEP	2026-08-09T05:14:02.7346203Z ##[group]GITHUB_TOKEN Permissions
+build	UNKNOWN STEP	2026-08-09T05:14:02.7348547Z Contents: read
+build	UNKNOWN STEP	2026-08-09T05:14:02.7349221Z Metadata: read
+build	UNKNOWN STEP	2026-08-09T05:14:02.7350078Z Packages: read
+build	UNKNOWN STEP	2026-08-09T05:14:02.7350827Z ##[endgroup]
+build	UNKNOWN STEP	2026-08-09T05:14:02.7353203Z Secret source: Actions
+build	UNKNOWN STEP	2026-08-09T05:14:02.7355045Z Prepare workflow directory
+build	UNKNOWN STEP	2026-08-09T05:14:02.7707814Z Prepare all required actions
+build	UNKNOWN STEP	2026-08-09T05:14:02.7758164Z Getting action download info
+build	UNKNOWN STEP	2026-08-09T05:14:03.0155486Z Download action repository 'actions/checkout@v5' (SHA:fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09)
+build	UNKNOWN STEP	2026-08-09T05:14:03.4418803Z Download action repository 'actions/setup-python@v6' (SHA:ece7cb06caefa5fff74198d8649806c4678c61a1)
+build	UNKNOWN STEP	2026-08-09T05:14:03.6232119Z Complete job name: build
+build	UNKNOWN STEP	2026-08-09T05:14:03.6980405Z ##[group]Run actions/checkout@v5
+build	UNKNOWN STEP	2026-08-09T05:14:03.6981327Z with:
+build	UNKNOWN STEP	2026-08-09T05:14:03.6981812Z   repository: sambitmallick/pulse-board
+build	UNKNOWN STEP	2026-08-09T05:14:03.6986244Z   token: ***
+build	UNKNOWN STEP	2026-08-09T05:14:03.6986688Z   ssh-strict: true
+build	UNKNOWN STEP	2026-08-09T05:14:03.6987157Z   ssh-user: git
+build	UNKNOWN STEP	2026-08-09T05:14:03.6987603Z   persist-credentials: true
+build	UNKNOWN STEP	2026-08-09T05:14:03.6988082Z   clean: true
+build	UNKNOWN STEP	2026-08-09T05:14:03.6988517Z   sparse-checkout-cone-mode: true
+build	UNKNOWN STEP	2026-08-09T05:14:03.6989054Z   fetch-depth: 1
+build	UNKNOWN STEP	2026-08-09T05:14:03.6989736Z   fetch-tags: false
+build	UNKNOWN STEP	2026-08-09T05:14:03.6990190Z   show-progress: true
+build	UNKNOWN STEP	2026-08-09T05:14:03.6990630Z   lfs: false
+build	UNKNOWN STEP	2026-08-09T05:14:03.6991040Z   submodules: false
+build	UNKNOWN STEP	2026-08-09T05:14:03.6991483Z   set-safe-directory: true
+build	UNKNOWN STEP	2026-08-09T05:14:03.6991980Z   allow-unsafe-pr-checkout: false
+build	UNKNOWN STEP	2026-08-09T05:14:03.6992712Z ##[endgroup]
+build	UNKNOWN STEP	2026-08-09T05:14:03.8126435Z Syncing repository: sambitmallick/pulse-board
+build	UNKNOWN STEP	2026-08-09T05:14:03.8129822Z ##[group]Getting Git version info
+build	UNKNOWN STEP	2026-08-09T05:14:03.8131196Z Working directory is '/home/runner/work/pulse-board/pulse-board'
+build	UNKNOWN STEP	2026-08-09T05:14:03.8132944Z [command]/usr/bin/git version
+build	UNKNOWN STEP	2026-08-09T05:14:03.8182700Z git version 2.54.0
+build	UNKNOWN STEP	2026-08-09T05:14:03.8207965Z ##[endgroup]
+build	UNKNOWN STEP	2026-08-09T05:14:03.8237155Z Temporarily overriding HOME='/home/runner/work/_temp/d4a180d8-ac67-4017-9b33-95a3d670f72b' before making global git config changes
+build	UNKNOWN STEP	2026-08-09T05:14:03.8239377Z Adding repository directory to the temporary git global config as a safe directory
+build	UNKNOWN STEP	2026-08-09T05:14:03.8241582Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/pulse-board/pulse-board
+build	UNKNOWN STEP	2026-08-09T05:14:03.8286856Z Deleting the contents of '/home/runner/work/pulse-board/pulse-board'
+build	UNKNOWN STEP	2026-08-09T05:14:03.8290377Z ##[group]Initializing the repository
+build	UNKNOWN STEP	2026-08-09T05:14:03.8297357Z [command]/usr/bin/git init /home/runner/work/pulse-board/pulse-board
+build	UNKNOWN STEP	2026-08-09T05:14:03.8381927Z hint: Using 'master' as the name for the initial branch. This default branch name
+build	UNKNOWN STEP	2026-08-09T05:14:03.8383275Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+build	UNKNOWN STEP	2026-08-09T05:14:03.8384557Z hint: to use in all of your new repositories, which will suppress this warning,
+build	UNKNOWN STEP	2026-08-09T05:14:03.8385291Z hint: call:
+build	UNKNOWN STEP	2026-08-09T05:14:03.8385925Z hint:
+build	UNKNOWN STEP	2026-08-09T05:14:03.8386646Z hint: 	git config --global init.defaultBranch <name>
+build	UNKNOWN STEP	2026-08-09T05:14:03.8387729Z hint:
+build	UNKNOWN STEP	2026-08-09T05:14:03.8388438Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build	UNKNOWN STEP	2026-08-09T05:14:03.8389352Z hint: 'development'. The just-created branch can be renamed via this command:
+build	UNKNOWN STEP	2026-08-09T05:14:03.8390298Z hint:
+build	UNKNOWN STEP	2026-08-09T05:14:03.8390711Z hint: 	git branch -m <name>
+build	UNKNOWN STEP	2026-08-09T05:14:03.8391181Z hint:
+build	UNKNOWN STEP	2026-08-09T05:14:03.8391793Z hint: Disable this message with "git config set advice.defaultBranchName false"
+build	UNKNOWN STEP	2026-08-09T05:14:03.8392961Z Initialized empty Git repository in /home/runner/work/pulse-board/pulse-board/.git/
+build	UNKNOWN STEP	2026-08-09T05:14:03.8395231Z [command]/usr/bin/git remote add origin https://github.com/sambitmallick/pulse-board
+build	UNKNOWN STEP	2026-08-09T05:14:03.8473112Z ##[endgroup]
+build	UNKNOWN STEP	2026-08-09T05:14:03.8473910Z ##[group]Disabling automatic garbage collection
+build	UNKNOWN STEP	2026-08-09T05:14:03.8479024Z [command]/usr/bin/git config --local gc.auto 0
+build	UNKNOWN STEP	2026-08-09T05:14:03.8513271Z ##[endgroup]
+build	UNKNOWN STEP	2026-08-09T05:14:03.8514017Z ##[group]Setting up auth
+build	UNKNOWN STEP	2026-08-09T05:14:03.8522258Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	UNKNOWN STEP	2026-08-09T05:14:03.8558809Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	UNKNOWN STEP	2026-08-09T05:14:03.8954509Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	UNKNOWN STEP	2026-08-09T05:14:03.8989872Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	UNKNOWN STEP	2026-08-09T05:14:03.9249242Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build	UNKNOWN STEP	2026-08-09T05:14:03.9289873Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build	UNKNOWN STEP	2026-08-09T05:14:03.9542454Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build	UNKNOWN STEP	2026-08-09T05:14:03.9587043Z ##[endgroup]
+build	UNKNOWN STEP	2026-08-09T05:14:03.9588421Z ##[group]Fetching the repository
+build	UNKNOWN STEP	2026-08-09T05:14:03.9599999Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +9d5282cf540372a0cf79b6a883a27548bc8c1552:refs/remotes/origin/main
+build	UNKNOWN STEP	2026-08-09T05:14:04.2948935Z From https://github.com/sambitmallick/pulse-board
+build	UNKNOWN STEP	2026-08-09T05:14:04.2951945Z  * [new ref]         9d5282cf540372a0cf79b6a883a27548bc8c1552 -> origin/main
+build	UNKNOWN STEP	2026-08-09T05:14:04.2983309Z ##[endgroup]
+build	UNKNOWN STEP	2026-08-09T05:14:04.2985079Z ##[group]Determining the checkout info
+build	UNKNOWN STEP	2026-08-09T05:14:04.2987141Z ##[endgroup]
+build	UNKNOWN STEP	2026-08-09T05:14:04.2993675Z [command]/usr/bin/git sparse-checkout disable
+build	UNKNOWN STEP	2026-08-09T05:14:04.3047019Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+build	UNKNOWN STEP	2026-08-09T05:14:04.3081833Z ##[group]Checking out the ref
+build	UNKNOWN STEP	2026-08-09T05:14:04.3085796Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+build	UNKNOWN STEP	2026-08-09T05:14:04.3150410Z Switched to a new branch 'main'
+build	UNKNOWN STEP	2026-08-09T05:14:04.3152254Z branch 'main' set up to track 'origin/main'.
+build	UNKNOWN STEP	2026-08-09T05:14:04.3159849Z ##[endgroup]
+build	UNKNOWN STEP	2026-08-09T05:14:04.3202911Z [command]/usr/bin/git log -1 --format=%H
+build	UNKNOWN STEP	2026-08-09T05:14:04.3232452Z 9d5282cf540372a0cf79b6a883a27548bc8c1552
+build	UNKNOWN STEP	2026-08-09T05:14:04.3612129Z ##[group]Run actions/setup-python@v6
+build	UNKNOWN STEP	2026-08-09T05:14:04.3613302Z with:
+build	UNKNOWN STEP	2026-08-09T05:14:04.3614092Z   python-version: 3.10
+build	UNKNOWN STEP	2026-08-09T05:14:04.3615013Z   check-latest: false
+build	UNKNOWN STEP	2026-08-09T05:14:04.3624803Z   token: ***
+build	UNKNOWN STEP	2026-08-09T05:14:04.3625647Z   update-environment: true
+build	UNKNOWN STEP	2026-08-09T05:14:04.3626648Z   allow-prereleases: false
+build	UNKNOWN STEP	2026-08-09T05:14:04.3627627Z   freethreaded: false
+build	UNKNOWN STEP	2026-08-09T05:14:04.3628742Z ##[endgroup]
+build	UNKNOWN STEP	2026-08-09T05:14:04.5018670Z ##[group]Installed versions
+build	UNKNOWN STEP	2026-08-09T05:14:04.5112097Z Successfully set up CPython (3.10.20)
+build	UNKNOWN STEP	2026-08-09T05:14:04.5114214Z ##[endgroup]
+build	UNKNOWN STEP	2026-08-09T05:14:04.5309132Z ##[group]Run pip install .
+build	UNKNOWN STEP	2026-08-09T05:14:04.5310581Z ^[[36;1mpip install .^[[0m
+build	UNKNOWN STEP	2026-08-09T05:14:04.5378415Z shell: /usr/bin/bash -e {0}
+build	UNKNOWN STEP	2026-08-09T05:14:04.5379734Z env:
+build	UNKNOWN STEP	2026-08-09T05:14:04.5380841Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.20/x64
+build	UNKNOWN STEP	2026-08-09T05:14:04.5382941Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib/pkgconfig
+build	UNKNOWN STEP	2026-08-09T05:14:04.5387038Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+build	UNKNOWN STEP	2026-08-09T05:14:04.5389868Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+build	UNKNOWN STEP	2026-08-09T05:14:04.5392176Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+build	UNKNOWN STEP	2026-08-09T05:14:04.5394547Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib
+build	UNKNOWN STEP	2026-08-09T05:14:04.5396496Z ##[endgroup]
+build	UNKNOWN STEP	2026-08-09T05:14:05.2900652Z Processing ./.
+build	UNKNOWN STEP	2026-08-09T05:14:05.2917747Z   Installing build dependencies: started
+build	UNKNOWN STEP	2026-08-09T05:14:06.2471823Z   Installing build dependencies: finished with status 'done'
+build	UNKNOWN STEP	2026-08-09T05:14:06.2479035Z   Getting requirements to build wheel: started
+build	UNKNOWN STEP	2026-08-09T05:14:06.7971997Z   Getting requirements to build wheel: finished with status 'done'
+build	UNKNOWN STEP	2026-08-09T05:14:06.7983331Z   Preparing metadata (pyproject.toml): started
+build	UNKNOWN STEP	2026-08-09T05:14:06.9874637Z   Preparing metadata (pyproject.toml): finished with status 'done'
+build	UNKNOWN STEP	2026-08-09T05:14:06.9893764Z INFO: pip is looking at multiple versions of pulse-board to determine which version is compatible with other requirements. This could take a while.
+build	UNKNOWN STEP	2026-08-09T05:14:06.9904271Z 
+build	UNKNOWN STEP	2026-08-09T05:14:06.9904766Z [notice] A new release of pip is available: 26.1.2 -> 26.2.1
+build	UNKNOWN STEP	2026-08-09T05:14:06.9905507Z [notice] To update, run: pip install --upgrade pip
+build	UNKNOWN STEP	2026-08-09T05:14:06.9910597Z ERROR: Package 'pulse-board' requires a different Python: 3.10.20 not in '>=3.12'
+build	UNKNOWN STEP	2026-08-09T05:14:07.0522069Z ##[error]Process completed with exit code 1.
+build	UNKNOWN STEP	2026-08-09T05:14:07.0683575Z Post job cleanup.
+build	UNKNOWN STEP	2026-08-09T05:14:07.1564385Z [command]/usr/bin/git version
+build	UNKNOWN STEP	2026-08-09T05:14:07.1608750Z git version 2.54.0
+build	UNKNOWN STEP	2026-08-09T05:14:07.1651427Z Temporarily overriding HOME='/home/runner/work/_temp/ed1ca32e-6f89-4815-92f2-7e29c9c71060' before making global git config changes
+build	UNKNOWN STEP	2026-08-09T05:14:07.1653035Z Adding repository directory to the temporary git global config as a safe directory
+build	UNKNOWN STEP	2026-08-09T05:14:07.1656313Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/pulse-board/pulse-board
+build	UNKNOWN STEP	2026-08-09T05:14:07.1707200Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	UNKNOWN STEP	2026-08-09T05:14:07.1754921Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	UNKNOWN STEP	2026-08-09T05:14:07.2072104Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	UNKNOWN STEP	2026-08-09T05:14:07.2104362Z http.https://github.com/.extraheader
+build	UNKNOWN STEP	2026-08-09T05:14:07.2117004Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+build	UNKNOWN STEP	2026-08-09T05:14:07.2156463Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	UNKNOWN STEP	2026-08-09T05:14:07.2434365Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build	UNKNOWN STEP	2026-08-09T05:14:07.2478270Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build	UNKNOWN STEP	2026-08-09T05:14:07.2908923Z Cleaning up orphan processes

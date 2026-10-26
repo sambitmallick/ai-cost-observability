@@ -1,0 +1,34 @@
+test	Install dependencies	﻿2026-08-09T04:32:47.6968494Z ##[group]Run pip install -r requirements.txt
+test	Install dependencies	2026-08-09T04:32:47.6969933Z ^[[36;1mpip install -r requirements.txt^[[0m
+test	Install dependencies	2026-08-09T04:32:47.7021759Z shell: /usr/bin/bash -e {0}
+test	Install dependencies	2026-08-09T04:32:47.7022359Z env:
+test	Install dependencies	2026-08-09T04:32:47.7022910Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+test	Install dependencies	2026-08-09T04:32:47.7023766Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+test	Install dependencies	2026-08-09T04:32:47.7024753Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+test	Install dependencies	2026-08-09T04:32:47.7025548Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+test	Install dependencies	2026-08-09T04:32:47.7026354Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+test	Install dependencies	2026-08-09T04:32:47.7027221Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+test	Install dependencies	2026-08-09T04:32:47.7027887Z ##[endgroup]
+test	Install dependencies	2026-08-09T04:32:50.0187352Z Collecting flask==3.0.0 (from -r requirements.txt (line 1))
+test	Install dependencies	2026-08-09T04:32:50.0980380Z   Downloading flask-3.0.0-py3-none-any.whl.metadata (3.6 kB)
+test	Install dependencies	2026-08-09T04:32:50.1280421Z Collecting werkzeug==2.0.3 (from -r requirements.txt (line 3))
+test	Install dependencies	2026-08-09T04:32:50.1413041Z   Downloading Werkzeug-2.0.3-py3-none-any.whl.metadata (4.5 kB)
+test	Install dependencies	2026-08-09T04:32:50.1465492Z INFO: pip is looking at multiple versions of flask to determine which version is compatible with other requirements. This could take a while.
+test	Install dependencies	2026-08-09T04:32:50.1468846Z ERROR: Cannot install -r requirements.txt (line 1) and werkzeug==2.0.3 because these package versions have conflicting dependencies.
+test	Install dependencies	2026-08-09T04:32:50.1472725Z 
+test	Install dependencies	2026-08-09T04:32:50.1473476Z The conflict is caused by:
+test	Install dependencies	2026-08-09T04:32:50.1473976Z     The user requested werkzeug==2.0.3
+test	Install dependencies	2026-08-09T04:32:50.1474418Z     flask 3.0.0 depends on Werkzeug>=3.0.0
+test	Install dependencies	2026-08-09T04:32:50.1474974Z 
+test	Install dependencies	2026-08-09T04:32:50.1475497Z Additionally, some packages in these conflicts have no matching distributions available for your environment:
+test	Install dependencies	2026-08-09T04:32:50.1476196Z     werkzeug
+test	Install dependencies	2026-08-09T04:32:50.1476382Z 
+test	Install dependencies	2026-08-09T04:32:50.1476543Z To fix this you could try to:
+test	Install dependencies	2026-08-09T04:32:50.1477068Z 1. loosen the range of package versions you've specified
+test	Install dependencies	2026-08-09T04:32:50.1477723Z 2. remove package versions to allow pip to attempt to solve the dependency conflict
+test	Install dependencies	2026-08-09T04:32:50.1478148Z 
+test	Install dependencies	2026-08-09T04:32:50.1481361Z 
+test	Install dependencies	2026-08-09T04:32:50.1481807Z [notice] A new release of pip is available: 26.1.2 -> 26.2.1
+test	Install dependencies	2026-08-09T04:32:50.1482345Z [notice] To update, run: pip install --upgrade pip
+test	Install dependencies	2026-08-09T04:32:50.1484947Z ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+test	Install dependencies	2026-08-09T04:32:50.1869666Z ##[error]Process completed with exit code 1.

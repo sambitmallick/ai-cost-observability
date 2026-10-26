@@ -1,0 +1,24 @@
+build	Package install check	﻿2026-08-09T04:35:03.4289092Z ##[group]Run pip install .
+build	Package install check	2026-08-09T04:35:03.4290786Z ^[[36;1mpip install .^[[0m
+build	Package install check	2026-08-09T04:35:03.4408862Z shell: /usr/bin/bash -e {0}
+build	Package install check	2026-08-09T04:35:03.4410527Z env:
+build	Package install check	2026-08-09T04:35:03.4412624Z   pythonLocation: /opt/hostedtoolcache/Python/3.10.20/x64
+build	Package install check	2026-08-09T04:35:03.4415749Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib/pkgconfig
+build	Package install check	2026-08-09T04:35:03.4418824Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+build	Package install check	2026-08-09T04:35:03.4421445Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+build	Package install check	2026-08-09T04:35:03.4423439Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.10.20/x64
+build	Package install check	2026-08-09T04:35:03.4426177Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.10.20/x64/lib
+build	Package install check	2026-08-09T04:35:03.4428649Z ##[endgroup]
+build	Package install check	2026-08-09T04:35:05.7789115Z Processing ./.
+build	Package install check	2026-08-09T04:35:05.7805439Z   Installing build dependencies: started
+build	Package install check	2026-08-09T04:35:07.1915139Z   Installing build dependencies: finished with status 'done'
+build	Package install check	2026-08-09T04:35:07.1921549Z   Getting requirements to build wheel: started
+build	Package install check	2026-08-09T04:35:07.7429553Z   Getting requirements to build wheel: finished with status 'done'
+build	Package install check	2026-08-09T04:35:07.7440289Z   Preparing metadata (pyproject.toml): started
+build	Package install check	2026-08-09T04:35:07.9259022Z   Preparing metadata (pyproject.toml): finished with status 'done'
+build	Package install check	2026-08-09T04:35:07.9279013Z INFO: pip is looking at multiple versions of pulse-board to determine which version is compatible with other requirements. This could take a while.
+build	Package install check	2026-08-09T04:35:07.9289141Z 
+build	Package install check	2026-08-09T04:35:07.9289655Z [notice] A new release of pip is available: 26.1.2 -> 26.2.1
+build	Package install check	2026-08-09T04:35:07.9290455Z [notice] To update, run: pip install --upgrade pip
+build	Package install check	2026-08-09T04:35:07.9291848Z ERROR: Package 'pulse-board' requires a different Python: 3.10.20 not in '>=3.12'
+build	Package install check	2026-08-09T04:35:07.9807248Z ##[error]Process completed with exit code 1.

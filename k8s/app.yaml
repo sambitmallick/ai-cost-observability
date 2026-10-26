@@ -1,0 +1,31 @@
+# CI Copilot. One replica: the response cache and the chat sessions live in its memory.
+# The API key comes from a Secret created from a local file (never from this repo):
+#   kubectl -n ai-cost create secret generic anthropic --from-file=api-key=$HOME/.anthropic/ep31.key
+apiVersion: apps/v1
+kind: Deployment
+metadata: { name: ci-copilot, namespace: ai-cost }
+spec:
+  replicas: 1
+  selector: { matchLabels: { app: ci-copilot } }
+  template:
+    metadata: { labels: { app: ci-copilot } }
+    spec:
+      containers:
+        - name: app
+          image: localhost/ci-copilot:1.0
+          imagePullPolicy: Never
+          ports: [{ containerPort: 8080 }]
+          env:
+            - { name: APP_VERSION, value: "v1" }
+            - { name: OTEL_EXPORTER_OTLP_ENDPOINT, value: "http://jaeger:4318" }
+            - name: ANTHROPIC_API_KEY
+              valueFrom: { secretKeyRef: { name: anthropic, key: api-key } }
+          readinessProbe: { httpGet: { path: /healthz, port: 8080 }, periodSeconds: 5 }
+          resources: { requests: { cpu: 100m, memory: 128Mi }, limits: { memory: 512Mi } }
+---
+apiVersion: v1
+kind: Service
+metadata: { name: ci-copilot, namespace: ai-cost }
+spec:
+  selector: { app: ci-copilot }
+  ports: [{ port: 8080 }]

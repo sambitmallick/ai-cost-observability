@@ -1,0 +1,391 @@
+lint	Set up job	﻿2026-08-10T02:21:43.9680973Z Current runner version: '2.336.0'
+lint	Set up job	2026-08-10T02:21:43.9708963Z ##[group]Runner Image Provisioner
+lint	Set up job	2026-08-10T02:21:43.9709948Z Hosted Compute Agent
+lint	Set up job	2026-08-10T02:21:43.9710871Z Version: 20260707.563
+lint	Set up job	2026-08-10T02:21:43.9711584Z Commit: 02667638d2b423fbc733a8e32a88b44996a3ba6e
+lint	Set up job	2026-08-10T02:21:43.9712347Z Build Date: 2026-07-07T19:33:50Z
+lint	Set up job	2026-08-10T02:21:43.9713171Z Worker ID: {66347590-027c-4ba9-99fb-d2ef61a0027e}
+lint	Set up job	2026-08-10T02:21:43.9713919Z Azure Region: eastus
+lint	Set up job	2026-08-10T02:21:43.9714554Z ##[endgroup]
+lint	Set up job	2026-08-10T02:21:43.9716452Z ##[group]Operating System
+lint	Set up job	2026-08-10T02:21:43.9717138Z Ubuntu
+lint	Set up job	2026-08-10T02:21:43.9717795Z 24.04.4
+lint	Set up job	2026-08-10T02:21:43.9718324Z LTS
+lint	Set up job	2026-08-10T02:21:43.9718833Z ##[endgroup]
+lint	Set up job	2026-08-10T02:21:43.9719473Z ##[group]Runner Image
+lint	Set up job	2026-08-10T02:21:43.9720097Z Image: ubuntu-24.04
+lint	Set up job	2026-08-10T02:21:43.9720996Z Version: 20260720.247.2
+lint	Set up job	2026-08-10T02:21:43.9722178Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260720.247/images/ubuntu/Ubuntu2404-Readme.md
+lint	Set up job	2026-08-10T02:21:43.9724139Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260720.247
+lint	Set up job	2026-08-10T02:21:43.9725200Z ##[endgroup]
+lint	Set up job	2026-08-10T02:21:43.9726601Z ##[group]GITHUB_TOKEN Permissions
+lint	Set up job	2026-08-10T02:21:43.9728831Z Contents: read
+lint	Set up job	2026-08-10T02:21:43.9729533Z Metadata: read
+lint	Set up job	2026-08-10T02:21:43.9730133Z Packages: read
+lint	Set up job	2026-08-10T02:21:43.9731098Z ##[endgroup]
+lint	Set up job	2026-08-10T02:21:43.9733951Z Secret source: Actions
+lint	Set up job	2026-08-10T02:21:43.9735440Z Prepare workflow directory
+lint	Set up job	2026-08-10T02:21:44.0090131Z Prepare all required actions
+lint	Set up job	2026-08-10T02:21:44.0144448Z Getting action download info
+lint	Set up job	2026-08-10T02:21:44.2263277Z Download action repository 'actions/checkout@v5' (SHA:fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09)
+lint	Set up job	2026-08-10T02:21:44.4496919Z Download action repository 'actions/setup-python@v6' (SHA:ece7cb06caefa5fff74198d8649806c4678c61a1)
+lint	Set up job	2026-08-10T02:21:44.6785997Z Complete job name: lint
+lint	Run actions/checkout@v5	﻿2026-08-10T02:21:44.7722239Z ##[group]Run actions/checkout@v5
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.7723179Z with:
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.7723686Z   repository: sambitmallick/pulse-board
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.7727962Z   token: ***
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.7728408Z   ssh-strict: true
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.7728851Z   ssh-user: git
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.7729297Z   persist-credentials: true
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.7729785Z   clean: true
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.7730227Z   sparse-checkout-cone-mode: true
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.7731239Z   fetch-depth: 1
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.7731692Z   fetch-tags: false
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.7732149Z   show-progress: true
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.7732602Z   lfs: false
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.7733026Z   submodules: false
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.7733479Z   set-safe-directory: true
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.7733988Z   allow-unsafe-pr-checkout: false
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.7734840Z ##[endgroup]
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.8971946Z Syncing repository: sambitmallick/pulse-board
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.8975036Z ##[group]Getting Git version info
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.8976302Z Working directory is '/home/runner/work/pulse-board/pulse-board'
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.8977674Z [command]/usr/bin/git version
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.8978230Z git version 2.54.0
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.9009902Z ##[endgroup]
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.9017613Z Temporarily overriding HOME='/home/runner/work/_temp/f048b7f0-ec82-47b9-8dc0-4288e8f2aff0' before making global git config changes
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.9020159Z Adding repository directory to the temporary git global config as a safe directory
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.9024677Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/pulse-board/pulse-board
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.9082800Z Deleting the contents of '/home/runner/work/pulse-board/pulse-board'
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.9088436Z ##[group]Initializing the repository
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.9094737Z [command]/usr/bin/git init /home/runner/work/pulse-board/pulse-board
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.9192642Z hint: Using 'master' as the name for the initial branch. This default branch name
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.9195183Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.9197764Z hint: to use in all of your new repositories, which will suppress this warning,
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.9199878Z hint: call:
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.9203565Z hint:
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.9204917Z hint: 	git config --global init.defaultBranch <name>
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.9206456Z hint:
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.9207849Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.9209867Z hint: 'development'. The just-created branch can be renamed via this command:
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.9213034Z hint:
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.9214214Z hint: 	git branch -m <name>
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.9215339Z hint:
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.9216595Z hint: Disable this message with "git config set advice.defaultBranchName false"
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.9218708Z Initialized empty Git repository in /home/runner/work/pulse-board/pulse-board/.git/
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.9222720Z [command]/usr/bin/git remote add origin https://github.com/sambitmallick/pulse-board
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.9271043Z ##[endgroup]
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.9272731Z ##[group]Disabling automatic garbage collection
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.9281561Z [command]/usr/bin/git config --local gc.auto 0
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.9326697Z ##[endgroup]
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.9328288Z ##[group]Setting up auth
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.9339506Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+lint	Run actions/checkout@v5	2026-08-10T02:21:44.9392899Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+lint	Run actions/checkout@v5	2026-08-10T02:21:45.0006953Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+lint	Run actions/checkout@v5	2026-08-10T02:21:45.0067319Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+lint	Run actions/checkout@v5	2026-08-10T02:21:45.0364604Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+lint	Run actions/checkout@v5	2026-08-10T02:21:45.0411466Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+lint	Run actions/checkout@v5	2026-08-10T02:21:45.0685873Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+lint	Run actions/checkout@v5	2026-08-10T02:21:45.0739940Z ##[endgroup]
+lint	Run actions/checkout@v5	2026-08-10T02:21:45.0741426Z ##[group]Fetching the repository
+lint	Run actions/checkout@v5	2026-08-10T02:21:45.0756851Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +d1999afcc084c965b186f70acab24a683e86195c:refs/remotes/origin/main
+lint	Run actions/checkout@v5	2026-08-10T02:21:45.2737006Z From https://github.com/sambitmallick/pulse-board
+lint	Run actions/checkout@v5	2026-08-10T02:21:45.2738556Z  * [new ref]         d1999afcc084c965b186f70acab24a683e86195c -> origin/main
+lint	Run actions/checkout@v5	2026-08-10T02:21:45.2774239Z ##[endgroup]
+lint	Run actions/checkout@v5	2026-08-10T02:21:45.2775383Z ##[group]Determining the checkout info
+lint	Run actions/checkout@v5	2026-08-10T02:21:45.2778132Z ##[endgroup]
+lint	Run actions/checkout@v5	2026-08-10T02:21:45.2786488Z [command]/usr/bin/git sparse-checkout disable
+lint	Run actions/checkout@v5	2026-08-10T02:21:45.2842426Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+lint	Run actions/checkout@v5	2026-08-10T02:21:45.2882022Z ##[group]Checking out the ref
+lint	Run actions/checkout@v5	2026-08-10T02:21:45.2888643Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+lint	Run actions/checkout@v5	2026-08-10T02:21:45.2957149Z Switched to a new branch 'main'
+lint	Run actions/checkout@v5	2026-08-10T02:21:45.2959071Z branch 'main' set up to track 'origin/main'.
+lint	Run actions/checkout@v5	2026-08-10T02:21:45.2966761Z ##[endgroup]
+lint	Run actions/checkout@v5	2026-08-10T02:21:45.3019392Z [command]/usr/bin/git log -1 --format=%H
+lint	Run actions/checkout@v5	2026-08-10T02:21:45.3051903Z d1999afcc084c965b186f70acab24a683e86195c
+lint	Run actions/setup-python@v6	﻿2026-08-10T02:21:45.3368829Z ##[group]Run actions/setup-python@v6
+lint	Run actions/setup-python@v6	2026-08-10T02:21:45.3369468Z with:
+lint	Run actions/setup-python@v6	2026-08-10T02:21:45.3369879Z   python-version: 3.12
+lint	Run actions/setup-python@v6	2026-08-10T02:21:45.3370605Z   check-latest: false
+lint	Run actions/setup-python@v6	2026-08-10T02:21:45.3374621Z   token: ***
+lint	Run actions/setup-python@v6	2026-08-10T02:21:45.3375056Z   update-environment: true
+lint	Run actions/setup-python@v6	2026-08-10T02:21:45.3375620Z   allow-prereleases: false
+lint	Run actions/setup-python@v6	2026-08-10T02:21:45.3376104Z   freethreaded: false
+lint	Run actions/setup-python@v6	2026-08-10T02:21:45.3376543Z ##[endgroup]
+lint	Run actions/setup-python@v6	2026-08-10T02:21:45.4789425Z ##[group]Installed versions
+lint	Run actions/setup-python@v6	2026-08-10T02:21:45.4886578Z Successfully set up CPython (3.12.13)
+lint	Run actions/setup-python@v6	2026-08-10T02:21:45.4888216Z ##[endgroup]
+lint	Install ruff	﻿2026-08-10T02:21:45.5079568Z ##[group]Run pip install ruff==0.5.7
+lint	Install ruff	2026-08-10T02:21:45.5080301Z ^[[36;1mpip install ruff==0.5.7^[[0m
+lint	Install ruff	2026-08-10T02:21:45.5151178Z shell: /usr/bin/bash -e {0}
+lint	Install ruff	2026-08-10T02:21:45.5151890Z env:
+lint	Install ruff	2026-08-10T02:21:45.5152451Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+lint	Install ruff	2026-08-10T02:21:45.5153345Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+lint	Install ruff	2026-08-10T02:21:45.5154239Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+lint	Install ruff	2026-08-10T02:21:45.5155354Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+lint	Install ruff	2026-08-10T02:21:45.5156390Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+lint	Install ruff	2026-08-10T02:21:45.5157719Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+lint	Install ruff	2026-08-10T02:21:45.5158570Z ##[endgroup]
+lint	Install ruff	2026-08-10T02:21:46.7451937Z Collecting ruff==0.5.7
+lint	Install ruff	2026-08-10T02:21:46.8004316Z   Downloading ruff-0.5.7-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (25 kB)
+lint	Install ruff	2026-08-10T02:21:46.8345231Z Downloading ruff-0.5.7-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.2 MB)
+lint	Install ruff	2026-08-10T02:21:46.9585054Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.2/10.2 MB 94.3 MB/s  0:00:00
+lint	Install ruff	2026-08-10T02:21:46.9883689Z Installing collected packages: ruff
+lint	Install ruff	2026-08-10T02:21:47.1068733Z Successfully installed ruff-0.5.7
+lint	Install ruff	2026-08-10T02:21:47.1077733Z 
+lint	Install ruff	2026-08-10T02:21:47.1078419Z [notice] A new release of pip is available: 26.1.2 -> 26.2.1
+lint	Install ruff	2026-08-10T02:21:47.1079376Z [notice] To update, run: pip install --upgrade pip
+lint	Lint	﻿2026-08-10T02:21:47.1976096Z ##[group]Run ruff check .
+lint	Lint	2026-08-10T02:21:47.1976619Z ^[[36;1mruff check .^[[0m
+lint	Lint	2026-08-10T02:21:47.2027064Z shell: /usr/bin/bash -e {0}
+lint	Lint	2026-08-10T02:21:47.2027551Z env:
+lint	Lint	2026-08-10T02:21:47.2027988Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+lint	Lint	2026-08-10T02:21:47.2028699Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+lint	Lint	2026-08-10T02:21:47.2029462Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+lint	Lint	2026-08-10T02:21:47.2030093Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+lint	Lint	2026-08-10T02:21:47.2030897Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+lint	Lint	2026-08-10T02:21:47.2031543Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+lint	Lint	2026-08-10T02:21:47.2032073Z ##[endgroup]
+lint	Lint	2026-08-10T02:21:47.2191911Z All checks passed!
+lint	Post Run actions/setup-python@v6	﻿2026-08-10T02:21:47.2315595Z Post job cleanup.
+lint	Post Run actions/checkout@v5	﻿2026-08-10T02:21:47.3809155Z Post job cleanup.
+lint	Post Run actions/checkout@v5	2026-08-10T02:21:47.4771468Z [command]/usr/bin/git version
+lint	Post Run actions/checkout@v5	2026-08-10T02:21:47.4817533Z git version 2.54.0
+lint	Post Run actions/checkout@v5	2026-08-10T02:21:47.4862642Z Temporarily overriding HOME='/home/runner/work/_temp/735a6758-2d60-408f-b1c8-b4e29bc7b017' before making global git config changes
+lint	Post Run actions/checkout@v5	2026-08-10T02:21:47.4864125Z Adding repository directory to the temporary git global config as a safe directory
+lint	Post Run actions/checkout@v5	2026-08-10T02:21:47.4869528Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/pulse-board/pulse-board
+lint	Post Run actions/checkout@v5	2026-08-10T02:21:47.4916374Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+lint	Post Run actions/checkout@v5	2026-08-10T02:21:47.5007106Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+lint	Post Run actions/checkout@v5	2026-08-10T02:21:47.5244478Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+lint	Post Run actions/checkout@v5	2026-08-10T02:21:47.5279179Z http.https://github.com/.extraheader
+lint	Post Run actions/checkout@v5	2026-08-10T02:21:47.5292748Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+lint	Post Run actions/checkout@v5	2026-08-10T02:21:47.5342291Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+lint	Post Run actions/checkout@v5	2026-08-10T02:21:47.5621609Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+lint	Post Run actions/checkout@v5	2026-08-10T02:21:47.5666707Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+lint	Complete job	﻿2026-08-10T02:21:47.6114307Z Cleaning up orphan processes
+test	Set up job	﻿2026-08-10T02:21:44.0047661Z Current runner version: '2.336.0'
+test	Set up job	2026-08-10T02:21:44.0083084Z ##[group]Runner Image Provisioner
+test	Set up job	2026-08-10T02:21:44.0084253Z Hosted Compute Agent
+test	Set up job	2026-08-10T02:21:44.0085247Z Version: 20260707.563
+test	Set up job	2026-08-10T02:21:44.0085898Z Commit: 02667638d2b423fbc733a8e32a88b44996a3ba6e
+test	Set up job	2026-08-10T02:21:44.0086704Z Build Date: 2026-07-07T19:33:50Z
+test	Set up job	2026-08-10T02:21:44.0087431Z Worker ID: {ec257a2c-8727-4587-9d34-e67448fad8ac}
+test	Set up job	2026-08-10T02:21:44.0088166Z Azure Region: eastus2
+test	Set up job	2026-08-10T02:21:44.0089224Z ##[endgroup]
+test	Set up job	2026-08-10T02:21:44.0091175Z ##[group]Operating System
+test	Set up job	2026-08-10T02:21:44.0091899Z Ubuntu
+test	Set up job	2026-08-10T02:21:44.0092458Z 24.04.4
+test	Set up job	2026-08-10T02:21:44.0093000Z LTS
+test	Set up job	2026-08-10T02:21:44.0093620Z ##[endgroup]
+test	Set up job	2026-08-10T02:21:44.0094186Z ##[group]Runner Image
+test	Set up job	2026-08-10T02:21:44.0094784Z Image: ubuntu-24.04
+test	Set up job	2026-08-10T02:21:44.0095436Z Version: 20260720.247.2
+test	Set up job	2026-08-10T02:21:44.0096509Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260720.247/images/ubuntu/Ubuntu2404-Readme.md
+test	Set up job	2026-08-10T02:21:44.0098620Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260720.247
+test	Set up job	2026-08-10T02:21:44.0099596Z ##[endgroup]
+test	Set up job	2026-08-10T02:21:44.0100899Z ##[group]GITHUB_TOKEN Permissions
+test	Set up job	2026-08-10T02:21:44.0103233Z Contents: read
+test	Set up job	2026-08-10T02:21:44.0104020Z Metadata: read
+test	Set up job	2026-08-10T02:21:44.0104593Z Packages: read
+test	Set up job	2026-08-10T02:21:44.0105570Z ##[endgroup]
+test	Set up job	2026-08-10T02:21:44.0108126Z Secret source: Actions
+test	Set up job	2026-08-10T02:21:44.0110074Z Prepare workflow directory
+test	Set up job	2026-08-10T02:21:44.0890395Z Prepare all required actions
+test	Set up job	2026-08-10T02:21:44.0964538Z Getting action download info
+test	Set up job	2026-08-10T02:21:44.2683423Z Download action repository 'actions/checkout@v5' (SHA:fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09)
+test	Set up job	2026-08-10T02:21:45.1120215Z Download action repository 'actions/setup-python@v6' (SHA:ece7cb06caefa5fff74198d8649806c4678c61a1)
+test	Set up job	2026-08-10T02:21:45.3037327Z Complete job name: test
+test	Run actions/checkout@v5	﻿2026-08-10T02:21:45.3854260Z ##[group]Run actions/checkout@v5
+test	Run actions/checkout@v5	2026-08-10T02:21:45.3855235Z with:
+test	Run actions/checkout@v5	2026-08-10T02:21:45.3855804Z   repository: sambitmallick/pulse-board
+test	Run actions/checkout@v5	2026-08-10T02:21:45.3860650Z   token: ***
+test	Run actions/checkout@v5	2026-08-10T02:21:45.3861146Z   ssh-strict: true
+test	Run actions/checkout@v5	2026-08-10T02:21:45.3861628Z   ssh-user: git
+test	Run actions/checkout@v5	2026-08-10T02:21:45.3862110Z   persist-credentials: true
+test	Run actions/checkout@v5	2026-08-10T02:21:45.3862642Z   clean: true
+test	Run actions/checkout@v5	2026-08-10T02:21:45.3863120Z   sparse-checkout-cone-mode: true
+test	Run actions/checkout@v5	2026-08-10T02:21:45.3863677Z   fetch-depth: 1
+test	Run actions/checkout@v5	2026-08-10T02:21:45.3864138Z   fetch-tags: false
+test	Run actions/checkout@v5	2026-08-10T02:21:45.3864619Z   show-progress: true
+test	Run actions/checkout@v5	2026-08-10T02:21:45.3865119Z   lfs: false
+test	Run actions/checkout@v5	2026-08-10T02:21:45.3865583Z   submodules: false
+test	Run actions/checkout@v5	2026-08-10T02:21:45.3866071Z   set-safe-directory: true
+test	Run actions/checkout@v5	2026-08-10T02:21:45.3866621Z   allow-unsafe-pr-checkout: false
+test	Run actions/checkout@v5	2026-08-10T02:21:45.3867494Z ##[endgroup]
+test	Run actions/checkout@v5	2026-08-10T02:21:45.4948119Z Syncing repository: sambitmallick/pulse-board
+test	Run actions/checkout@v5	2026-08-10T02:21:45.4951138Z ##[group]Getting Git version info
+test	Run actions/checkout@v5	2026-08-10T02:21:45.4952220Z Working directory is '/home/runner/work/pulse-board/pulse-board'
+test	Run actions/checkout@v5	2026-08-10T02:21:45.4954346Z [command]/usr/bin/git version
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5004006Z git version 2.54.0
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5063146Z ##[endgroup]
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5081376Z Temporarily overriding HOME='/home/runner/work/_temp/2443d345-2179-4b32-a82e-1bb17aee8af9' before making global git config changes
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5083845Z Adding repository directory to the temporary git global config as a safe directory
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5088668Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/pulse-board/pulse-board
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5146817Z Deleting the contents of '/home/runner/work/pulse-board/pulse-board'
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5152928Z ##[group]Initializing the repository
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5159896Z [command]/usr/bin/git init /home/runner/work/pulse-board/pulse-board
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5292324Z hint: Using 'master' as the name for the initial branch. This default branch name
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5294749Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5297202Z hint: to use in all of your new repositories, which will suppress this warning,
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5299264Z hint: call:
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5300845Z hint:
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5303087Z hint: 	git config --global init.defaultBranch <name>
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5305406Z hint:
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5307484Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5310087Z hint: 'development'. The just-created branch can be renamed via this command:
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5311522Z hint:
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5312296Z hint: 	git branch -m <name>
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5313185Z hint:
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5314410Z hint: Disable this message with "git config set advice.defaultBranchName false"
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5316247Z Initialized empty Git repository in /home/runner/work/pulse-board/pulse-board/.git/
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5319753Z [command]/usr/bin/git remote add origin https://github.com/sambitmallick/pulse-board
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5371990Z ##[endgroup]
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5373385Z ##[group]Disabling automatic garbage collection
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5377509Z [command]/usr/bin/git config --local gc.auto 0
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5435242Z ##[endgroup]
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5436629Z ##[group]Setting up auth
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5437986Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5472399Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5883131Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test	Run actions/checkout@v5	2026-08-10T02:21:45.5930930Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test	Run actions/checkout@v5	2026-08-10T02:21:45.6185994Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test	Run actions/checkout@v5	2026-08-10T02:21:45.6226815Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test	Run actions/checkout@v5	2026-08-10T02:21:45.6480210Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+test	Run actions/checkout@v5	2026-08-10T02:21:45.6523396Z ##[endgroup]
+test	Run actions/checkout@v5	2026-08-10T02:21:45.6524342Z ##[group]Fetching the repository
+test	Run actions/checkout@v5	2026-08-10T02:21:45.6533186Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +d1999afcc084c965b186f70acab24a683e86195c:refs/remotes/origin/main
+test	Run actions/checkout@v5	2026-08-10T02:21:45.8847443Z From https://github.com/sambitmallick/pulse-board
+test	Run actions/checkout@v5	2026-08-10T02:21:45.8849805Z  * [new ref]         d1999afcc084c965b186f70acab24a683e86195c -> origin/main
+test	Run actions/checkout@v5	2026-08-10T02:21:45.8885807Z ##[endgroup]
+test	Run actions/checkout@v5	2026-08-10T02:21:45.8887052Z ##[group]Determining the checkout info
+test	Run actions/checkout@v5	2026-08-10T02:21:45.8888771Z ##[endgroup]
+test	Run actions/checkout@v5	2026-08-10T02:21:45.8895757Z [command]/usr/bin/git sparse-checkout disable
+test	Run actions/checkout@v5	2026-08-10T02:21:45.8958898Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+test	Run actions/checkout@v5	2026-08-10T02:21:45.9000472Z ##[group]Checking out the ref
+test	Run actions/checkout@v5	2026-08-10T02:21:45.9007894Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+test	Run actions/checkout@v5	2026-08-10T02:21:45.9077343Z Switched to a new branch 'main'
+test	Run actions/checkout@v5	2026-08-10T02:21:45.9081206Z branch 'main' set up to track 'origin/main'.
+test	Run actions/checkout@v5	2026-08-10T02:21:45.9087891Z ##[endgroup]
+test	Run actions/checkout@v5	2026-08-10T02:21:45.9136206Z [command]/usr/bin/git log -1 --format=%H
+test	Run actions/checkout@v5	2026-08-10T02:21:45.9166946Z d1999afcc084c965b186f70acab24a683e86195c
+test	Run actions/setup-python@v6	﻿2026-08-10T02:21:45.9535019Z ##[group]Run actions/setup-python@v6
+test	Run actions/setup-python@v6	2026-08-10T02:21:45.9536164Z with:
+test	Run actions/setup-python@v6	2026-08-10T02:21:45.9536958Z   python-version: 3.12
+test	Run actions/setup-python@v6	2026-08-10T02:21:45.9537878Z   check-latest: false
+test	Run actions/setup-python@v6	2026-08-10T02:21:45.9548005Z   token: ***
+test	Run actions/setup-python@v6	2026-08-10T02:21:45.9549015Z   update-environment: true
+test	Run actions/setup-python@v6	2026-08-10T02:21:45.9550009Z   allow-prereleases: false
+test	Run actions/setup-python@v6	2026-08-10T02:21:45.9550969Z   freethreaded: false
+test	Run actions/setup-python@v6	2026-08-10T02:21:45.9552039Z ##[endgroup]
+test	Run actions/setup-python@v6	2026-08-10T02:21:46.0953178Z ##[group]Installed versions
+test	Run actions/setup-python@v6	2026-08-10T02:21:46.1051959Z Successfully set up CPython (3.12.13)
+test	Run actions/setup-python@v6	2026-08-10T02:21:46.1054296Z ##[endgroup]
+test	Install dependencies	﻿2026-08-10T02:21:46.1277248Z ##[group]Run pip install -r requirements.txt
+test	Install dependencies	2026-08-10T02:21:46.1279350Z ^[[36;1mpip install -r requirements.txt^[[0m
+test	Install dependencies	2026-08-10T02:21:46.1366825Z shell: /usr/bin/bash -e {0}
+test	Install dependencies	2026-08-10T02:21:46.1368268Z env:
+test	Install dependencies	2026-08-10T02:21:46.1369866Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+test	Install dependencies	2026-08-10T02:21:46.1372297Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+test	Install dependencies	2026-08-10T02:21:46.1374767Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+test	Install dependencies	2026-08-10T02:21:46.1376974Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+test	Install dependencies	2026-08-10T02:21:46.1379452Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+test	Install dependencies	2026-08-10T02:21:46.1381305Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+test	Install dependencies	2026-08-10T02:21:46.1382702Z ##[endgroup]
+test	Install dependencies	2026-08-10T02:21:48.0884114Z Collecting flask==3.0.0 (from -r requirements.txt (line 1))
+test	Install dependencies	2026-08-10T02:21:48.1541202Z   Downloading flask-3.0.0-py3-none-any.whl.metadata (3.6 kB)
+test	Install dependencies	2026-08-10T02:21:48.1820821Z Collecting Werkzeug>=3.0.0 (from flask==3.0.0->-r requirements.txt (line 1))
+test	Install dependencies	2026-08-10T02:21:48.1903820Z   Downloading werkzeug-3.1.8-py3-none-any.whl.metadata (4.0 kB)
+test	Install dependencies	2026-08-10T02:21:48.2076158Z Collecting Jinja2>=3.1.2 (from flask==3.0.0->-r requirements.txt (line 1))
+test	Install dependencies	2026-08-10T02:21:48.2151000Z   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+test	Install dependencies	2026-08-10T02:21:48.2309459Z Collecting itsdangerous>=2.1.2 (from flask==3.0.0->-r requirements.txt (line 1))
+test	Install dependencies	2026-08-10T02:21:48.2382478Z   Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+test	Install dependencies	2026-08-10T02:21:48.2588283Z Collecting click>=8.1.3 (from flask==3.0.0->-r requirements.txt (line 1))
+test	Install dependencies	2026-08-10T02:21:48.2668344Z   Downloading click-8.4.2-py3-none-any.whl.metadata (2.6 kB)
+test	Install dependencies	2026-08-10T02:21:48.2821783Z Collecting blinker>=1.6.2 (from flask==3.0.0->-r requirements.txt (line 1))
+test	Install dependencies	2026-08-10T02:21:48.2897373Z   Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+test	Install dependencies	2026-08-10T02:21:48.3440812Z Collecting MarkupSafe>=2.0 (from Jinja2>=3.1.2->flask==3.0.0->-r requirements.txt (line 1))
+test	Install dependencies	2026-08-10T02:21:48.3517089Z   Downloading markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+test	Install dependencies	2026-08-10T02:21:48.3643783Z Downloading flask-3.0.0-py3-none-any.whl (99 kB)
+test	Install dependencies	2026-08-10T02:21:48.3865832Z Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+test	Install dependencies	2026-08-10T02:21:48.3962931Z Downloading click-8.4.2-py3-none-any.whl (119 kB)
+test	Install dependencies	2026-08-10T02:21:48.4118058Z Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+test	Install dependencies	2026-08-10T02:21:48.4211130Z Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+test	Install dependencies	2026-08-10T02:21:48.4373522Z Downloading markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+test	Install dependencies	2026-08-10T02:21:48.4469280Z Downloading werkzeug-3.1.8-py3-none-any.whl (226 kB)
+test	Install dependencies	2026-08-10T02:21:48.5279738Z Installing collected packages: MarkupSafe, itsdangerous, click, blinker, Werkzeug, Jinja2, flask
+test	Install dependencies	2026-08-10T02:21:48.9460671Z 
+test	Install dependencies	2026-08-10T02:21:48.9475557Z Successfully installed Jinja2-3.1.6 MarkupSafe-3.0.3 Werkzeug-3.1.8 blinker-1.9.0 click-8.4.2 flask-3.0.0 itsdangerous-2.2.0
+test	Install dependencies	2026-08-10T02:21:48.9485195Z 
+test	Install dependencies	2026-08-10T02:21:48.9485765Z [notice] A new release of pip is available: 26.1.2 -> 26.2.1
+test	Install dependencies	2026-08-10T02:21:48.9486406Z [notice] To update, run: pip install --upgrade pip
+test	Install pytest	﻿2026-08-10T02:21:49.0157162Z ##[group]Run pip install pytest==8.3.2
+test	Install pytest	2026-08-10T02:21:49.0157553Z ^[[36;1mpip install pytest==8.3.2^[[0m
+test	Install pytest	2026-08-10T02:21:49.0206963Z shell: /usr/bin/bash -e {0}
+test	Install pytest	2026-08-10T02:21:49.0207277Z env:
+test	Install pytest	2026-08-10T02:21:49.0207564Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+test	Install pytest	2026-08-10T02:21:49.0208053Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+test	Install pytest	2026-08-10T02:21:49.0208675Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+test	Install pytest	2026-08-10T02:21:49.0209349Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+test	Install pytest	2026-08-10T02:21:49.0209728Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+test	Install pytest	2026-08-10T02:21:49.0210112Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+test	Install pytest	2026-08-10T02:21:49.0210441Z ##[endgroup]
+test	Install pytest	2026-08-10T02:21:49.4652587Z Collecting pytest==8.3.2
+test	Install pytest	2026-08-10T02:21:49.5265325Z   Downloading pytest-8.3.2-py3-none-any.whl.metadata (7.5 kB)
+test	Install pytest	2026-08-10T02:21:49.5437060Z Collecting iniconfig (from pytest==8.3.2)
+test	Install pytest	2026-08-10T02:21:49.5514307Z   Downloading iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+test	Install pytest	2026-08-10T02:21:49.5712108Z Collecting packaging (from pytest==8.3.2)
+test	Install pytest	2026-08-10T02:21:49.5809060Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+test	Install pytest	2026-08-10T02:21:49.5962410Z Collecting pluggy<2,>=1.5 (from pytest==8.3.2)
+test	Install pytest	2026-08-10T02:21:49.6043041Z   Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+test	Install pytest	2026-08-10T02:21:49.6174155Z Downloading pytest-8.3.2-py3-none-any.whl (341 kB)
+test	Install pytest	2026-08-10T02:21:49.6559787Z Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+test	Install pytest	2026-08-10T02:21:49.6665185Z Downloading iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+test	Install pytest	2026-08-10T02:21:49.6764552Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+test	Install pytest	2026-08-10T02:21:49.6992128Z Installing collected packages: pluggy, packaging, iniconfig, pytest
+test	Install pytest	2026-08-10T02:21:50.0628270Z 
+test	Install pytest	2026-08-10T02:21:50.0643988Z Successfully installed iniconfig-2.3.0 packaging-26.3 pluggy-1.6.0 pytest-8.3.2
+test	Install pytest	2026-08-10T02:21:50.0652514Z 
+test	Install pytest	2026-08-10T02:21:50.0652784Z [notice] A new release of pip is available: 26.1.2 -> 26.2.1
+test	Install pytest	2026-08-10T02:21:50.0653411Z [notice] To update, run: pip install --upgrade pip
+test	Run tests	﻿2026-08-10T02:21:50.1237291Z ##[group]Run pytest -q
+test	Run tests	2026-08-10T02:21:50.1237617Z ^[[36;1mpytest -q^[[0m
+test	Run tests	2026-08-10T02:21:50.1286716Z shell: /usr/bin/bash -e {0}
+test	Run tests	2026-08-10T02:21:50.1286978Z env:
+test	Run tests	2026-08-10T02:21:50.1287254Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+test	Run tests	2026-08-10T02:21:50.1287691Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+test	Run tests	2026-08-10T02:21:50.1288135Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+test	Run tests	2026-08-10T02:21:50.1288737Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+test	Run tests	2026-08-10T02:21:50.1289121Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+test	Run tests	2026-08-10T02:21:50.1289493Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+test	Run tests	2026-08-10T02:21:50.1289812Z ##[endgroup]
+test	Run tests	2026-08-10T02:21:50.7862510Z .....F                                                                   [100%]
+test	Run tests	2026-08-10T02:21:50.7863526Z =================================== FAILURES ===================================
+test	Run tests	2026-08-10T02:21:50.7864199Z __________________ test_worst_latency_reports_the_recent_peak __________________
+test	Run tests	2026-08-10T02:21:50.7864767Z 
+test	Run tests	2026-08-10T02:21:50.7864978Z     def test_worst_latency_reports_the_recent_peak():
+test	Run tests	2026-08-10T02:21:50.7865624Z         history = [_check(True, 20), _check(True, 180), _check(True, 35)]
+test	Run tests	2026-08-10T02:21:50.7866103Z >       assert worst_latency(history, window=2) == 180
+test	Run tests	2026-08-10T02:21:50.7866418Z E       AssertionError: assert 35 == 180
+test	Run tests	2026-08-10T02:21:50.7867142Z E        +  where 35 = worst_latency([{'latency_ms': 20, 'ok': True, 't': '2026-08-08T00:00:00Z'}, {'latency_ms': 180, 'ok': True, 't': '2026-08-08T00:00:00Z'}, {'latency_ms': 35, 'ok': True, 't': '2026-08-08T00:00:00Z'}], window=2)
+test	Run tests	2026-08-10T02:21:50.7867807Z 
+test	Run tests	2026-08-10T02:21:50.7867932Z tests/test_checks.py:32: AssertionError
+test	Run tests	2026-08-10T02:21:50.7868282Z =========================== short test summary info ============================
+test	Run tests	2026-08-10T02:21:50.7869499Z FAILED tests/test_checks.py::test_worst_latency_reports_the_recent_peak - AssertionError: assert 35 == 180
+test	Run tests	2026-08-10T02:21:50.7870421Z  +  where 35 = worst_latency([{'latency_ms': 20, 'ok': True, 't': '2026-08-08T00:00:00Z'}, {'latency_ms': 180, 'ok': True, 't': '2026-08-08T00:00:00Z'}, {'latency_ms': 35, 'ok': True, 't': '2026-08-08T00:00:00Z'}], window=2)
+test	Run tests	2026-08-10T02:21:50.7871124Z 1 failed, 5 passed in 0.20s
+test	Run tests	2026-08-10T02:21:50.8320134Z ##[error]Process completed with exit code 1.
+test	Post Run actions/checkout@v5	﻿2026-08-10T02:21:50.8464553Z Post job cleanup.
+test	Post Run actions/checkout@v5	2026-08-10T02:21:50.9331951Z [command]/usr/bin/git version
+test	Post Run actions/checkout@v5	2026-08-10T02:21:50.9377042Z git version 2.54.0
+test	Post Run actions/checkout@v5	2026-08-10T02:21:50.9417290Z Temporarily overriding HOME='/home/runner/work/_temp/9cec0715-906a-4923-8296-48f9dcd87848' before making global git config changes
+test	Post Run actions/checkout@v5	2026-08-10T02:21:50.9418750Z Adding repository directory to the temporary git global config as a safe directory
+test	Post Run actions/checkout@v5	2026-08-10T02:21:50.9423917Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/pulse-board/pulse-board
+test	Post Run actions/checkout@v5	2026-08-10T02:21:50.9471456Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test	Post Run actions/checkout@v5	2026-08-10T02:21:50.9511894Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test	Post Run actions/checkout@v5	2026-08-10T02:21:50.9799699Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test	Post Run actions/checkout@v5	2026-08-10T02:21:50.9823176Z http.https://github.com/.extraheader
+test	Post Run actions/checkout@v5	2026-08-10T02:21:50.9835365Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+test	Post Run actions/checkout@v5	2026-08-10T02:21:50.9893688Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test	Post Run actions/checkout@v5	2026-08-10T02:21:51.0276043Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test	Post Run actions/checkout@v5	2026-08-10T02:21:51.0338958Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test	Complete job	﻿2026-08-10T02:21:51.0830840Z Cleaning up orphan processes

@@ -1,0 +1,36 @@
+# Grafana with the datasources and the cost dashboard provisioned from files (configmaps grafana-provisioning and
+# grafana-dashboards, created from grafana/). Anonymous admin: a local demo cluster only.
+apiVersion: apps/v1
+kind: Deployment
+metadata: { name: grafana, namespace: ai-cost }
+spec:
+  replicas: 1
+  selector: { matchLabels: { app: grafana } }
+  template:
+    metadata: { labels: { app: grafana } }
+    spec:
+      containers:
+        - name: grafana
+          image: docker.io/grafana/grafana:13.2.3
+          imagePullPolicy: Never
+          ports: [{ containerPort: 3000 }]
+          env:
+            - { name: GF_AUTH_ANONYMOUS_ENABLED, value: "true" }
+            - { name: GF_AUTH_ANONYMOUS_ORG_ROLE, value: "Admin" }
+            - { name: GF_AUTH_DISABLE_LOGIN_FORM, value: "true" }
+            - { name: GF_NEWS_NEWS_FEED_ENABLED, value: "false" }
+            - { name: GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH, value: "/var/lib/grafana/dashboards/ai-cost.json" }
+          volumeMounts:
+            - { name: provisioning, mountPath: /etc/grafana/provisioning/datasources/ds.yaml, subPath: datasources.yaml }
+            - { name: provisioning, mountPath: /etc/grafana/provisioning/dashboards/db.yaml, subPath: dashboards.yaml }
+            - { name: dashboards, mountPath: /var/lib/grafana/dashboards }
+      volumes:
+        - { name: provisioning, configMap: { name: grafana-provisioning } }
+        - { name: dashboards, configMap: { name: grafana-dashboards } }
+---
+apiVersion: v1
+kind: Service
+metadata: { name: grafana, namespace: ai-cost }
+spec:
+  selector: { app: grafana }
+  ports: [{ port: 3000 }]

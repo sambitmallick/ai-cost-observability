@@ -1,0 +1,401 @@
+lint	UNKNOWN STEP	﻿2026-08-09T05:11:46.8666340Z Current runner version: '2.336.0'
+lint	UNKNOWN STEP	2026-08-09T05:11:46.8692756Z ##[group]Runner Image Provisioner
+lint	UNKNOWN STEP	2026-08-09T05:11:46.8693747Z Hosted Compute Agent
+lint	UNKNOWN STEP	2026-08-09T05:11:46.8694382Z Version: 20260707.563
+lint	UNKNOWN STEP	2026-08-09T05:11:46.8695049Z Commit: 02667638d2b423fbc733a8e32a88b44996a3ba6e
+lint	UNKNOWN STEP	2026-08-09T05:11:46.8695750Z Build Date: 2026-07-07T19:33:50Z
+lint	UNKNOWN STEP	2026-08-09T05:11:46.8696457Z Worker ID: {85bb732b-6eb9-4361-bca9-00504cdf9919}
+lint	UNKNOWN STEP	2026-08-09T05:11:46.8697221Z Azure Region: westus
+lint	UNKNOWN STEP	2026-08-09T05:11:46.8697760Z ##[endgroup]
+lint	UNKNOWN STEP	2026-08-09T05:11:46.8699779Z ##[group]Operating System
+lint	UNKNOWN STEP	2026-08-09T05:11:46.8700459Z Ubuntu
+lint	UNKNOWN STEP	2026-08-09T05:11:46.8701049Z 24.04.4
+lint	UNKNOWN STEP	2026-08-09T05:11:46.8701572Z LTS
+lint	UNKNOWN STEP	2026-08-09T05:11:46.8702104Z ##[endgroup]
+lint	UNKNOWN STEP	2026-08-09T05:11:46.8702731Z ##[group]Runner Image
+lint	UNKNOWN STEP	2026-08-09T05:11:46.8703320Z Image: ubuntu-24.04
+lint	UNKNOWN STEP	2026-08-09T05:11:46.8703849Z Version: 20260720.247.2
+lint	UNKNOWN STEP	2026-08-09T05:11:46.8705140Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260720.247/images/ubuntu/Ubuntu2404-Readme.md
+lint	UNKNOWN STEP	2026-08-09T05:11:46.8706743Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260720.247
+lint	UNKNOWN STEP	2026-08-09T05:11:46.8707683Z ##[endgroup]
+lint	UNKNOWN STEP	2026-08-09T05:11:46.8708829Z ##[group]GITHUB_TOKEN Permissions
+lint	UNKNOWN STEP	2026-08-09T05:11:46.8710971Z Contents: read
+lint	UNKNOWN STEP	2026-08-09T05:11:46.8711571Z Metadata: read
+lint	UNKNOWN STEP	2026-08-09T05:11:46.8712283Z Packages: read
+lint	UNKNOWN STEP	2026-08-09T05:11:46.8712900Z ##[endgroup]
+lint	UNKNOWN STEP	2026-08-09T05:11:46.8715012Z Secret source: Actions
+lint	UNKNOWN STEP	2026-08-09T05:11:46.8716089Z Prepare workflow directory
+lint	UNKNOWN STEP	2026-08-09T05:11:46.9060691Z Prepare all required actions
+lint	UNKNOWN STEP	2026-08-09T05:11:46.9111695Z Getting action download info
+lint	UNKNOWN STEP	2026-08-09T05:11:47.2627984Z Download action repository 'actions/checkout@v5' (SHA:fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09)
+lint	UNKNOWN STEP	2026-08-09T05:11:47.7010148Z Download action repository 'actions/setup-python@v6' (SHA:ece7cb06caefa5fff74198d8649806c4678c61a1)
+lint	UNKNOWN STEP	2026-08-09T05:11:47.8786822Z Complete job name: lint
+lint	UNKNOWN STEP	2026-08-09T05:11:47.9554310Z ##[group]Run actions/checkout@v5
+lint	UNKNOWN STEP	2026-08-09T05:11:47.9555196Z with:
+lint	UNKNOWN STEP	2026-08-09T05:11:47.9555688Z   repository: sambitmallick/pulse-board
+lint	UNKNOWN STEP	2026-08-09T05:11:47.9559552Z   token: ***
+lint	UNKNOWN STEP	2026-08-09T05:11:47.9559999Z   ssh-strict: true
+lint	UNKNOWN STEP	2026-08-09T05:11:47.9560429Z   ssh-user: git
+lint	UNKNOWN STEP	2026-08-09T05:11:47.9560862Z   persist-credentials: true
+lint	UNKNOWN STEP	2026-08-09T05:11:47.9561339Z   clean: true
+lint	UNKNOWN STEP	2026-08-09T05:11:47.9561770Z   sparse-checkout-cone-mode: true
+lint	UNKNOWN STEP	2026-08-09T05:11:47.9562282Z   fetch-depth: 1
+lint	UNKNOWN STEP	2026-08-09T05:11:47.9562697Z   fetch-tags: false
+lint	UNKNOWN STEP	2026-08-09T05:11:47.9563127Z   show-progress: true
+lint	UNKNOWN STEP	2026-08-09T05:11:47.9563557Z   lfs: false
+lint	UNKNOWN STEP	2026-08-09T05:11:47.9563960Z   submodules: false
+lint	UNKNOWN STEP	2026-08-09T05:11:47.9564405Z   set-safe-directory: true
+lint	UNKNOWN STEP	2026-08-09T05:11:47.9564896Z   allow-unsafe-pr-checkout: false
+lint	UNKNOWN STEP	2026-08-09T05:11:47.9565679Z ##[endgroup]
+lint	UNKNOWN STEP	2026-08-09T05:11:48.0594868Z Syncing repository: sambitmallick/pulse-board
+lint	UNKNOWN STEP	2026-08-09T05:11:48.0597792Z ##[group]Getting Git version info
+lint	UNKNOWN STEP	2026-08-09T05:11:48.0599474Z Working directory is '/home/runner/work/pulse-board/pulse-board'
+lint	UNKNOWN STEP	2026-08-09T05:11:48.0601454Z [command]/usr/bin/git version
+lint	UNKNOWN STEP	2026-08-09T05:11:48.0673886Z git version 2.54.0
+lint	UNKNOWN STEP	2026-08-09T05:11:48.0696115Z ##[endgroup]
+lint	UNKNOWN STEP	2026-08-09T05:11:48.0721987Z Temporarily overriding HOME='/home/runner/work/_temp/0ad22684-d981-40a9-95b3-41234f059c9a' before making global git config changes
+lint	UNKNOWN STEP	2026-08-09T05:11:48.0724298Z Adding repository directory to the temporary git global config as a safe directory
+lint	UNKNOWN STEP	2026-08-09T05:11:48.0726673Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/pulse-board/pulse-board
+lint	UNKNOWN STEP	2026-08-09T05:11:48.0792232Z Deleting the contents of '/home/runner/work/pulse-board/pulse-board'
+lint	UNKNOWN STEP	2026-08-09T05:11:48.0797897Z ##[group]Initializing the repository
+lint	UNKNOWN STEP	2026-08-09T05:11:48.0803644Z [command]/usr/bin/git init /home/runner/work/pulse-board/pulse-board
+lint	UNKNOWN STEP	2026-08-09T05:11:48.0916656Z hint: Using 'master' as the name for the initial branch. This default branch name
+lint	UNKNOWN STEP	2026-08-09T05:11:48.0918400Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+lint	UNKNOWN STEP	2026-08-09T05:11:48.0920831Z hint: to use in all of your new repositories, which will suppress this warning,
+lint	UNKNOWN STEP	2026-08-09T05:11:48.0922192Z hint: call:
+lint	UNKNOWN STEP	2026-08-09T05:11:48.0923074Z hint:
+lint	UNKNOWN STEP	2026-08-09T05:11:48.0923940Z hint: 	git config --global init.defaultBranch <name>
+lint	UNKNOWN STEP	2026-08-09T05:11:48.0925158Z hint:
+lint	UNKNOWN STEP	2026-08-09T05:11:48.0926321Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+lint	UNKNOWN STEP	2026-08-09T05:11:48.0928060Z hint: 'development'. The just-created branch can be renamed via this command:
+lint	UNKNOWN STEP	2026-08-09T05:11:48.0929672Z hint:
+lint	UNKNOWN STEP	2026-08-09T05:11:48.0930541Z hint: 	git branch -m <name>
+lint	UNKNOWN STEP	2026-08-09T05:11:48.0931466Z hint:
+lint	UNKNOWN STEP	2026-08-09T05:11:48.0932627Z hint: Disable this message with "git config set advice.defaultBranchName false"
+lint	UNKNOWN STEP	2026-08-09T05:11:48.0946904Z Initialized empty Git repository in /home/runner/work/pulse-board/pulse-board/.git/
+lint	UNKNOWN STEP	2026-08-09T05:11:48.0962472Z [command]/usr/bin/git remote add origin https://github.com/sambitmallick/pulse-board
+lint	UNKNOWN STEP	2026-08-09T05:11:48.1006847Z ##[endgroup]
+lint	UNKNOWN STEP	2026-08-09T05:11:48.1008141Z ##[group]Disabling automatic garbage collection
+lint	UNKNOWN STEP	2026-08-09T05:11:48.1011247Z [command]/usr/bin/git config --local gc.auto 0
+lint	UNKNOWN STEP	2026-08-09T05:11:48.1043101Z ##[endgroup]
+lint	UNKNOWN STEP	2026-08-09T05:11:48.1044327Z ##[group]Setting up auth
+lint	UNKNOWN STEP	2026-08-09T05:11:48.1051449Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+lint	UNKNOWN STEP	2026-08-09T05:11:48.1091609Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+lint	UNKNOWN STEP	2026-08-09T05:11:48.1509459Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+lint	UNKNOWN STEP	2026-08-09T05:11:48.1549603Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+lint	UNKNOWN STEP	2026-08-09T05:11:48.1780821Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+lint	UNKNOWN STEP	2026-08-09T05:11:48.1818972Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+lint	UNKNOWN STEP	2026-08-09T05:11:48.2049428Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+lint	UNKNOWN STEP	2026-08-09T05:11:48.2087467Z ##[endgroup]
+lint	UNKNOWN STEP	2026-08-09T05:11:48.2088404Z ##[group]Fetching the repository
+lint	UNKNOWN STEP	2026-08-09T05:11:48.2097723Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +1d532564a3df691285d16549e7ef29a9f4e5d804:refs/remotes/origin/main
+lint	UNKNOWN STEP	2026-08-09T05:11:48.6248869Z From https://github.com/sambitmallick/pulse-board
+lint	UNKNOWN STEP	2026-08-09T05:11:48.6251618Z  * [new ref]         1d532564a3df691285d16549e7ef29a9f4e5d804 -> origin/main
+lint	UNKNOWN STEP	2026-08-09T05:11:48.6286815Z ##[endgroup]
+lint	UNKNOWN STEP	2026-08-09T05:11:48.6288034Z ##[group]Determining the checkout info
+lint	UNKNOWN STEP	2026-08-09T05:11:48.6291028Z ##[endgroup]
+lint	UNKNOWN STEP	2026-08-09T05:11:48.6295702Z [command]/usr/bin/git sparse-checkout disable
+lint	UNKNOWN STEP	2026-08-09T05:11:48.6345479Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+lint	UNKNOWN STEP	2026-08-09T05:11:48.6376244Z ##[group]Checking out the ref
+lint	UNKNOWN STEP	2026-08-09T05:11:48.6380890Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+lint	UNKNOWN STEP	2026-08-09T05:11:48.6439814Z Switched to a new branch 'main'
+lint	UNKNOWN STEP	2026-08-09T05:11:48.6443058Z branch 'main' set up to track 'origin/main'.
+lint	UNKNOWN STEP	2026-08-09T05:11:48.6449524Z ##[endgroup]
+lint	UNKNOWN STEP	2026-08-09T05:11:48.6491037Z [command]/usr/bin/git log -1 --format=%H
+lint	UNKNOWN STEP	2026-08-09T05:11:48.6517973Z 1d532564a3df691285d16549e7ef29a9f4e5d804
+lint	UNKNOWN STEP	2026-08-09T05:11:48.6899019Z ##[group]Run actions/setup-python@v6
+lint	UNKNOWN STEP	2026-08-09T05:11:48.6900397Z with:
+lint	UNKNOWN STEP	2026-08-09T05:11:48.6901177Z   python-version: 3.12
+lint	UNKNOWN STEP	2026-08-09T05:11:48.6902100Z   check-latest: false
+lint	UNKNOWN STEP	2026-08-09T05:11:48.6911744Z   token: ***
+lint	UNKNOWN STEP	2026-08-09T05:11:48.6912584Z   update-environment: true
+lint	UNKNOWN STEP	2026-08-09T05:11:48.6913598Z   allow-prereleases: false
+lint	UNKNOWN STEP	2026-08-09T05:11:48.6914565Z   freethreaded: false
+lint	UNKNOWN STEP	2026-08-09T05:11:48.6915438Z ##[endgroup]
+lint	UNKNOWN STEP	2026-08-09T05:11:48.8247752Z ##[group]Installed versions
+lint	UNKNOWN STEP	2026-08-09T05:11:48.8349458Z Successfully set up CPython (3.12.13)
+lint	UNKNOWN STEP	2026-08-09T05:11:48.8352251Z ##[endgroup]
+lint	UNKNOWN STEP	2026-08-09T05:11:48.8588547Z ##[group]Run pip install ruff==0.5.7
+lint	UNKNOWN STEP	2026-08-09T05:11:48.8590739Z ^[[36;1mpip install ruff==0.5.7^[[0m
+lint	UNKNOWN STEP	2026-08-09T05:11:48.8724729Z shell: /usr/bin/bash -e {0}
+lint	UNKNOWN STEP	2026-08-09T05:11:48.8726399Z env:
+lint	UNKNOWN STEP	2026-08-09T05:11:48.8728119Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+lint	UNKNOWN STEP	2026-08-09T05:11:48.8730636Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+lint	UNKNOWN STEP	2026-08-09T05:11:48.8732407Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+lint	UNKNOWN STEP	2026-08-09T05:11:48.8733980Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+lint	UNKNOWN STEP	2026-08-09T05:11:48.8735559Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+lint	UNKNOWN STEP	2026-08-09T05:11:48.8737138Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+lint	UNKNOWN STEP	2026-08-09T05:11:48.8738459Z ##[endgroup]
+lint	UNKNOWN STEP	2026-08-09T05:11:52.0570067Z Collecting ruff==0.5.7
+lint	UNKNOWN STEP	2026-08-09T05:11:52.1663666Z   Downloading ruff-0.5.7-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (25 kB)
+lint	UNKNOWN STEP	2026-08-09T05:11:52.2067807Z Downloading ruff-0.5.7-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.2 MB)
+lint	UNKNOWN STEP	2026-08-09T05:11:52.4480978Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.2/10.2 MB 53.1 MB/s  0:00:00
+lint	UNKNOWN STEP	2026-08-09T05:11:52.5139843Z Installing collected packages: ruff
+lint	UNKNOWN STEP	2026-08-09T05:11:52.6273524Z Successfully installed ruff-0.5.7
+lint	UNKNOWN STEP	2026-08-09T05:11:52.6285126Z 
+lint	UNKNOWN STEP	2026-08-09T05:11:52.6285650Z [notice] A new release of pip is available: 26.1.2 -> 26.2.1
+lint	UNKNOWN STEP	2026-08-09T05:11:52.6286529Z [notice] To update, run: pip install --upgrade pip
+lint	UNKNOWN STEP	2026-08-09T05:11:52.6800384Z ##[group]Run ruff check .
+lint	UNKNOWN STEP	2026-08-09T05:11:52.6800722Z ^[[36;1mruff check .^[[0m
+lint	UNKNOWN STEP	2026-08-09T05:11:52.6847038Z shell: /usr/bin/bash -e {0}
+lint	UNKNOWN STEP	2026-08-09T05:11:52.6847294Z env:
+lint	UNKNOWN STEP	2026-08-09T05:11:52.6847566Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+lint	UNKNOWN STEP	2026-08-09T05:11:52.6848023Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+lint	UNKNOWN STEP	2026-08-09T05:11:52.6848504Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+lint	UNKNOWN STEP	2026-08-09T05:11:52.6848887Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+lint	UNKNOWN STEP	2026-08-09T05:11:52.6849596Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+lint	UNKNOWN STEP	2026-08-09T05:11:52.6850013Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+lint	UNKNOWN STEP	2026-08-09T05:11:52.6850358Z ##[endgroup]
+lint	UNKNOWN STEP	2026-08-09T05:11:52.6984999Z All checks passed!
+lint	UNKNOWN STEP	2026-08-09T05:11:52.7102134Z Post job cleanup.
+lint	UNKNOWN STEP	2026-08-09T05:11:52.8516304Z Post job cleanup.
+lint	UNKNOWN STEP	2026-08-09T05:11:52.9381528Z [command]/usr/bin/git version
+lint	UNKNOWN STEP	2026-08-09T05:11:52.9426330Z git version 2.54.0
+lint	UNKNOWN STEP	2026-08-09T05:11:52.9467964Z Temporarily overriding HOME='/home/runner/work/_temp/33de3c93-319d-46e9-a524-a3ab96929115' before making global git config changes
+lint	UNKNOWN STEP	2026-08-09T05:11:52.9470118Z Adding repository directory to the temporary git global config as a safe directory
+lint	UNKNOWN STEP	2026-08-09T05:11:52.9475199Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/pulse-board/pulse-board
+lint	UNKNOWN STEP	2026-08-09T05:11:52.9515918Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+lint	UNKNOWN STEP	2026-08-09T05:11:52.9564889Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+lint	UNKNOWN STEP	2026-08-09T05:11:52.9910359Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+lint	UNKNOWN STEP	2026-08-09T05:11:52.9937308Z http.https://github.com/.extraheader
+lint	UNKNOWN STEP	2026-08-09T05:11:52.9952713Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+lint	UNKNOWN STEP	2026-08-09T05:11:52.9996940Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+lint	UNKNOWN STEP	2026-08-09T05:11:53.0350335Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+lint	UNKNOWN STEP	2026-08-09T05:11:53.0401259Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+lint	UNKNOWN STEP	2026-08-09T05:11:53.0799918Z Cleaning up orphan processes
+test	UNKNOWN STEP	﻿2026-08-09T05:11:46.3226242Z Current runner version: '2.336.0'
+test	UNKNOWN STEP	2026-08-09T05:11:46.3246021Z ##[group]Runner Image Provisioner
+test	UNKNOWN STEP	2026-08-09T05:11:46.3246788Z Hosted Compute Agent
+test	UNKNOWN STEP	2026-08-09T05:11:46.3247263Z Version: 20260707.563
+test	UNKNOWN STEP	2026-08-09T05:11:46.3247752Z Commit: 02667638d2b423fbc733a8e32a88b44996a3ba6e
+test	UNKNOWN STEP	2026-08-09T05:11:46.3248418Z Build Date: 2026-07-07T19:33:50Z
+test	UNKNOWN STEP	2026-08-09T05:11:46.3248981Z Worker ID: {8f19812d-a41d-4c8b-9471-9e2ee7f66579}
+test	UNKNOWN STEP	2026-08-09T05:11:46.3249602Z Azure Region: westcentralus
+test	UNKNOWN STEP	2026-08-09T05:11:46.3250101Z ##[endgroup]
+test	UNKNOWN STEP	2026-08-09T05:11:46.3251148Z ##[group]Operating System
+test	UNKNOWN STEP	2026-08-09T05:11:46.3251984Z Ubuntu
+test	UNKNOWN STEP	2026-08-09T05:11:46.3252404Z 24.04.4
+test	UNKNOWN STEP	2026-08-09T05:11:46.3252798Z LTS
+test	UNKNOWN STEP	2026-08-09T05:11:46.3253271Z ##[endgroup]
+test	UNKNOWN STEP	2026-08-09T05:11:46.3253709Z ##[group]Runner Image
+test	UNKNOWN STEP	2026-08-09T05:11:46.3254226Z Image: ubuntu-24.04
+test	UNKNOWN STEP	2026-08-09T05:11:46.3254689Z Version: 20260720.247.2
+test	UNKNOWN STEP	2026-08-09T05:11:46.3255708Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260720.247/images/ubuntu/Ubuntu2404-Readme.md
+test	UNKNOWN STEP	2026-08-09T05:11:46.3256930Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260720.247
+test	UNKNOWN STEP	2026-08-09T05:11:46.3257724Z ##[endgroup]
+test	UNKNOWN STEP	2026-08-09T05:11:46.3258643Z ##[group]GITHUB_TOKEN Permissions
+test	UNKNOWN STEP	2026-08-09T05:11:46.3260195Z Contents: read
+test	UNKNOWN STEP	2026-08-09T05:11:46.3260686Z Metadata: read
+test	UNKNOWN STEP	2026-08-09T05:11:46.3261134Z Packages: read
+test	UNKNOWN STEP	2026-08-09T05:11:46.3261806Z ##[endgroup]
+test	UNKNOWN STEP	2026-08-09T05:11:46.3263435Z Secret source: Actions
+test	UNKNOWN STEP	2026-08-09T05:11:46.3264635Z Prepare workflow directory
+test	UNKNOWN STEP	2026-08-09T05:11:46.3521146Z Prepare all required actions
+test	UNKNOWN STEP	2026-08-09T05:11:46.3559238Z Getting action download info
+test	UNKNOWN STEP	2026-08-09T05:11:46.6618169Z Download action repository 'actions/checkout@v5' (SHA:fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09)
+test	UNKNOWN STEP	2026-08-09T05:11:47.2428744Z Download action repository 'actions/setup-python@v6' (SHA:ece7cb06caefa5fff74198d8649806c4678c61a1)
+test	UNKNOWN STEP	2026-08-09T05:11:47.4512433Z Complete job name: test
+test	UNKNOWN STEP	2026-08-09T05:11:47.5084939Z ##[group]Run actions/checkout@v5
+test	UNKNOWN STEP	2026-08-09T05:11:47.5085623Z with:
+test	UNKNOWN STEP	2026-08-09T05:11:47.5085999Z   repository: sambitmallick/pulse-board
+test	UNKNOWN STEP	2026-08-09T05:11:47.5089044Z   token: ***
+test	UNKNOWN STEP	2026-08-09T05:11:47.5089390Z   ssh-strict: true
+test	UNKNOWN STEP	2026-08-09T05:11:47.5089731Z   ssh-user: git
+test	UNKNOWN STEP	2026-08-09T05:11:47.5090075Z   persist-credentials: true
+test	UNKNOWN STEP	2026-08-09T05:11:47.5090452Z   clean: true
+test	UNKNOWN STEP	2026-08-09T05:11:47.5090795Z   sparse-checkout-cone-mode: true
+test	UNKNOWN STEP	2026-08-09T05:11:47.5091194Z   fetch-depth: 1
+test	UNKNOWN STEP	2026-08-09T05:11:47.5091524Z   fetch-tags: false
+test	UNKNOWN STEP	2026-08-09T05:11:47.5092011Z   show-progress: true
+test	UNKNOWN STEP	2026-08-09T05:11:47.5092361Z   lfs: false
+test	UNKNOWN STEP	2026-08-09T05:11:47.5092676Z   submodules: false
+test	UNKNOWN STEP	2026-08-09T05:11:47.5093022Z   set-safe-directory: true
+test	UNKNOWN STEP	2026-08-09T05:11:47.5093411Z   allow-unsafe-pr-checkout: false
+test	UNKNOWN STEP	2026-08-09T05:11:47.5093965Z ##[endgroup]
+test	UNKNOWN STEP	2026-08-09T05:11:47.5880311Z Syncing repository: sambitmallick/pulse-board
+test	UNKNOWN STEP	2026-08-09T05:11:47.5882289Z ##[group]Getting Git version info
+test	UNKNOWN STEP	2026-08-09T05:11:47.5882975Z Working directory is '/home/runner/work/pulse-board/pulse-board'
+test	UNKNOWN STEP	2026-08-09T05:11:47.5883893Z [command]/usr/bin/git version
+test	UNKNOWN STEP	2026-08-09T05:11:47.5913352Z git version 2.54.0
+test	UNKNOWN STEP	2026-08-09T05:11:47.5929518Z ##[endgroup]
+test	UNKNOWN STEP	2026-08-09T05:11:47.5941423Z Temporarily overriding HOME='/home/runner/work/_temp/9bda99ac-1c3d-4c4f-b9f1-d1799bf44548' before making global git config changes
+test	UNKNOWN STEP	2026-08-09T05:11:47.5943292Z Adding repository directory to the temporary git global config as a safe directory
+test	UNKNOWN STEP	2026-08-09T05:11:47.5945783Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/pulse-board/pulse-board
+test	UNKNOWN STEP	2026-08-09T05:11:47.5977232Z Deleting the contents of '/home/runner/work/pulse-board/pulse-board'
+test	UNKNOWN STEP	2026-08-09T05:11:47.5980257Z ##[group]Initializing the repository
+test	UNKNOWN STEP	2026-08-09T05:11:47.5984322Z [command]/usr/bin/git init /home/runner/work/pulse-board/pulse-board
+test	UNKNOWN STEP	2026-08-09T05:11:47.6048752Z hint: Using 'master' as the name for the initial branch. This default branch name
+test	UNKNOWN STEP	2026-08-09T05:11:47.6049898Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+test	UNKNOWN STEP	2026-08-09T05:11:47.6050962Z hint: to use in all of your new repositories, which will suppress this warning,
+test	UNKNOWN STEP	2026-08-09T05:11:47.6061053Z hint: call:
+test	UNKNOWN STEP	2026-08-09T05:11:47.6063227Z hint:
+test	UNKNOWN STEP	2026-08-09T05:11:47.6064193Z hint: 	git config --global init.defaultBranch <name>
+test	UNKNOWN STEP	2026-08-09T05:11:47.6065286Z hint:
+test	UNKNOWN STEP	2026-08-09T05:11:47.6066352Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+test	UNKNOWN STEP	2026-08-09T05:11:47.6067492Z hint: 'development'. The just-created branch can be renamed via this command:
+test	UNKNOWN STEP	2026-08-09T05:11:47.6068366Z hint:
+test	UNKNOWN STEP	2026-08-09T05:11:47.6068842Z hint: 	git branch -m <name>
+test	UNKNOWN STEP	2026-08-09T05:11:47.6069387Z hint:
+test	UNKNOWN STEP	2026-08-09T05:11:47.6070102Z hint: Disable this message with "git config set advice.defaultBranchName false"
+test	UNKNOWN STEP	2026-08-09T05:11:47.6071313Z Initialized empty Git repository in /home/runner/work/pulse-board/pulse-board/.git/
+test	UNKNOWN STEP	2026-08-09T05:11:47.6073550Z [command]/usr/bin/git remote add origin https://github.com/sambitmallick/pulse-board
+test	UNKNOWN STEP	2026-08-09T05:11:47.6117639Z ##[endgroup]
+test	UNKNOWN STEP	2026-08-09T05:11:47.6118641Z ##[group]Disabling automatic garbage collection
+test	UNKNOWN STEP	2026-08-09T05:11:47.6121442Z [command]/usr/bin/git config --local gc.auto 0
+test	UNKNOWN STEP	2026-08-09T05:11:47.6147795Z ##[endgroup]
+test	UNKNOWN STEP	2026-08-09T05:11:47.6148639Z ##[group]Setting up auth
+test	UNKNOWN STEP	2026-08-09T05:11:47.6152119Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test	UNKNOWN STEP	2026-08-09T05:11:47.6177907Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test	UNKNOWN STEP	2026-08-09T05:11:47.6444991Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test	UNKNOWN STEP	2026-08-09T05:11:47.6477118Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test	UNKNOWN STEP	2026-08-09T05:11:47.6680856Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test	UNKNOWN STEP	2026-08-09T05:11:47.6711426Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test	UNKNOWN STEP	2026-08-09T05:11:47.6901790Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+test	UNKNOWN STEP	2026-08-09T05:11:47.6934234Z ##[endgroup]
+test	UNKNOWN STEP	2026-08-09T05:11:47.6935033Z ##[group]Fetching the repository
+test	UNKNOWN STEP	2026-08-09T05:11:47.6941989Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +1d532564a3df691285d16549e7ef29a9f4e5d804:refs/remotes/origin/main
+test	UNKNOWN STEP	2026-08-09T05:11:48.0687092Z From https://github.com/sambitmallick/pulse-board
+test	UNKNOWN STEP	2026-08-09T05:11:48.0688824Z  * [new ref]         1d532564a3df691285d16549e7ef29a9f4e5d804 -> origin/main
+test	UNKNOWN STEP	2026-08-09T05:11:48.0706779Z ##[endgroup]
+test	UNKNOWN STEP	2026-08-09T05:11:48.0708075Z ##[group]Determining the checkout info
+test	UNKNOWN STEP	2026-08-09T05:11:48.0709693Z ##[endgroup]
+test	UNKNOWN STEP	2026-08-09T05:11:48.0714983Z [command]/usr/bin/git sparse-checkout disable
+test	UNKNOWN STEP	2026-08-09T05:11:48.0752454Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+test	UNKNOWN STEP	2026-08-09T05:11:48.0782726Z ##[group]Checking out the ref
+test	UNKNOWN STEP	2026-08-09T05:11:48.0783800Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+test	UNKNOWN STEP	2026-08-09T05:11:48.0827366Z Switched to a new branch 'main'
+test	UNKNOWN STEP	2026-08-09T05:11:48.0829598Z branch 'main' set up to track 'origin/main'.
+test	UNKNOWN STEP	2026-08-09T05:11:48.0841309Z ##[endgroup]
+test	UNKNOWN STEP	2026-08-09T05:11:48.0871497Z [command]/usr/bin/git log -1 --format=%H
+test	UNKNOWN STEP	2026-08-09T05:11:48.0894600Z 1d532564a3df691285d16549e7ef29a9f4e5d804
+test	UNKNOWN STEP	2026-08-09T05:11:48.1196171Z ##[group]Run actions/setup-python@v6
+test	UNKNOWN STEP	2026-08-09T05:11:48.1197047Z with:
+test	UNKNOWN STEP	2026-08-09T05:11:48.1197662Z   python-version: 3.12
+test	UNKNOWN STEP	2026-08-09T05:11:48.1198371Z   check-latest: false
+test	UNKNOWN STEP	2026-08-09T05:11:48.1205655Z   token: ***
+test	UNKNOWN STEP	2026-08-09T05:11:48.1206323Z   update-environment: true
+test	UNKNOWN STEP	2026-08-09T05:11:48.1207096Z   allow-prereleases: false
+test	UNKNOWN STEP	2026-08-09T05:11:48.1207858Z   freethreaded: false
+test	UNKNOWN STEP	2026-08-09T05:11:48.1208722Z ##[endgroup]
+test	UNKNOWN STEP	2026-08-09T05:11:48.2255335Z ##[group]Installed versions
+test	UNKNOWN STEP	2026-08-09T05:11:48.2329413Z Successfully set up CPython (3.12.13)
+test	UNKNOWN STEP	2026-08-09T05:11:48.2331344Z ##[endgroup]
+test	UNKNOWN STEP	2026-08-09T05:11:48.2510515Z ##[group]Run pip install -r requirements.txt
+test	UNKNOWN STEP	2026-08-09T05:11:48.2512221Z ^[[36;1mpip install -r requirements.txt^[[0m
+test	UNKNOWN STEP	2026-08-09T05:11:48.2575300Z shell: /usr/bin/bash -e {0}
+test	UNKNOWN STEP	2026-08-09T05:11:48.2577348Z env:
+test	UNKNOWN STEP	2026-08-09T05:11:48.2578920Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+test	UNKNOWN STEP	2026-08-09T05:11:48.2581163Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+test	UNKNOWN STEP	2026-08-09T05:11:48.2583792Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+test	UNKNOWN STEP	2026-08-09T05:11:48.2585891Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+test	UNKNOWN STEP	2026-08-09T05:11:48.2587626Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+test	UNKNOWN STEP	2026-08-09T05:11:48.2589032Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+test	UNKNOWN STEP	2026-08-09T05:11:48.2590063Z ##[endgroup]
+test	UNKNOWN STEP	2026-08-09T05:11:51.0418696Z Collecting flask==3.0.0 (from -r requirements.txt (line 1))
+test	UNKNOWN STEP	2026-08-09T05:11:51.1379832Z   Downloading flask-3.0.0-py3-none-any.whl.metadata (3.6 kB)
+test	UNKNOWN STEP	2026-08-09T05:11:51.1758208Z Collecting Werkzeug>=3.0.0 (from flask==3.0.0->-r requirements.txt (line 1))
+test	UNKNOWN STEP	2026-08-09T05:11:51.1948429Z   Downloading werkzeug-3.1.8-py3-none-any.whl.metadata (4.0 kB)
+test	UNKNOWN STEP	2026-08-09T05:11:51.2240446Z Collecting Jinja2>=3.1.2 (from flask==3.0.0->-r requirements.txt (line 1))
+test	UNKNOWN STEP	2026-08-09T05:11:51.2429051Z   Downloading jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+test	UNKNOWN STEP	2026-08-09T05:11:51.2683841Z Collecting itsdangerous>=2.1.2 (from flask==3.0.0->-r requirements.txt (line 1))
+test	UNKNOWN STEP	2026-08-09T05:11:51.2873106Z   Downloading itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+test	UNKNOWN STEP	2026-08-09T05:11:51.3181110Z Collecting click>=8.1.3 (from flask==3.0.0->-r requirements.txt (line 1))
+test	UNKNOWN STEP	2026-08-09T05:11:51.3375434Z   Downloading click-8.4.2-py3-none-any.whl.metadata (2.6 kB)
+test	UNKNOWN STEP	2026-08-09T05:11:51.3627894Z Collecting blinker>=1.6.2 (from flask==3.0.0->-r requirements.txt (line 1))
+test	UNKNOWN STEP	2026-08-09T05:11:51.3816406Z   Downloading blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+test	UNKNOWN STEP	2026-08-09T05:11:51.4527091Z Collecting MarkupSafe>=2.0 (from Jinja2>=3.1.2->flask==3.0.0->-r requirements.txt (line 1))
+test	UNKNOWN STEP	2026-08-09T05:11:51.4715474Z   Downloading markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+test	UNKNOWN STEP	2026-08-09T05:11:51.4974692Z Downloading flask-3.0.0-py3-none-any.whl (99 kB)
+test	UNKNOWN STEP	2026-08-09T05:11:51.5476049Z Downloading blinker-1.9.0-py3-none-any.whl (8.5 kB)
+test	UNKNOWN STEP	2026-08-09T05:11:51.5706661Z Downloading click-8.4.2-py3-none-any.whl (119 kB)
+test	UNKNOWN STEP	2026-08-09T05:11:51.6097426Z Downloading itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+test	UNKNOWN STEP	2026-08-09T05:11:51.6306221Z Downloading jinja2-3.1.6-py3-none-any.whl (134 kB)
+test	UNKNOWN STEP	2026-08-09T05:11:51.6607807Z Downloading markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+test	UNKNOWN STEP	2026-08-09T05:11:51.6882537Z Downloading werkzeug-3.1.8-py3-none-any.whl (226 kB)
+test	UNKNOWN STEP	2026-08-09T05:11:51.7539758Z Installing collected packages: MarkupSafe, itsdangerous, click, blinker, Werkzeug, Jinja2, flask
+test	UNKNOWN STEP	2026-08-09T05:11:52.0698313Z 
+test	UNKNOWN STEP	2026-08-09T05:11:52.0710414Z Successfully installed Jinja2-3.1.6 MarkupSafe-3.0.3 Werkzeug-3.1.8 blinker-1.9.0 click-8.4.2 flask-3.0.0 itsdangerous-2.2.0
+test	UNKNOWN STEP	2026-08-09T05:11:52.0720352Z 
+test	UNKNOWN STEP	2026-08-09T05:11:52.0720727Z [notice] A new release of pip is available: 26.1.2 -> 26.2.1
+test	UNKNOWN STEP	2026-08-09T05:11:52.0721210Z [notice] To update, run: pip install --upgrade pip
+test	UNKNOWN STEP	2026-08-09T05:11:52.1150431Z ##[group]Run pip install pytest==8.3.2
+test	UNKNOWN STEP	2026-08-09T05:11:52.1150848Z ^[[36;1mpip install pytest==8.3.2^[[0m
+test	UNKNOWN STEP	2026-08-09T05:11:52.1192338Z shell: /usr/bin/bash -e {0}
+test	UNKNOWN STEP	2026-08-09T05:11:52.1192539Z env:
+test	UNKNOWN STEP	2026-08-09T05:11:52.1192764Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+test	UNKNOWN STEP	2026-08-09T05:11:52.1193132Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+test	UNKNOWN STEP	2026-08-09T05:11:52.1193456Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+test	UNKNOWN STEP	2026-08-09T05:11:52.1193950Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+test	UNKNOWN STEP	2026-08-09T05:11:52.1194245Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+test	UNKNOWN STEP	2026-08-09T05:11:52.1194538Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+test	UNKNOWN STEP	2026-08-09T05:11:52.1194788Z ##[endgroup]
+test	UNKNOWN STEP	2026-08-09T05:11:52.9889323Z Collecting pytest==8.3.2
+test	UNKNOWN STEP	2026-08-09T05:11:53.0754284Z   Downloading pytest-8.3.2-py3-none-any.whl.metadata (7.5 kB)
+test	UNKNOWN STEP	2026-08-09T05:11:53.1022413Z Collecting iniconfig (from pytest==8.3.2)
+test	UNKNOWN STEP	2026-08-09T05:11:53.1211970Z   Downloading iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+test	UNKNOWN STEP	2026-08-09T05:11:53.1499986Z Collecting packaging (from pytest==8.3.2)
+test	UNKNOWN STEP	2026-08-09T05:11:53.1708588Z   Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+test	UNKNOWN STEP	2026-08-09T05:11:53.1971960Z Collecting pluggy<2,>=1.5 (from pytest==8.3.2)
+test	UNKNOWN STEP	2026-08-09T05:11:53.2158579Z   Downloading pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+test	UNKNOWN STEP	2026-08-09T05:11:53.2403486Z Downloading pytest-8.3.2-py3-none-any.whl (341 kB)
+test	UNKNOWN STEP	2026-08-09T05:11:53.3259338Z Downloading pluggy-1.6.0-py3-none-any.whl (20 kB)
+test	UNKNOWN STEP	2026-08-09T05:11:53.3469083Z Downloading iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+test	UNKNOWN STEP	2026-08-09T05:11:53.3673874Z Downloading packaging-26.3-py3-none-any.whl (129 kB)
+test	UNKNOWN STEP	2026-08-09T05:11:53.3856700Z Installing collected packages: pluggy, packaging, iniconfig, pytest
+test	UNKNOWN STEP	2026-08-09T05:11:53.6534349Z 
+test	UNKNOWN STEP	2026-08-09T05:11:53.6546937Z Successfully installed iniconfig-2.3.0 packaging-26.3 pluggy-1.6.0 pytest-8.3.2
+test	UNKNOWN STEP	2026-08-09T05:11:53.6554341Z 
+test	UNKNOWN STEP	2026-08-09T05:11:53.6554654Z [notice] A new release of pip is available: 26.1.2 -> 26.2.1
+test	UNKNOWN STEP	2026-08-09T05:11:53.6555215Z [notice] To update, run: pip install --upgrade pip
+test	UNKNOWN STEP	2026-08-09T05:11:53.6962735Z ##[group]Run pytest -q
+test	UNKNOWN STEP	2026-08-09T05:11:53.6962968Z ^[[36;1mpytest -q^[[0m
+test	UNKNOWN STEP	2026-08-09T05:11:53.7001405Z shell: /usr/bin/bash -e {0}
+test	UNKNOWN STEP	2026-08-09T05:11:53.7001779Z env:
+test	UNKNOWN STEP	2026-08-09T05:11:53.7001997Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+test	UNKNOWN STEP	2026-08-09T05:11:53.7002326Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+test	UNKNOWN STEP	2026-08-09T05:11:53.7002666Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+test	UNKNOWN STEP	2026-08-09T05:11:53.7002957Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+test	UNKNOWN STEP	2026-08-09T05:11:53.7003239Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+test	UNKNOWN STEP	2026-08-09T05:11:53.7003526Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+test	UNKNOWN STEP	2026-08-09T05:11:53.7003778Z ##[endgroup]
+test	UNKNOWN STEP	2026-08-09T05:11:54.2170166Z ..F...                                                                   [100%]
+test	UNKNOWN STEP	2026-08-09T05:11:54.2170873Z =================================== FAILURES ===================================
+test	UNKNOWN STEP	2026-08-09T05:11:54.2171435Z ________________ test_failures_in_window_sees_the_whole_window _________________
+test	UNKNOWN STEP	2026-08-09T05:11:54.2171989Z 
+test	UNKNOWN STEP	2026-08-09T05:11:54.2172157Z     def test_failures_in_window_sees_the_whole_window():
+test	UNKNOWN STEP	2026-08-09T05:11:54.2172643Z         # last five checks: fail, ok, ok, fail, ok  ->  two failures
+test	UNKNOWN STEP	2026-08-09T05:11:54.2173022Z         history = [
+test	UNKNOWN STEP	2026-08-09T05:11:54.2173248Z             _check(True),
+test	UNKNOWN STEP	2026-08-09T05:11:54.2173503Z             _check(False),
+test	UNKNOWN STEP	2026-08-09T05:11:54.2173749Z             _check(True),
+test	UNKNOWN STEP	2026-08-09T05:11:54.2173977Z             _check(True),
+test	UNKNOWN STEP	2026-08-09T05:11:54.2174200Z             _check(False),
+test	UNKNOWN STEP	2026-08-09T05:11:54.2174427Z             _check(True),
+test	UNKNOWN STEP	2026-08-09T05:11:54.2174650Z         ]
+test	UNKNOWN STEP	2026-08-09T05:11:54.2174924Z >       assert len(failures_in_window(history, window=5)) == 2
+test	UNKNOWN STEP	2026-08-09T05:11:54.2175288Z E       AssertionError: assert 1 == 2
+test	UNKNOWN STEP	2026-08-09T05:11:54.2175708Z E        +  where 1 = len([{'latency_ms': 42, 'ok': False, 't': '2026-08-08T00:00:00Z'}])
+test	UNKNOWN STEP	2026-08-09T05:11:54.2177032Z E        +    where [{'latency_ms': 42, 'ok': False, 't': '2026-08-08T00:00:00Z'}] = failures_in_window([{'latency_ms': 42, 'ok': True, 't': '2026-08-08T00:00:00Z'}, {'latency_ms': 42, 'ok': False, 't': '2026-08-08T00:00:0...atency_ms': 42, 'ok': False, 't': '2026-08-08T00:00:00Z'}, {'latency_ms': 42, 'ok': True, 't': '2026-08-08T00:00:00Z'}], window=5)
+test	UNKNOWN STEP	2026-08-09T05:11:54.2178369Z 
+test	UNKNOWN STEP	2026-08-09T05:11:54.2178498Z tests/test_checks.py:18: AssertionError
+test	UNKNOWN STEP	2026-08-09T05:11:54.2178865Z =========================== short test summary info ============================
+test	UNKNOWN STEP	2026-08-09T05:11:54.2179612Z FAILED tests/test_checks.py::test_failures_in_window_sees_the_whole_window - AssertionError: assert 1 == 2
+test	UNKNOWN STEP	2026-08-09T05:11:54.2180256Z  +  where 1 = len([{'latency_ms': 42, 'ok': False, 't': '2026-08-08T00:00:00Z'}])
+test	UNKNOWN STEP	2026-08-09T05:11:54.2181496Z  +    where [{'latency_ms': 42, 'ok': False, 't': '2026-08-08T00:00:00Z'}] = failures_in_window([{'latency_ms': 42, 'ok': True, 't': '2026-08-08T00:00:00Z'}, {'latency_ms': 42, 'ok': False, 't': '2026-08-08T00:00:0...atency_ms': 42, 'ok': False, 't': '2026-08-08T00:00:00Z'}, {'latency_ms': 42, 'ok': True, 't': '2026-08-08T00:00:00Z'}], window=5)
+test	UNKNOWN STEP	2026-08-09T05:11:54.2182851Z 1 failed, 5 passed in 0.16s
+test	UNKNOWN STEP	2026-08-09T05:11:54.2466110Z ##[error]Process completed with exit code 1.
+test	UNKNOWN STEP	2026-08-09T05:11:54.2579298Z Post job cleanup.
+test	UNKNOWN STEP	2026-08-09T05:11:54.3233168Z [command]/usr/bin/git version
+test	UNKNOWN STEP	2026-08-09T05:11:54.3300660Z git version 2.54.0
+test	UNKNOWN STEP	2026-08-09T05:11:54.3332424Z Temporarily overriding HOME='/home/runner/work/_temp/18e7db27-96c8-4640-91f6-cd320c2b08bf' before making global git config changes
+test	UNKNOWN STEP	2026-08-09T05:11:54.3333408Z Adding repository directory to the temporary git global config as a safe directory
+test	UNKNOWN STEP	2026-08-09T05:11:54.3337057Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/pulse-board/pulse-board
+test	UNKNOWN STEP	2026-08-09T05:11:54.3370180Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test	UNKNOWN STEP	2026-08-09T05:11:54.3406955Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test	UNKNOWN STEP	2026-08-09T05:11:54.3621233Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test	UNKNOWN STEP	2026-08-09T05:11:54.3644435Z http.https://github.com/.extraheader
+test	UNKNOWN STEP	2026-08-09T05:11:54.3654048Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+test	UNKNOWN STEP	2026-08-09T05:11:54.3688718Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test	UNKNOWN STEP	2026-08-09T05:11:54.3907049Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test	UNKNOWN STEP	2026-08-09T05:11:54.3943153Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test	UNKNOWN STEP	2026-08-09T05:11:54.4272811Z Cleaning up orphan processes

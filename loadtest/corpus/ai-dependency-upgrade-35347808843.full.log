@@ -1,0 +1,205 @@
+check	Set up job	﻿2026-09-18T13:01:30.9532106Z Current runner version: '2.337.0'
+check	Set up job	2026-09-18T13:01:30.9550682Z ##[group]Runner Image Provisioner
+check	Set up job	2026-09-18T13:01:30.9551452Z Hosted Compute Agent
+check	Set up job	2026-09-18T13:01:30.9551851Z Version: 20260828.587
+check	Set up job	2026-09-18T13:01:30.9552306Z Commit: abac92662cab4cc7352de4f9f9d2e2419aad9c29
+check	Set up job	2026-09-18T13:01:30.9552811Z Build Date: 2026-08-28T16:44:25Z
+check	Set up job	2026-09-18T13:01:30.9553265Z Worker ID: {36cd503a-b94d-4204-ba33-d5f0c4a11a79}
+check	Set up job	2026-09-18T13:01:30.9553730Z Azure Region: centralus
+check	Set up job	2026-09-18T13:01:30.9554136Z ##[endgroup]
+check	Set up job	2026-09-18T13:01:30.9554936Z ##[group]Operating System
+check	Set up job	2026-09-18T13:01:30.9555429Z Ubuntu
+check	Set up job	2026-09-18T13:01:30.9555775Z 24.04.5
+check	Set up job	2026-09-18T13:01:30.9556094Z LTS
+check	Set up job	2026-09-18T13:01:30.9556539Z ##[endgroup]
+check	Set up job	2026-09-18T13:01:30.9556944Z ##[group]Runner Image
+check	Set up job	2026-09-18T13:01:30.9557355Z Image: ubuntu-24.04
+check	Set up job	2026-09-18T13:01:30.9558028Z Version: 20260907.300.1
+check	Set up job	2026-09-18T13:01:30.9558742Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260907.300/images/ubuntu/Ubuntu2404-Readme.md
+check	Set up job	2026-09-18T13:01:30.9559951Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260907.300
+check	Set up job	2026-09-18T13:01:30.9560590Z ##[endgroup]
+check	Set up job	2026-09-18T13:01:30.9561410Z ##[group]GITHUB_TOKEN Permissions
+check	Set up job	2026-09-18T13:01:30.9562929Z Contents: read
+check	Set up job	2026-09-18T13:01:30.9563318Z Metadata: read
+check	Set up job	2026-09-18T13:01:30.9563705Z Packages: read
+check	Set up job	2026-09-18T13:01:30.9564084Z ##[endgroup]
+check	Set up job	2026-09-18T13:01:30.9565471Z Secret source: Dependabot
+check	Set up job	2026-09-18T13:01:30.9566168Z Cache mode: write
+check	Set up job	2026-09-18T13:01:30.9566649Z Prepare workflow directory
+check	Set up job	2026-09-18T13:01:30.9790246Z Prepare all required actions
+check	Set up job	2026-09-18T13:01:30.9824905Z Getting action download info
+check	Set up job	2026-09-18T13:01:31.2261331Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+check	Set up job	2026-09-18T13:01:31.3337234Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+check	Set up job	2026-09-18T13:01:31.5211186Z Complete job name: check
+check	Run actions/checkout@v4	﻿2026-09-18T13:01:31.5762417Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+check	Run actions/checkout@v4	2026-09-18T13:01:31.5768986Z ##[group]Run actions/checkout@v4
+check	Run actions/checkout@v4	2026-09-18T13:01:31.5769576Z with:
+check	Run actions/checkout@v4	2026-09-18T13:01:31.5769987Z   repository: sambitmallick/ai-dependency-upgrade
+check	Run actions/checkout@v4	2026-09-18T13:01:31.5772645Z   token: ***
+check	Run actions/checkout@v4	2026-09-18T13:01:31.5773020Z   ssh-strict: true
+check	Run actions/checkout@v4	2026-09-18T13:01:31.5773391Z   ssh-user: git
+check	Run actions/checkout@v4	2026-09-18T13:01:31.5773749Z   persist-credentials: true
+check	Run actions/checkout@v4	2026-09-18T13:01:31.5774143Z   clean: true
+check	Run actions/checkout@v4	2026-09-18T13:01:31.5774502Z   sparse-checkout-cone-mode: true
+check	Run actions/checkout@v4	2026-09-18T13:01:31.5774918Z   fetch-depth: 1
+check	Run actions/checkout@v4	2026-09-18T13:01:31.5775279Z   fetch-tags: false
+check	Run actions/checkout@v4	2026-09-18T13:01:31.5775700Z   show-progress: true
+check	Run actions/checkout@v4	2026-09-18T13:01:31.5776066Z   lfs: false
+check	Run actions/checkout@v4	2026-09-18T13:01:31.5776396Z   submodules: false
+check	Run actions/checkout@v4	2026-09-18T13:01:31.5776865Z   set-safe-directory: true
+check	Run actions/checkout@v4	2026-09-18T13:01:31.5777277Z   allow-unsafe-pr-checkout: false
+check	Run actions/checkout@v4	2026-09-18T13:01:31.5778230Z ##[endgroup]
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6548662Z Syncing repository: sambitmallick/ai-dependency-upgrade
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6550723Z ##[group]Getting Git version info
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6551559Z Working directory is '/home/runner/work/ai-dependency-upgrade/ai-dependency-upgrade'
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6552763Z [command]/usr/bin/git version
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6633807Z git version 2.55.0
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6646653Z ##[endgroup]
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6656661Z Temporarily overriding HOME='/home/runner/work/_temp/50953b62-aff1-47eb-bcef-71e729cf8550' before making global git config changes
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6658738Z Adding repository directory to the temporary git global config as a safe directory
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6660243Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ai-dependency-upgrade/ai-dependency-upgrade
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6702210Z Deleting the contents of '/home/runner/work/ai-dependency-upgrade/ai-dependency-upgrade'
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6708089Z ##[group]Initializing the repository
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6712254Z [command]/usr/bin/git init /home/runner/work/ai-dependency-upgrade/ai-dependency-upgrade
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6820680Z hint: Using 'master' as the name for the initial branch. This default branch name
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6821855Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6822870Z hint: to use in all of your new repositories, which will suppress this warning,
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6823599Z hint: call:
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6824001Z hint:
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6824534Z hint: 	git config --global init.defaultBranch <name>
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6825118Z hint:
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6825566Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6826299Z hint: 'development'. The just-created branch can be renamed via this command:
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6827043Z hint:
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6827628Z hint: 	git branch -m <name>
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6828223Z hint:
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6828881Z hint: Disable this message with "git config set advice.defaultBranchName false"
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6829888Z Initialized empty Git repository in /home/runner/work/ai-dependency-upgrade/ai-dependency-upgrade/.git/
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6831303Z [command]/usr/bin/git remote add origin https://github.com/sambitmallick/ai-dependency-upgrade
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6892111Z ##[endgroup]
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6893051Z ##[group]Disabling automatic garbage collection
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6893903Z [command]/usr/bin/git config --local gc.auto 0
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6913367Z ##[endgroup]
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6914679Z ##[group]Setting up auth
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6921234Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+check	Run actions/checkout@v4	2026-09-18T13:01:31.6948207Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+check	Run actions/checkout@v4	2026-09-18T13:01:31.7246713Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+check	Run actions/checkout@v4	2026-09-18T13:01:31.7271680Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+check	Run actions/checkout@v4	2026-09-18T13:01:31.7417089Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+check	Run actions/checkout@v4	2026-09-18T13:01:31.7440132Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+check	Run actions/checkout@v4	2026-09-18T13:01:31.7584132Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+check	Run actions/checkout@v4	2026-09-18T13:01:31.7608782Z ##[endgroup]
+check	Run actions/checkout@v4	2026-09-18T13:01:31.7609804Z ##[group]Fetching the repository
+check	Run actions/checkout@v4	2026-09-18T13:01:31.7616951Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +15d626dc6b9c68d4045a25b3e3267f76e7036685:refs/remotes/pull/1/merge
+check	Run actions/checkout@v4	2026-09-18T13:01:32.1436190Z From https://github.com/sambitmallick/ai-dependency-upgrade
+check	Run actions/checkout@v4	2026-09-18T13:01:32.1437581Z  * [new ref]         15d626dc6b9c68d4045a25b3e3267f76e7036685 -> pull/1/merge
+check	Run actions/checkout@v4	2026-09-18T13:01:32.1439912Z ##[endgroup]
+check	Run actions/checkout@v4	2026-09-18T13:01:32.1441039Z ##[group]Determining the checkout info
+check	Run actions/checkout@v4	2026-09-18T13:01:32.1442663Z ##[endgroup]
+check	Run actions/checkout@v4	2026-09-18T13:01:32.1448196Z [command]/usr/bin/git sparse-checkout disable
+check	Run actions/checkout@v4	2026-09-18T13:01:32.1846626Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+check	Run actions/checkout@v4	2026-09-18T13:01:32.1868039Z ##[group]Checking out the ref
+check	Run actions/checkout@v4	2026-09-18T13:01:32.1871605Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/1/merge
+check	Run actions/checkout@v4	2026-09-18T13:01:32.1904210Z Note: switching to 'refs/remotes/pull/1/merge'.
+check	Run actions/checkout@v4	2026-09-18T13:01:32.1904926Z 
+check	Run actions/checkout@v4	2026-09-18T13:01:32.1905337Z You are in 'detached HEAD' state. You can look around, make experimental
+check	Run actions/checkout@v4	2026-09-18T13:01:32.1906329Z changes and commit them, and you can discard any commits you make in this
+check	Run actions/checkout@v4	2026-09-18T13:01:32.1907135Z state without impacting any branches by switching back to a branch.
+check	Run actions/checkout@v4	2026-09-18T13:01:32.1907772Z 
+check	Run actions/checkout@v4	2026-09-18T13:01:32.1908134Z If you want to create a new branch to retain commits you create, you may
+check	Run actions/checkout@v4	2026-09-18T13:01:32.1908848Z do so (now or later) by using -c with the switch command. Example:
+check	Run actions/checkout@v4	2026-09-18T13:01:32.1909440Z 
+check	Run actions/checkout@v4	2026-09-18T13:01:32.1909741Z   git switch -c <new-branch-name>
+check	Run actions/checkout@v4	2026-09-18T13:01:32.1910052Z 
+check	Run actions/checkout@v4	2026-09-18T13:01:32.1910233Z Or undo this operation with:
+check	Run actions/checkout@v4	2026-09-18T13:01:32.1910523Z 
+check	Run actions/checkout@v4	2026-09-18T13:01:32.1910718Z   git switch -
+check	Run actions/checkout@v4	2026-09-18T13:01:32.1910956Z 
+check	Run actions/checkout@v4	2026-09-18T13:01:32.1911298Z Turn off this advice by setting config variable advice.detachedHead to false
+check	Run actions/checkout@v4	2026-09-18T13:01:32.1911751Z 
+check	Run actions/checkout@v4	2026-09-18T13:01:32.1912469Z HEAD is now at 15d626d Merge a2d5150fe5e1ceadbd2de70cf4ee2489d205c634 into 259080612148728dd07343ade06c9e3222ee1517
+check	Run actions/checkout@v4	2026-09-18T13:01:32.1914277Z ##[endgroup]
+check	Run actions/checkout@v4	2026-09-18T13:01:32.1939960Z [command]/usr/bin/git log -1 --format=%H
+check	Run actions/checkout@v4	2026-09-18T13:01:32.1956766Z 15d626dc6b9c68d4045a25b3e3267f76e7036685
+check	Run actions/setup-node@v4	﻿2026-09-18T13:01:32.2181975Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+check	Run actions/setup-node@v4	2026-09-18T13:01:32.2184085Z ##[group]Run actions/setup-node@v4
+check	Run actions/setup-node@v4	2026-09-18T13:01:32.2184548Z with:
+check	Run actions/setup-node@v4	2026-09-18T13:01:32.2184916Z   node-version: 24
+check	Run actions/setup-node@v4	2026-09-18T13:01:32.2185319Z   cache: npm
+check	Run actions/setup-node@v4	2026-09-18T13:01:32.2185703Z   always-auth: false
+check	Run actions/setup-node@v4	2026-09-18T13:01:32.2186488Z   check-latest: false
+check	Run actions/setup-node@v4	2026-09-18T13:01:32.2189810Z   token: ***
+check	Run actions/setup-node@v4	2026-09-18T13:01:32.2190223Z ##[endgroup]
+check	Run actions/setup-node@v4	2026-09-18T13:01:32.3223278Z Found in cache @ /opt/hostedtoolcache/node/24.20.0/x64
+check	Run actions/setup-node@v4	2026-09-18T13:01:32.3226189Z (node:2041) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+check	Run actions/setup-node@v4	2026-09-18T13:01:32.3227929Z (Use `node --trace-deprecation ...` to show where the warning was created)
+check	Run actions/setup-node@v4	2026-09-18T13:01:32.3229745Z ##[group]Environment details
+check	Run actions/setup-node@v4	2026-09-18T13:01:40.2576950Z node: v24.20.0
+check	Run actions/setup-node@v4	2026-09-18T13:01:40.2577872Z npm: 11.19.0
+check	Run actions/setup-node@v4	2026-09-18T13:01:40.2578462Z yarn: 1.22.22
+check	Run actions/setup-node@v4	2026-09-18T13:01:40.2580177Z ##[endgroup]
+check	Run actions/setup-node@v4	2026-09-18T13:01:40.2592628Z [command]/opt/hostedtoolcache/node/24.20.0/x64/bin/npm config get cache
+check	Run actions/setup-node@v4	2026-09-18T13:01:40.8457915Z /home/runner/.npm
+check	Run actions/setup-node@v4	2026-09-18T13:01:41.1339814Z npm cache is not found
+check	Run npm ci	﻿2026-09-18T13:01:41.1455150Z ##[group]Run npm ci
+check	Run npm ci	2026-09-18T13:01:41.1455574Z ^[[36;1mnpm ci^[[0m
+check	Run npm ci	2026-09-18T13:01:41.2064579Z shell: /usr/bin/bash -e {0}
+check	Run npm ci	2026-09-18T13:01:41.2065165Z ##[endgroup]
+check	Run npm ci	2026-09-18T13:01:47.5877714Z 
+check	Run npm ci	2026-09-18T13:01:47.5884766Z added 4 packages, and audited 5 packages in 6s
+check	Run npm ci	2026-09-18T13:01:47.5885279Z 
+check	Run npm ci	2026-09-18T13:01:47.5885625Z 1 package is looking for funding
+check	Run npm ci	2026-09-18T13:01:47.5886249Z   run `npm fund` for details
+check	Run npm ci	2026-09-18T13:01:47.5886481Z 
+check	Run npm ci	2026-09-18T13:01:47.5886691Z found 0 vulnerabilities
+check	Run npm run build	﻿2026-09-18T13:01:47.6094876Z ##[group]Run npm run build
+check	Run npm run build	2026-09-18T13:01:47.6095237Z ^[[36;1mnpm run build^[[0m
+check	Run npm run build	2026-09-18T13:01:47.6117582Z shell: /usr/bin/bash -e {0}
+check	Run npm run build	2026-09-18T13:01:47.6117931Z ##[endgroup]
+check	Run npm run build	2026-09-18T13:01:47.6928523Z 
+check	Run npm run build	2026-09-18T13:01:47.6929566Z > signupkit@1.0.0 build
+check	Run npm run build	2026-09-18T13:01:47.6930167Z > tsc
+check	Run npm run build	2026-09-18T13:01:47.6930403Z 
+check	Run npm run build	2026-09-18T13:01:48.5053338Z ##[error]src/schemas.ts(16,18): error TS2339: Property 'ip' does not exist on type 'ZodString'.
+check	Run npm run build	2026-09-18T13:01:48.5061331Z ##[error]src/schemas.ts(19,12): error TS2554: Expected 2-3 arguments, but got 1.
+check	Run npm run build	2026-09-18T13:01:48.5062955Z ##[error]src/schemas.ts(24,53): error TS2769: No overload matches this call.
+check	Run npm run build	2026-09-18T13:01:48.5064201Z   Overload 1 of 2, '(def: number): ZodDefault<ZodPipe<ZodString, ZodTransform<number, string>>>', gave the following error.
+check	Run npm run build	2026-09-18T13:01:48.5065108Z     Argument of type 'string' is not assignable to parameter of type 'number'.
+check	Run npm run build	2026-09-18T13:01:48.5066287Z   Overload 2 of 2, '(def: () => number): ZodDefault<ZodPipe<ZodString, ZodTransform<number, string>>>', gave the following error.
+check	Run npm run build	2026-09-18T13:01:48.5067319Z     Argument of type 'string' is not assignable to parameter of type '() => number'.
+check	Run npm run build	2026-09-18T13:01:48.5068670Z ##[error]src/schemas.ts(26,14): error TS2769: No overload matches this call.
+check	Run npm run build	2026-09-18T13:01:48.5070841Z   Overload 1 of 2, '(def: { theme: "light" | "dark"; retries: number; }): ZodDefault<ZodObject<{ theme: ZodDefault<ZodEnum<{ light: "light"; dark: "dark"; }>>; retries: ZodDefault<ZodPipe<ZodString, ZodTransform<number, string>>>; }, $strip>>', gave the following error.
+check	Run npm run build	2026-09-18T13:01:48.5072325Z     Argument of type '{}' is not assignable to parameter of type '{ theme: "light" | "dark"; retries: number; }'.
+check	Run npm run build	2026-09-18T13:01:48.5073273Z       Type '{}' is missing the following properties from type '{ theme: "light" | "dark"; retries: number; }': theme, retries
+check	Run npm run build	2026-09-18T13:01:48.5074906Z   Overload 2 of 2, '(def: () => { theme: "light" | "dark"; retries: number; }): ZodDefault<ZodObject<{ theme: ZodDefault<ZodEnum<{ light: "light"; dark: "dark"; }>>; retries: ZodDefault<ZodPipe<ZodString, ZodTransform<...>>>; }, $strip>>', gave the following error.
+check	Run npm run build	2026-09-18T13:01:48.5076378Z     Argument of type '{}' is not assignable to parameter of type '() => { theme: "light" | "dark"; retries: number; }'.
+check	Run npm run build	2026-09-18T13:01:48.5077282Z       Type '{}' provides no match for the signature '(): { theme: "light" | "dark"; retries: number; }'.
+check	Run npm run build	2026-09-18T13:01:48.5078599Z ##[error]src/schemas.ts(32,46): error TS2769: No overload matches this call.
+check	Run npm run build	2026-09-18T13:01:48.5079930Z   Overload 1 of 2, '(def: number): ZodDefault<ZodPipe<ZodString, ZodTransform<number, string>>>', gave the following error.
+check	Run npm run build	2026-09-18T13:01:48.5080682Z     Argument of type 'string' is not assignable to parameter of type 'number'.
+check	Run npm run build	2026-09-18T13:01:48.5081568Z   Overload 2 of 2, '(def: () => number): ZodDefault<ZodPipe<ZodString, ZodTransform<number, string>>>', gave the following error.
+check	Run npm run build	2026-09-18T13:01:48.5082436Z     Argument of type 'string' is not assignable to parameter of type '() => number'.
+check	Run npm run build	2026-09-18T13:01:48.5083447Z ##[error]src/schemas.ts(33,29): error TS2339: Property 'ip' does not exist on type 'ZodString'.
+check	Run npm run build	2026-09-18T13:01:48.5085454Z ##[error]src/schemas.ts(39,34): error TS2339: Property 'args' does not exist on type 'ZodFunction<$ZodFunctionArgs, $ZodFunctionOut>'.
+check	Run npm run build	2026-09-18T13:01:48.5087341Z ##[error]src/validate.ts(8,14): error TS2339: Property 'errors' does not exist on type 'ZodError<unknown>'.
+check	Run npm run build	2026-09-18T13:01:48.5089212Z ##[error]src/validate.ts(8,26): error TS7006: Parameter 'e' implicitly has an 'any' type.
+check	Run npm run build	2026-09-18T13:01:48.5090916Z ##[error]test/schemas.test.ts(48,35): error TS7006: Parameter 'event' implicitly has an 'any' type.
+check	Run npm run build	2026-09-18T13:01:48.5092561Z ##[error]test/schemas.test.ts(48,42): error TS7006: Parameter 'bytes' implicitly has an 'any' type.
+check	Run npm run build	2026-09-18T13:01:48.5210993Z ##[error]Process completed with exit code 2.
+check	Post Run actions/checkout@v4	﻿2026-09-18T13:01:48.5347194Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+check	Post Run actions/checkout@v4	2026-09-18T13:01:48.5348368Z Post job cleanup.
+check	Post Run actions/checkout@v4	2026-09-18T13:01:48.6058764Z [command]/usr/bin/git version
+check	Post Run actions/checkout@v4	2026-09-18T13:01:48.6091153Z git version 2.55.0
+check	Post Run actions/checkout@v4	2026-09-18T13:01:48.6118152Z Temporarily overriding HOME='/home/runner/work/_temp/9630400d-a92a-44e1-aa4f-530e6f80ef9f' before making global git config changes
+check	Post Run actions/checkout@v4	2026-09-18T13:01:48.6119557Z Adding repository directory to the temporary git global config as a safe directory
+check	Post Run actions/checkout@v4	2026-09-18T13:01:48.6122031Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ai-dependency-upgrade/ai-dependency-upgrade
+check	Post Run actions/checkout@v4	2026-09-18T13:01:48.6154306Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+check	Post Run actions/checkout@v4	2026-09-18T13:01:48.6181495Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+check	Post Run actions/checkout@v4	2026-09-18T13:01:48.6385114Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+check	Post Run actions/checkout@v4	2026-09-18T13:01:48.6404252Z http.https://github.com/.extraheader
+check	Post Run actions/checkout@v4	2026-09-18T13:01:48.6427737Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+check	Post Run actions/checkout@v4	2026-09-18T13:01:48.6453122Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+check	Post Run actions/checkout@v4	2026-09-18T13:01:48.6651511Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+check	Post Run actions/checkout@v4	2026-09-18T13:01:48.6683189Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+check	Complete job	﻿2026-09-18T13:01:48.6961435Z Cleaning up orphan processes
+check	Complete job	2026-09-18T13:01:48.7150796Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

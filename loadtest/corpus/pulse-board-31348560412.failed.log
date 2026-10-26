@@ -1,0 +1,27 @@
+test	Run tests	﻿2026-08-10T01:59:51.4785136Z ##[group]Run pytest -q
+test	Run tests	2026-08-10T01:59:51.4785435Z ^[[36;1mpytest -q^[[0m
+test	Run tests	2026-08-10T01:59:51.4830368Z shell: /usr/bin/bash -e {0}
+test	Run tests	2026-08-10T01:59:51.4830643Z env:
+test	Run tests	2026-08-10T01:59:51.4830925Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+test	Run tests	2026-08-10T01:59:51.4831395Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+test	Run tests	2026-08-10T01:59:51.4831884Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+test	Run tests	2026-08-10T01:59:51.4832291Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+test	Run tests	2026-08-10T01:59:51.4832975Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+test	Run tests	2026-08-10T01:59:51.4833405Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+test	Run tests	2026-08-10T01:59:51.4833746Z ##[endgroup]
+test	Run tests	2026-08-10T01:59:52.1029978Z .....F                                                                   [100%]
+test	Run tests	2026-08-10T01:59:52.1030652Z =================================== FAILURES ===================================
+test	Run tests	2026-08-10T01:59:52.1031423Z __________________ test_worst_latency_reports_the_recent_peak __________________
+test	Run tests	2026-08-10T01:59:52.1032102Z 
+test	Run tests	2026-08-10T01:59:52.1032381Z     def test_worst_latency_reports_the_recent_peak():
+test	Run tests	2026-08-10T01:59:52.1033580Z         history = [_check(True, 20), _check(True, 180), _check(True, 35)]
+test	Run tests	2026-08-10T01:59:52.1034417Z >       assert worst_latency(history, window=2) == 180
+test	Run tests	2026-08-10T01:59:52.1035122Z E       AssertionError: assert 35 == 180
+test	Run tests	2026-08-10T01:59:52.1036734Z E        +  where 35 = worst_latency([{'latency_ms': 20, 'ok': True, 't': '2026-08-08T00:00:00Z'}, {'latency_ms': 180, 'ok': True, 't': '2026-08-08T00:00:00Z'}, {'latency_ms': 35, 'ok': True, 't': '2026-08-08T00:00:00Z'}], window=2)
+test	Run tests	2026-08-10T01:59:52.1038163Z 
+test	Run tests	2026-08-10T01:59:52.1038402Z tests/test_checks.py:32: AssertionError
+test	Run tests	2026-08-10T01:59:52.1039056Z =========================== short test summary info ============================
+test	Run tests	2026-08-10T01:59:52.1040188Z FAILED tests/test_checks.py::test_worst_latency_reports_the_recent_peak - AssertionError: assert 35 == 180
+test	Run tests	2026-08-10T01:59:52.1042166Z  +  where 35 = worst_latency([{'latency_ms': 20, 'ok': True, 't': '2026-08-08T00:00:00Z'}, {'latency_ms': 180, 'ok': True, 't': '2026-08-08T00:00:00Z'}, {'latency_ms': 35, 'ok': True, 't': '2026-08-08T00:00:00Z'}], window=2)
+test	Run tests	2026-08-10T01:59:52.1044171Z 1 failed, 5 passed in 0.20s
+test	Run tests	2026-08-10T01:59:52.1387648Z ##[error]Process completed with exit code 1.

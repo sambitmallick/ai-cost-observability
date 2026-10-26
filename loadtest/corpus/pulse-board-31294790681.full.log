@@ -1,0 +1,346 @@
+lint	Set up job	﻿2026-08-09T04:32:46.2895236Z Current runner version: '2.336.0'
+lint	Set up job	2026-08-09T04:32:46.2920833Z ##[group]Runner Image Provisioner
+lint	Set up job	2026-08-09T04:32:46.2921885Z Hosted Compute Agent
+lint	Set up job	2026-08-09T04:32:46.2922484Z Version: 20260707.563
+lint	Set up job	2026-08-09T04:32:46.2923145Z Commit: 02667638d2b423fbc733a8e32a88b44996a3ba6e
+lint	Set up job	2026-08-09T04:32:46.2923943Z Build Date: 2026-07-07T19:33:50Z
+lint	Set up job	2026-08-09T04:32:46.2924639Z Worker ID: {fe9c9b90-0c7c-4f15-8251-1b27a559a595}
+lint	Set up job	2026-08-09T04:32:46.2925400Z Azure Region: westcentralus
+lint	Set up job	2026-08-09T04:32:46.2926362Z ##[endgroup]
+lint	Set up job	2026-08-09T04:32:46.2927807Z ##[group]Operating System
+lint	Set up job	2026-08-09T04:32:46.2928541Z Ubuntu
+lint	Set up job	2026-08-09T04:32:46.2929081Z 24.04.4
+lint	Set up job	2026-08-09T04:32:46.2929586Z LTS
+lint	Set up job	2026-08-09T04:32:46.2930220Z ##[endgroup]
+lint	Set up job	2026-08-09T04:32:46.2930782Z ##[group]Runner Image
+lint	Set up job	2026-08-09T04:32:46.2931460Z Image: ubuntu-24.04
+lint	Set up job	2026-08-09T04:32:46.2932049Z Version: 20260720.247.2
+lint	Set up job	2026-08-09T04:32:46.2933109Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260720.247/images/ubuntu/Ubuntu2404-Readme.md
+lint	Set up job	2026-08-09T04:32:46.2934800Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260720.247
+lint	Set up job	2026-08-09T04:32:46.2936023Z ##[endgroup]
+lint	Set up job	2026-08-09T04:32:46.2937313Z ##[group]GITHUB_TOKEN Permissions
+lint	Set up job	2026-08-09T04:32:46.2939170Z Contents: read
+lint	Set up job	2026-08-09T04:32:46.2939891Z Metadata: read
+lint	Set up job	2026-08-09T04:32:46.2940502Z Packages: read
+lint	Set up job	2026-08-09T04:32:46.2941112Z ##[endgroup]
+lint	Set up job	2026-08-09T04:32:46.2943120Z Secret source: Actions
+lint	Set up job	2026-08-09T04:32:46.2944267Z Prepare workflow directory
+lint	Set up job	2026-08-09T04:32:46.3457258Z Prepare all required actions
+lint	Set up job	2026-08-09T04:32:46.3502922Z Getting action download info
+lint	Set up job	2026-08-09T04:32:46.6338105Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+lint	Set up job	2026-08-09T04:32:47.9067424Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+lint	Set up job	2026-08-09T04:32:48.0954895Z Complete job name: lint
+lint	Run actions/checkout@v4	﻿2026-08-09T04:32:48.1721285Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.1730654Z ##[group]Run actions/checkout@v4
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.1731430Z with:
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.1731917Z   repository: sambitmallick/pulse-board
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.1736635Z   token: ***
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.1737134Z   ssh-strict: true
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.1737612Z   ssh-user: git
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.1738091Z   persist-credentials: true
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.1738611Z   clean: true
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.1739084Z   sparse-checkout-cone-mode: true
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.1739635Z   fetch-depth: 1
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.1740090Z   fetch-tags: false
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.1740570Z   show-progress: true
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.1741067Z   lfs: false
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.1741508Z   submodules: false
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.1742057Z   set-safe-directory: true
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.1742595Z   allow-unsafe-pr-checkout: false
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.1743408Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.2801224Z Syncing repository: sambitmallick/pulse-board
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.2803652Z ##[group]Getting Git version info
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.2804511Z Working directory is '/home/runner/work/pulse-board/pulse-board'
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.2806072Z [command]/usr/bin/git version
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.2843213Z git version 2.54.0
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.2864195Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.2879555Z Temporarily overriding HOME='/home/runner/work/_temp/02ca9711-5932-4923-ace1-b5d2509aa4c3' before making global git config changes
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.2881461Z Adding repository directory to the temporary git global config as a safe directory
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.2884646Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/pulse-board/pulse-board
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.2942024Z Deleting the contents of '/home/runner/work/pulse-board/pulse-board'
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.2948032Z ##[group]Initializing the repository
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.2954949Z [command]/usr/bin/git init /home/runner/work/pulse-board/pulse-board
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.3035104Z hint: Using 'master' as the name for the initial branch. This default branch name
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.3037250Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.3039661Z hint: to use in all of your new repositories, which will suppress this warning,
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.3041023Z hint: call:
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.3041597Z hint:
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.3042162Z hint: 	git config --global init.defaultBranch <name>
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.3043195Z hint:
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.3044071Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.3045134Z hint: 'development'. The just-created branch can be renamed via this command:
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.3046173Z hint:
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.3046622Z hint: 	git branch -m <name>
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.3047167Z hint:
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.3048021Z hint: Disable this message with "git config set advice.defaultBranchName false"
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.3049713Z Initialized empty Git repository in /home/runner/work/pulse-board/pulse-board/.git/
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.3052265Z [command]/usr/bin/git remote add origin https://github.com/sambitmallick/pulse-board
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.3102142Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.3103552Z ##[group]Disabling automatic garbage collection
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.3104748Z [command]/usr/bin/git config --local gc.auto 0
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.3135340Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.3136928Z ##[group]Setting up auth
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.3141682Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.3176982Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.3586709Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.3647381Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.3946911Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.3991549Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.4237918Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.4278574Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.4280093Z ##[group]Fetching the repository
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.4289806Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +2f5861c243f3ab7ae6c90fbfa8874d999cd0827e:refs/remotes/origin/main
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.8581900Z From https://github.com/sambitmallick/pulse-board
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.8583912Z  * [new ref]         2f5861c243f3ab7ae6c90fbfa8874d999cd0827e -> origin/main
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.8613675Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.8615199Z ##[group]Determining the checkout info
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.8617230Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.8623572Z [command]/usr/bin/git sparse-checkout disable
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.8679426Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.8716235Z ##[group]Checking out the ref
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.8721481Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.8780437Z Switched to a new branch 'main'
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.8783901Z branch 'main' set up to track 'origin/main'.
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.8841273Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.8844145Z [command]/usr/bin/git log -1 --format=%H
+lint	Run actions/checkout@v4	2026-08-09T04:32:48.8873233Z 2f5861c243f3ab7ae6c90fbfa8874d999cd0827e
+lint	Run actions/setup-python@v5	﻿2026-08-09T04:32:48.9235000Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+lint	Run actions/setup-python@v5	2026-08-09T04:32:48.9240786Z ##[group]Run actions/setup-python@v5
+lint	Run actions/setup-python@v5	2026-08-09T04:32:48.9241861Z with:
+lint	Run actions/setup-python@v5	2026-08-09T04:32:48.9242642Z   python-version: 3.12
+lint	Run actions/setup-python@v5	2026-08-09T04:32:48.9243549Z   check-latest: false
+lint	Run actions/setup-python@v5	2026-08-09T04:32:48.9253116Z   token: ***
+lint	Run actions/setup-python@v5	2026-08-09T04:32:48.9253970Z   update-environment: true
+lint	Run actions/setup-python@v5	2026-08-09T04:32:48.9254944Z   allow-prereleases: false
+lint	Run actions/setup-python@v5	2026-08-09T04:32:48.9256057Z   freethreaded: false
+lint	Run actions/setup-python@v5	2026-08-09T04:32:48.9256923Z ##[endgroup]
+lint	Run actions/setup-python@v5	2026-08-09T04:32:49.0590189Z ##[group]Installed versions
+lint	Run actions/setup-python@v5	2026-08-09T04:32:49.0671679Z (node:2370) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+lint	Run actions/setup-python@v5	2026-08-09T04:32:49.0674813Z (Use `node --trace-deprecation ...` to show where the warning was created)
+lint	Run actions/setup-python@v5	2026-08-09T04:32:49.0676884Z Successfully set up CPython (3.12.13)
+lint	Run actions/setup-python@v5	2026-08-09T04:32:49.0679165Z ##[endgroup]
+lint	Install ruff	﻿2026-08-09T04:32:49.0864369Z ##[group]Run pip install ruff==0.5.7
+lint	Install ruff	2026-08-09T04:32:49.0865560Z ^[[36;1mpip install ruff==0.5.7^[[0m
+lint	Install ruff	2026-08-09T04:32:49.0927899Z shell: /usr/bin/bash -e {0}
+lint	Install ruff	2026-08-09T04:32:49.0928844Z env:
+lint	Install ruff	2026-08-09T04:32:49.0929798Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+lint	Install ruff	2026-08-09T04:32:49.0931447Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+lint	Install ruff	2026-08-09T04:32:49.0933070Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+lint	Install ruff	2026-08-09T04:32:49.0934519Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+lint	Install ruff	2026-08-09T04:32:49.0936487Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+lint	Install ruff	2026-08-09T04:32:49.0938062Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+lint	Install ruff	2026-08-09T04:32:49.0940171Z ##[endgroup]
+lint	Install ruff	2026-08-09T04:32:50.2291396Z Collecting ruff==0.5.7
+lint	Install ruff	2026-08-09T04:32:50.3299136Z   Downloading ruff-0.5.7-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (25 kB)
+lint	Install ruff	2026-08-09T04:32:50.3637760Z Downloading ruff-0.5.7-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (10.2 MB)
+lint	Install ruff	2026-08-09T04:32:50.5813869Z    ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.2/10.2 MB 58.3 MB/s  0:00:00
+lint	Install ruff	2026-08-09T04:32:50.6092678Z Installing collected packages: ruff
+lint	Install ruff	2026-08-09T04:32:50.7349152Z Successfully installed ruff-0.5.7
+lint	Install ruff	2026-08-09T04:32:50.7358760Z 
+lint	Install ruff	2026-08-09T04:32:50.7359467Z [notice] A new release of pip is available: 26.1.2 -> 26.2.1
+lint	Install ruff	2026-08-09T04:32:50.7884454Z [notice] To update, run: pip install --upgrade pip
+lint	Lint	﻿2026-08-09T04:32:50.7947159Z ##[group]Run ruff check .
+lint	Lint	2026-08-09T04:32:50.7947807Z ^[[36;1mruff check .^[[0m
+lint	Lint	2026-08-09T04:32:50.7997681Z shell: /usr/bin/bash -e {0}
+lint	Lint	2026-08-09T04:32:50.7998295Z env:
+lint	Lint	2026-08-09T04:32:50.7998907Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+lint	Lint	2026-08-09T04:32:50.8000037Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+lint	Lint	2026-08-09T04:32:50.8001202Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+lint	Lint	2026-08-09T04:32:50.8002215Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+lint	Lint	2026-08-09T04:32:50.8003241Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+lint	Lint	2026-08-09T04:32:50.8004278Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+lint	Lint	2026-08-09T04:32:50.8005153Z ##[endgroup]
+lint	Lint	2026-08-09T04:32:50.8147931Z All checks passed!
+lint	Post Run actions/setup-python@v5	﻿2026-08-09T04:32:50.8304590Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+lint	Post Run actions/setup-python@v5	2026-08-09T04:32:50.8308068Z Post job cleanup.
+lint	Post Run actions/setup-python@v5	2026-08-09T04:32:50.9550199Z (node:2414) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+lint	Post Run actions/setup-python@v5	2026-08-09T04:32:50.9552205Z (Use `node --trace-deprecation ...` to show where the warning was created)
+lint	Post Run actions/checkout@v4	﻿2026-08-09T04:32:50.9844814Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+lint	Post Run actions/checkout@v4	2026-08-09T04:32:50.9849699Z Post job cleanup.
+lint	Post Run actions/checkout@v4	2026-08-09T04:32:51.0720510Z [command]/usr/bin/git version
+lint	Post Run actions/checkout@v4	2026-08-09T04:32:51.0795309Z git version 2.54.0
+lint	Post Run actions/checkout@v4	2026-08-09T04:32:51.0847963Z Temporarily overriding HOME='/home/runner/work/_temp/d6b21cec-603c-4d49-a826-9d57d734cc44' before making global git config changes
+lint	Post Run actions/checkout@v4	2026-08-09T04:32:51.0850853Z Adding repository directory to the temporary git global config as a safe directory
+lint	Post Run actions/checkout@v4	2026-08-09T04:32:51.0853217Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/pulse-board/pulse-board
+lint	Post Run actions/checkout@v4	2026-08-09T04:32:51.0890760Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+lint	Post Run actions/checkout@v4	2026-08-09T04:32:51.0955428Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+lint	Post Run actions/checkout@v4	2026-08-09T04:32:51.1276703Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+lint	Post Run actions/checkout@v4	2026-08-09T04:32:51.1309622Z http.https://github.com/.extraheader
+lint	Post Run actions/checkout@v4	2026-08-09T04:32:51.1320566Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+lint	Post Run actions/checkout@v4	2026-08-09T04:32:51.1358871Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+lint	Post Run actions/checkout@v4	2026-08-09T04:32:51.1624729Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+lint	Post Run actions/checkout@v4	2026-08-09T04:32:51.1669281Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+lint	Complete job	﻿2026-08-09T04:32:51.2092056Z Cleaning up orphan processes
+lint	Complete job	2026-08-09T04:32:51.2398492Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+test	Set up job	﻿2026-08-09T04:32:45.9925582Z Current runner version: '2.336.0'
+test	Set up job	2026-08-09T04:32:45.9950246Z ##[group]Runner Image Provisioner
+test	Set up job	2026-08-09T04:32:45.9951127Z Hosted Compute Agent
+test	Set up job	2026-08-09T04:32:45.9951855Z Version: 20260707.563
+test	Set up job	2026-08-09T04:32:45.9952441Z Commit: 02667638d2b423fbc733a8e32a88b44996a3ba6e
+test	Set up job	2026-08-09T04:32:45.9953138Z Build Date: 2026-07-07T19:33:50Z
+test	Set up job	2026-08-09T04:32:45.9953747Z Worker ID: {98c7f78e-df88-4f43-ab8d-ba58390b46d7}
+test	Set up job	2026-08-09T04:32:45.9954374Z Azure Region: centralus
+test	Set up job	2026-08-09T04:32:45.9955129Z ##[endgroup]
+test	Set up job	2026-08-09T04:32:45.9956563Z ##[group]Operating System
+test	Set up job	2026-08-09T04:32:45.9957165Z Ubuntu
+test	Set up job	2026-08-09T04:32:45.9957647Z 24.04.4
+test	Set up job	2026-08-09T04:32:45.9958096Z LTS
+test	Set up job	2026-08-09T04:32:45.9958655Z ##[endgroup]
+test	Set up job	2026-08-09T04:32:45.9959159Z ##[group]Runner Image
+test	Set up job	2026-08-09T04:32:45.9959693Z Image: ubuntu-24.04
+test	Set up job	2026-08-09T04:32:45.9960251Z Version: 20260720.247.2
+test	Set up job	2026-08-09T04:32:45.9961192Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260720.247/images/ubuntu/Ubuntu2404-Readme.md
+test	Set up job	2026-08-09T04:32:45.9962711Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260720.247
+test	Set up job	2026-08-09T04:32:45.9963524Z ##[endgroup]
+test	Set up job	2026-08-09T04:32:45.9964860Z ##[group]GITHUB_TOKEN Permissions
+test	Set up job	2026-08-09T04:32:45.9966750Z Contents: read
+test	Set up job	2026-08-09T04:32:45.9967351Z Metadata: read
+test	Set up job	2026-08-09T04:32:45.9967898Z Packages: read
+test	Set up job	2026-08-09T04:32:45.9968462Z ##[endgroup]
+test	Set up job	2026-08-09T04:32:45.9970432Z Secret source: Actions
+test	Set up job	2026-08-09T04:32:45.9971731Z Prepare workflow directory
+test	Set up job	2026-08-09T04:32:46.0341823Z Prepare all required actions
+test	Set up job	2026-08-09T04:32:46.0390435Z Getting action download info
+test	Set up job	2026-08-09T04:32:46.2703647Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+test	Set up job	2026-08-09T04:32:46.6783551Z Download action repository 'actions/setup-python@v5' (SHA:a26af69be951a213d495a4c3e4e4022e16d87065)
+test	Set up job	2026-08-09T04:32:46.8731879Z Complete job name: test
+test	Run actions/checkout@v4	﻿2026-08-09T04:32:46.9378775Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+test	Run actions/checkout@v4	2026-08-09T04:32:46.9387365Z ##[group]Run actions/checkout@v4
+test	Run actions/checkout@v4	2026-08-09T04:32:46.9388108Z with:
+test	Run actions/checkout@v4	2026-08-09T04:32:46.9388666Z   repository: sambitmallick/pulse-board
+test	Run actions/checkout@v4	2026-08-09T04:32:46.9392152Z   token: ***
+test	Run actions/checkout@v4	2026-08-09T04:32:46.9392633Z   ssh-strict: true
+test	Run actions/checkout@v4	2026-08-09T04:32:46.9393132Z   ssh-user: git
+test	Run actions/checkout@v4	2026-08-09T04:32:46.9393591Z   persist-credentials: true
+test	Run actions/checkout@v4	2026-08-09T04:32:46.9394081Z   clean: true
+test	Run actions/checkout@v4	2026-08-09T04:32:46.9394717Z   sparse-checkout-cone-mode: true
+test	Run actions/checkout@v4	2026-08-09T04:32:46.9395257Z   fetch-depth: 1
+test	Run actions/checkout@v4	2026-08-09T04:32:46.9395741Z   fetch-tags: false
+test	Run actions/checkout@v4	2026-08-09T04:32:46.9396224Z   show-progress: true
+test	Run actions/checkout@v4	2026-08-09T04:32:46.9396691Z   lfs: false
+test	Run actions/checkout@v4	2026-08-09T04:32:46.9397156Z   submodules: false
+test	Run actions/checkout@v4	2026-08-09T04:32:46.9397769Z   set-safe-directory: true
+test	Run actions/checkout@v4	2026-08-09T04:32:46.9398319Z   allow-unsafe-pr-checkout: false
+test	Run actions/checkout@v4	2026-08-09T04:32:46.9399127Z ##[endgroup]
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0526706Z Syncing repository: sambitmallick/pulse-board
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0529499Z ##[group]Getting Git version info
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0530774Z Working directory is '/home/runner/work/pulse-board/pulse-board'
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0534205Z [command]/usr/bin/git version
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0546321Z git version 2.54.0
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0569663Z ##[endgroup]
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0579825Z Temporarily overriding HOME='/home/runner/work/_temp/143382df-c14f-4a02-8d89-832df3ac8c6f' before making global git config changes
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0582508Z Adding repository directory to the temporary git global config as a safe directory
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0586293Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/pulse-board/pulse-board
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0651088Z Deleting the contents of '/home/runner/work/pulse-board/pulse-board'
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0656447Z ##[group]Initializing the repository
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0672313Z [command]/usr/bin/git init /home/runner/work/pulse-board/pulse-board
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0795635Z hint: Using 'master' as the name for the initial branch. This default branch name
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0797258Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0798785Z hint: to use in all of your new repositories, which will suppress this warning,
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0800065Z hint: call:
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0800888Z hint:
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0801900Z hint: 	git config --global init.defaultBranch <name>
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0802934Z hint:
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0804040Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0805480Z hint: 'development'. The just-created branch can be renamed via this command:
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0806185Z hint:
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0806558Z hint: 	git branch -m <name>
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0807015Z hint:
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0807929Z hint: Disable this message with "git config set advice.defaultBranchName false"
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0809139Z Initialized empty Git repository in /home/runner/work/pulse-board/pulse-board/.git/
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0816184Z [command]/usr/bin/git remote add origin https://github.com/sambitmallick/pulse-board
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0862481Z ##[endgroup]
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0863757Z ##[group]Disabling automatic garbage collection
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0866368Z [command]/usr/bin/git config --local gc.auto 0
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0904735Z ##[endgroup]
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0906165Z ##[group]Setting up auth
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0915519Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test	Run actions/checkout@v4	2026-08-09T04:32:47.0942358Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test	Run actions/checkout@v4	2026-08-09T04:32:47.1271999Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test	Run actions/checkout@v4	2026-08-09T04:32:47.1312788Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test	Run actions/checkout@v4	2026-08-09T04:32:47.1502199Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test	Run actions/checkout@v4	2026-08-09T04:32:47.1531854Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test	Run actions/checkout@v4	2026-08-09T04:32:47.1705166Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+test	Run actions/checkout@v4	2026-08-09T04:32:47.1738428Z ##[endgroup]
+test	Run actions/checkout@v4	2026-08-09T04:32:47.1739887Z ##[group]Fetching the repository
+test	Run actions/checkout@v4	2026-08-09T04:32:47.1749504Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +2f5861c243f3ab7ae6c90fbfa8874d999cd0827e:refs/remotes/origin/main
+test	Run actions/checkout@v4	2026-08-09T04:32:47.4922243Z From https://github.com/sambitmallick/pulse-board
+test	Run actions/checkout@v4	2026-08-09T04:32:47.4923783Z  * [new ref]         2f5861c243f3ab7ae6c90fbfa8874d999cd0827e -> origin/main
+test	Run actions/checkout@v4	2026-08-09T04:32:47.4960240Z ##[endgroup]
+test	Run actions/checkout@v4	2026-08-09T04:32:47.4961412Z ##[group]Determining the checkout info
+test	Run actions/checkout@v4	2026-08-09T04:32:47.4962778Z ##[endgroup]
+test	Run actions/checkout@v4	2026-08-09T04:32:47.4970228Z [command]/usr/bin/git sparse-checkout disable
+test	Run actions/checkout@v4	2026-08-09T04:32:47.5014200Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+test	Run actions/checkout@v4	2026-08-09T04:32:47.5108721Z ##[group]Checking out the ref
+test	Run actions/checkout@v4	2026-08-09T04:32:47.5109760Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+test	Run actions/checkout@v4	2026-08-09T04:32:47.5110610Z Switched to a new branch 'main'
+test	Run actions/checkout@v4	2026-08-09T04:32:47.5111191Z branch 'main' set up to track 'origin/main'.
+test	Run actions/checkout@v4	2026-08-09T04:32:47.5112963Z ##[endgroup]
+test	Run actions/checkout@v4	2026-08-09T04:32:47.5142452Z [command]/usr/bin/git log -1 --format=%H
+test	Run actions/checkout@v4	2026-08-09T04:32:47.5162036Z 2f5861c243f3ab7ae6c90fbfa8874d999cd0827e
+test	Run actions/setup-python@v5	﻿2026-08-09T04:32:47.5415308Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+test	Run actions/setup-python@v5	2026-08-09T04:32:47.5418080Z ##[group]Run actions/setup-python@v5
+test	Run actions/setup-python@v5	2026-08-09T04:32:47.5418628Z with:
+test	Run actions/setup-python@v5	2026-08-09T04:32:47.5419057Z   python-version: 3.12
+test	Run actions/setup-python@v5	2026-08-09T04:32:47.5419549Z   check-latest: false
+test	Run actions/setup-python@v5	2026-08-09T04:32:47.5423234Z   token: ***
+test	Run actions/setup-python@v5	2026-08-09T04:32:47.5423690Z   update-environment: true
+test	Run actions/setup-python@v5	2026-08-09T04:32:47.5424203Z   allow-prereleases: false
+test	Run actions/setup-python@v5	2026-08-09T04:32:47.5424828Z   freethreaded: false
+test	Run actions/setup-python@v5	2026-08-09T04:32:47.5425294Z ##[endgroup]
+test	Run actions/setup-python@v5	2026-08-09T04:32:47.6668771Z ##[group]Installed versions
+test	Run actions/setup-python@v5	2026-08-09T04:32:47.6755633Z (node:2167) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+test	Run actions/setup-python@v5	2026-08-09T04:32:47.6758245Z (Use `node --trace-deprecation ...` to show where the warning was created)
+test	Run actions/setup-python@v5	2026-08-09T04:32:47.6759950Z Successfully set up CPython (3.12.13)
+test	Run actions/setup-python@v5	2026-08-09T04:32:47.6761584Z ##[endgroup]
+test	Install dependencies	﻿2026-08-09T04:32:47.6968494Z ##[group]Run pip install -r requirements.txt
+test	Install dependencies	2026-08-09T04:32:47.6969933Z ^[[36;1mpip install -r requirements.txt^[[0m
+test	Install dependencies	2026-08-09T04:32:47.7021759Z shell: /usr/bin/bash -e {0}
+test	Install dependencies	2026-08-09T04:32:47.7022359Z env:
+test	Install dependencies	2026-08-09T04:32:47.7022910Z   pythonLocation: /opt/hostedtoolcache/Python/3.12.13/x64
+test	Install dependencies	2026-08-09T04:32:47.7023766Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib/pkgconfig
+test	Install dependencies	2026-08-09T04:32:47.7024753Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+test	Install dependencies	2026-08-09T04:32:47.7025548Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+test	Install dependencies	2026-08-09T04:32:47.7026354Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.12.13/x64
+test	Install dependencies	2026-08-09T04:32:47.7027221Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.12.13/x64/lib
+test	Install dependencies	2026-08-09T04:32:47.7027887Z ##[endgroup]
+test	Install dependencies	2026-08-09T04:32:50.0187352Z Collecting flask==3.0.0 (from -r requirements.txt (line 1))
+test	Install dependencies	2026-08-09T04:32:50.0980380Z   Downloading flask-3.0.0-py3-none-any.whl.metadata (3.6 kB)
+test	Install dependencies	2026-08-09T04:32:50.1280421Z Collecting werkzeug==2.0.3 (from -r requirements.txt (line 3))
+test	Install dependencies	2026-08-09T04:32:50.1413041Z   Downloading Werkzeug-2.0.3-py3-none-any.whl.metadata (4.5 kB)
+test	Install dependencies	2026-08-09T04:32:50.1465492Z INFO: pip is looking at multiple versions of flask to determine which version is compatible with other requirements. This could take a while.
+test	Install dependencies	2026-08-09T04:32:50.1468846Z ERROR: Cannot install -r requirements.txt (line 1) and werkzeug==2.0.3 because these package versions have conflicting dependencies.
+test	Install dependencies	2026-08-09T04:32:50.1472725Z 
+test	Install dependencies	2026-08-09T04:32:50.1473476Z The conflict is caused by:
+test	Install dependencies	2026-08-09T04:32:50.1473976Z     The user requested werkzeug==2.0.3
+test	Install dependencies	2026-08-09T04:32:50.1474418Z     flask 3.0.0 depends on Werkzeug>=3.0.0
+test	Install dependencies	2026-08-09T04:32:50.1474974Z 
+test	Install dependencies	2026-08-09T04:32:50.1475497Z Additionally, some packages in these conflicts have no matching distributions available for your environment:
+test	Install dependencies	2026-08-09T04:32:50.1476196Z     werkzeug
+test	Install dependencies	2026-08-09T04:32:50.1476382Z 
+test	Install dependencies	2026-08-09T04:32:50.1476543Z To fix this you could try to:
+test	Install dependencies	2026-08-09T04:32:50.1477068Z 1. loosen the range of package versions you've specified
+test	Install dependencies	2026-08-09T04:32:50.1477723Z 2. remove package versions to allow pip to attempt to solve the dependency conflict
+test	Install dependencies	2026-08-09T04:32:50.1478148Z 
+test	Install dependencies	2026-08-09T04:32:50.1481361Z 
+test	Install dependencies	2026-08-09T04:32:50.1481807Z [notice] A new release of pip is available: 26.1.2 -> 26.2.1
+test	Install dependencies	2026-08-09T04:32:50.1482345Z [notice] To update, run: pip install --upgrade pip
+test	Install dependencies	2026-08-09T04:32:50.1484947Z ERROR: ResolutionImpossible: for help visit https://pip.pypa.io/en/latest/topics/dependency-resolution/#dealing-with-dependency-conflicts
+test	Install dependencies	2026-08-09T04:32:50.1869666Z ##[error]Process completed with exit code 1.
+test	Post Run actions/checkout@v4	﻿2026-08-09T04:32:50.2023498Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+test	Post Run actions/checkout@v4	2026-08-09T04:32:50.2025164Z Post job cleanup.
+test	Post Run actions/checkout@v4	2026-08-09T04:32:50.2864405Z [command]/usr/bin/git version
+test	Post Run actions/checkout@v4	2026-08-09T04:32:50.2900666Z git version 2.54.0
+test	Post Run actions/checkout@v4	2026-08-09T04:32:50.2935510Z Temporarily overriding HOME='/home/runner/work/_temp/e6f92524-b925-4dff-ab7d-32cff2ab9a7b' before making global git config changes
+test	Post Run actions/checkout@v4	2026-08-09T04:32:50.2937180Z Adding repository directory to the temporary git global config as a safe directory
+test	Post Run actions/checkout@v4	2026-08-09T04:32:50.2941203Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/pulse-board/pulse-board
+test	Post Run actions/checkout@v4	2026-08-09T04:32:50.2974318Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test	Post Run actions/checkout@v4	2026-08-09T04:32:50.3006900Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test	Post Run actions/checkout@v4	2026-08-09T04:32:50.3212498Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test	Post Run actions/checkout@v4	2026-08-09T04:32:50.3240907Z http.https://github.com/.extraheader
+test	Post Run actions/checkout@v4	2026-08-09T04:32:50.3251801Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+test	Post Run actions/checkout@v4	2026-08-09T04:32:50.3279833Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test	Post Run actions/checkout@v4	2026-08-09T04:32:50.3479050Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test	Post Run actions/checkout@v4	2026-08-09T04:32:50.3506832Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test	Complete job	﻿2026-08-09T04:32:50.3853642Z Cleaning up orphan processes
+test	Complete job	2026-08-09T04:32:50.4090826Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-python@v5. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

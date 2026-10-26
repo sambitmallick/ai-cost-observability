@@ -1,0 +1,50 @@
+test (4)	Test (shard 4 of 4)	﻿2026-08-31T12:44:22.6538950Z ##[group]Run npm test -- --shard=4/4
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:22.6539613Z ^[[36;1mnpm test -- --shard=4/4^[[0m
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:22.6578362Z shell: /usr/bin/bash -e {0}
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:22.6578654Z ##[endgroup]
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:22.7752650Z 
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:22.7753278Z > orderkit@1.0.0 test
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:22.7753676Z > jest --shard=4/4
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:22.7753850Z 
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:23.9471371Z PASS test/slug.test.js
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0119903Z FAIL test/aload.integration.test.js (5.718 s)
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0121218Z   ● load aload (integration) › processes a batch of 220 orders
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0121745Z 
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0122099Z     thrown: "Exceeded timeout of 5000 ms for a test.
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0123571Z     Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0124607Z 
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0125086Z     ^[[0m ^[[90m 15 |^[[39m   })^[[33m;^[[39m
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0125684Z      ^[[90m 16 |^[[39m
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0127061Z     ^[[31m^[[1m>^[[22m^[[39m^[[90m 17 |^[[39m   test(^[[32m"processes a batch of 220 orders"^[[39m^[[33m,^[[39m ^[[36masync^[[39m () ^[[33m=>^[[39m {
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0128278Z      ^[[90m    |^[[39m   ^[[31m^[[1m^^[[22m^[[39m
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0130753Z      ^[[90m 18 |^[[39m     ^[[36mconst^[[39m res ^[[33m=^[[39m ^[[36mawait^[[39m processBatch(^[[33mArray^[[39m^[[33m.^[[39m^[[36mfrom^[[39m({ length^[[33m:^[[39m ^[[35m220^[[39m }^[[33m,^[[39m (_^[[33m,^[[39m i) ^[[33m=>^[[39m mk(i ^[[33m+^[[39m ^[[35m1^[[39m)))^[[33m;^[[39m
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0132871Z      ^[[90m 19 |^[[39m     expect(res)^[[33m.^[[39mtoHaveLength(^[[35m220^[[39m)^[[33m;^[[39m
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0134793Z      ^[[90m 20 |^[[39m     expect(res^[[33m.^[[39mevery((r) ^[[33m=>^[[39m r^[[33m.^[[39mtotalCents ^[[33m>^[[39m ^[[35m0^[[39m))^[[33m.^[[39mtoBe(^[[36mtrue^[[39m)^[[33m;^[[39m^[[0m
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0135821Z 
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0136246Z       at test (test/aload.integration.test.js:17:3)
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0137117Z       at Object.describe (test/aload.integration.test.js:5:1)
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0137628Z 
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0226240Z FAIL test/bload.integration.test.js (5.733 s)
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0227270Z   ● load bload (integration) › processes a batch of 220 orders
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0228998Z 
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0229297Z     thrown: "Exceeded timeout of 5000 ms for a test.
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0230802Z     Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0231380Z 
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0231611Z     ^[[0m ^[[90m 15 |^[[39m   })^[[33m;^[[39m
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0231923Z      ^[[90m 16 |^[[39m
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0232593Z     ^[[31m^[[1m>^[[22m^[[39m^[[90m 17 |^[[39m   test(^[[32m"processes a batch of 220 orders"^[[39m^[[33m,^[[39m ^[[36masync^[[39m () ^[[33m=>^[[39m {
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0233205Z      ^[[90m    |^[[39m   ^[[31m^[[1m^^[[22m^[[39m
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0234303Z      ^[[90m 18 |^[[39m     ^[[36mconst^[[39m res ^[[33m=^[[39m ^[[36mawait^[[39m processBatch(^[[33mArray^[[39m^[[33m.^[[39m^[[36mfrom^[[39m({ length^[[33m:^[[39m ^[[35m220^[[39m }^[[33m,^[[39m (_^[[33m,^[[39m i) ^[[33m=>^[[39m mk(i ^[[33m+^[[39m ^[[35m1^[[39m)))^[[33m;^[[39m
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0235369Z      ^[[90m 19 |^[[39m     expect(res)^[[33m.^[[39mtoHaveLength(^[[35m220^[[39m)^[[33m;^[[39m
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0236271Z      ^[[90m 20 |^[[39m     expect(res^[[33m.^[[39mevery((r) ^[[33m=>^[[39m r^[[33m.^[[39mtotalCents ^[[33m>^[[39m ^[[35m0^[[39m))^[[33m.^[[39mtoBe(^[[36mtrue^[[39m)^[[33m;^[[39m^[[0m
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0236763Z 
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0236966Z       at test (test/bload.integration.test.js:17:3)
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0237438Z       at Object.describe (test/bload.integration.test.js:5:1)
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0237990Z 
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.5323693Z A worker process has failed to exit gracefully and has been force exited. This is likely caused by tests leaking due to improper teardown. Try running with --detectOpenHandles to find leaks. Active timers can also cause this, ensure that .unref() was called on them.
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.5336614Z Test Suites: 2 failed, 1 passed, 3 total
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.5338018Z Tests:       2 failed, 10 passed, 12 total
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.5338663Z Snapshots:   0 total
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.5339112Z Time:        6.378 s
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.5339858Z Ran all test suites.
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.5465454Z ##[error]Process completed with exit code 1.

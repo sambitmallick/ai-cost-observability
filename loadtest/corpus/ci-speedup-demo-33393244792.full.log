@@ -1,0 +1,1269 @@
+lint	Set up job	﻿2026-08-31T12:44:16.9255338Z Current runner version: '2.337.0'
+lint	Set up job	2026-08-31T12:44:16.9294419Z ##[group]Runner Image Provisioner
+lint	Set up job	2026-08-31T12:44:16.9295888Z Hosted Compute Agent
+lint	Set up job	2026-08-31T12:44:16.9297293Z Version: 20260819.586
+lint	Set up job	2026-08-31T12:44:16.9298547Z Commit: 3cc4a88dfa507ef76119ad1bb3eccc6378bb2b76
+lint	Set up job	2026-08-31T12:44:16.9300093Z Build Date: 2026-08-18T23:20:18Z
+lint	Set up job	2026-08-31T12:44:16.9301361Z Worker ID: {66a279e0-e2e7-463e-adcc-49f73fdabc34}
+lint	Set up job	2026-08-31T12:44:16.9302789Z Azure Region: centralus
+lint	Set up job	2026-08-31T12:44:16.9303937Z ##[endgroup]
+lint	Set up job	2026-08-31T12:44:16.9306511Z ##[group]Operating System
+lint	Set up job	2026-08-31T12:44:16.9307832Z Ubuntu
+lint	Set up job	2026-08-31T12:44:16.9308747Z 24.04.4
+lint	Set up job	2026-08-31T12:44:16.9309790Z LTS
+lint	Set up job	2026-08-31T12:44:16.9310798Z ##[endgroup]
+lint	Set up job	2026-08-31T12:44:16.9311799Z ##[group]Runner Image
+lint	Set up job	2026-08-31T12:44:16.9313015Z Image: ubuntu-24.04
+lint	Set up job	2026-08-31T12:44:16.9314126Z Version: 20260823.283.1
+lint	Set up job	2026-08-31T12:44:16.9316571Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260823.283/images/ubuntu/Ubuntu2404-Readme.md
+lint	Set up job	2026-08-31T12:44:16.9319868Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260823.283
+lint	Set up job	2026-08-31T12:44:16.9322385Z ##[endgroup]
+lint	Set up job	2026-08-31T12:44:16.9324627Z ##[group]GITHUB_TOKEN Permissions
+lint	Set up job	2026-08-31T12:44:16.9327861Z Contents: read
+lint	Set up job	2026-08-31T12:44:16.9328806Z Metadata: read
+lint	Set up job	2026-08-31T12:44:16.9329636Z Packages: read
+lint	Set up job	2026-08-31T12:44:16.9330442Z ##[endgroup]
+lint	Set up job	2026-08-31T12:44:16.9332835Z Secret source: Actions
+lint	Set up job	2026-08-31T12:44:16.9334317Z Prepare workflow directory
+lint	Set up job	2026-08-31T12:44:16.9728869Z Prepare all required actions
+lint	Set up job	2026-08-31T12:44:16.9798915Z Getting action download info
+lint	Set up job	2026-08-31T12:44:17.2349153Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+lint	Set up job	2026-08-31T12:44:17.3674810Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+lint	Set up job	2026-08-31T12:44:17.4595797Z Download action repository 'actions/cache@v4' (SHA:0057852bfaa89a56745cba8c7296529d2fc39830)
+lint	Set up job	2026-08-31T12:44:17.6618754Z Complete job name: lint
+lint	Run actions/checkout@v4	﻿2026-08-31T12:44:17.7367674Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.7376544Z ##[group]Run actions/checkout@v4
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.7377337Z with:
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.7377835Z   repository: sambitmallick/ci-speedup-demo
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.7381703Z   token: ***
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.7382148Z   ssh-strict: true
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.7382598Z   ssh-user: git
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.7383045Z   persist-credentials: true
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.7383539Z   clean: true
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.7383991Z   sparse-checkout-cone-mode: true
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.7384518Z   fetch-depth: 1
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.7384961Z   fetch-tags: false
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.7385410Z   show-progress: true
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.7385905Z   lfs: false
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.7386788Z   submodules: false
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.7387295Z   set-safe-directory: true
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.7387824Z   allow-unsafe-pr-checkout: false
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.7388687Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8421127Z Syncing repository: sambitmallick/ci-speedup-demo
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8423902Z ##[group]Getting Git version info
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8424904Z Working directory is '/home/runner/work/ci-speedup-demo/ci-speedup-demo'
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8426638Z [command]/usr/bin/git version
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8500267Z git version 2.55.0
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8523806Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8539906Z Temporarily overriding HOME='/home/runner/work/_temp/c7624c26-bd71-4624-8de6-f6ec8292c24c' before making global git config changes
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8542065Z Adding repository directory to the temporary git global config as a safe directory
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8545215Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-speedup-demo/ci-speedup-demo
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8597708Z Deleting the contents of '/home/runner/work/ci-speedup-demo/ci-speedup-demo'
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8602209Z ##[group]Initializing the repository
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8607518Z [command]/usr/bin/git init /home/runner/work/ci-speedup-demo/ci-speedup-demo
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8709100Z hint: Using 'master' as the name for the initial branch. This default branch name
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8710951Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8712912Z hint: to use in all of your new repositories, which will suppress this warning,
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8714196Z hint: call:
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8714646Z hint:
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8715285Z hint: 	git config --global init.defaultBranch <name>
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8715930Z hint:
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8716955Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8718102Z hint: 'development'. The just-created branch can be renamed via this command:
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8718902Z hint:
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8719339Z hint: 	git branch -m <name>
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8719854Z hint:
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8720499Z hint: Disable this message with "git config set advice.defaultBranchName false"
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8721615Z Initialized empty Git repository in /home/runner/work/ci-speedup-demo/ci-speedup-demo/.git/
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8738804Z [command]/usr/bin/git remote add origin https://github.com/sambitmallick/ci-speedup-demo
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8779982Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8781326Z ##[group]Disabling automatic garbage collection
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8784580Z [command]/usr/bin/git config --local gc.auto 0
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8817481Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8819655Z ##[group]Setting up auth
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8827804Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.8862600Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.9252980Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.9298500Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.9547357Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.9587891Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.9847479Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.9879916Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.9881356Z ##[group]Fetching the repository
+lint	Run actions/checkout@v4	2026-08-31T12:44:17.9892382Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +d64aa3d544e45defd408a92fbbb6db084fb78434:refs/remotes/origin/main
+lint	Run actions/checkout@v4	2026-08-31T12:44:18.7655767Z From https://github.com/sambitmallick/ci-speedup-demo
+lint	Run actions/checkout@v4	2026-08-31T12:44:18.7667913Z  * [new ref]         d64aa3d544e45defd408a92fbbb6db084fb78434 -> origin/main
+lint	Run actions/checkout@v4	2026-08-31T12:44:18.7673366Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-08-31T12:44:18.7674804Z ##[group]Determining the checkout info
+lint	Run actions/checkout@v4	2026-08-31T12:44:18.7676748Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-08-31T12:44:18.7677777Z [command]/usr/bin/git sparse-checkout disable
+lint	Run actions/checkout@v4	2026-08-31T12:44:19.0191973Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+lint	Run actions/checkout@v4	2026-08-31T12:44:19.0622605Z ##[group]Checking out the ref
+lint	Run actions/checkout@v4	2026-08-31T12:44:19.0626279Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+lint	Run actions/checkout@v4	2026-08-31T12:44:19.1669980Z Switched to a new branch 'main'
+lint	Run actions/checkout@v4	2026-08-31T12:44:19.1676787Z branch 'main' set up to track 'origin/main'.
+lint	Run actions/checkout@v4	2026-08-31T12:44:19.1689920Z ##[endgroup]
+lint	Run actions/checkout@v4	2026-08-31T12:44:19.2064272Z [command]/usr/bin/git log -1 --format=%H
+lint	Run actions/checkout@v4	2026-08-31T12:44:19.2098186Z d64aa3d544e45defd408a92fbbb6db084fb78434
+lint	Run actions/setup-node@v4	﻿2026-08-31T12:44:19.2502051Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+lint	Run actions/setup-node@v4	2026-08-31T12:44:19.2507395Z ##[group]Run actions/setup-node@v4
+lint	Run actions/setup-node@v4	2026-08-31T12:44:19.2508501Z with:
+lint	Run actions/setup-node@v4	2026-08-31T12:44:19.2509341Z   node-version: 20
+lint	Run actions/setup-node@v4	2026-08-31T12:44:19.2510259Z   always-auth: false
+lint	Run actions/setup-node@v4	2026-08-31T12:44:19.2511199Z   check-latest: false
+lint	Run actions/setup-node@v4	2026-08-31T12:44:19.2520093Z   token: ***
+lint	Run actions/setup-node@v4	2026-08-31T12:44:19.2521010Z ##[endgroup]
+lint	Run actions/setup-node@v4	2026-08-31T12:44:19.6196651Z Attempting to download 20...
+lint	Run actions/setup-node@v4	2026-08-31T12:44:19.6328363Z (node:2217) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+lint	Run actions/setup-node@v4	2026-08-31T12:44:19.6329277Z (Use `node --trace-deprecation ...` to show where the warning was created)
+lint	Run actions/setup-node@v4	2026-08-31T12:44:20.3764838Z Acquiring 20.20.2 - x64 from https://github.com/actions/node-versions/releases/download/20.20.2-23521894959/node-20.20.2-linux-x64.tar.gz
+lint	Run actions/setup-node@v4	2026-08-31T12:44:21.1235309Z Extracting ...
+lint	Run actions/setup-node@v4	2026-08-31T12:44:21.1361885Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/d5b2dc29-03b8-4bce-b5b6-36f340007722 -f /home/runner/work/_temp/3cbd9686-3739-4ccf-a90d-a5f4b701dc46
+lint	Run actions/setup-node@v4	2026-08-31T12:44:22.1783642Z Adding to the cache ...
+lint	Run actions/setup-node@v4	2026-08-31T12:44:23.9759910Z ##[group]Environment details
+lint	Run actions/setup-node@v4	2026-08-31T12:44:24.2001270Z node: v20.20.2
+lint	Run actions/setup-node@v4	2026-08-31T12:44:24.2001889Z npm: 10.8.2
+lint	Run actions/setup-node@v4	2026-08-31T12:44:24.2002285Z yarn: 1.22.22
+lint	Run actions/setup-node@v4	2026-08-31T12:44:24.2003082Z ##[endgroup]
+lint	Cache dependencies	﻿2026-08-31T12:44:24.2230113Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+lint	Cache dependencies	2026-08-31T12:44:24.2231449Z ##[group]Run actions/cache@v4
+lint	Cache dependencies	2026-08-31T12:44:24.2231694Z with:
+lint	Cache dependencies	2026-08-31T12:44:24.2231891Z   path: node_modules
+lint	Cache dependencies	2026-08-31T12:44:24.2232127Z   key: node-modules-Linux
+lint	Cache dependencies	2026-08-31T12:44:24.2232376Z   enableCrossOsArchive: false
+lint	Cache dependencies	2026-08-31T12:44:24.2232657Z   fail-on-cache-miss: false
+lint	Cache dependencies	2026-08-31T12:44:24.2232904Z   lookup-only: false
+lint	Cache dependencies	2026-08-31T12:44:24.2233118Z   save-always: false
+lint	Cache dependencies	2026-08-31T12:44:24.2233327Z ##[endgroup]
+lint	Cache dependencies	2026-08-31T12:44:24.3303523Z (node:2252) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+lint	Cache dependencies	2026-08-31T12:44:24.3304999Z (Use `node --trace-deprecation ...` to show where the warning was created)
+lint	Cache dependencies	2026-08-31T12:44:24.4596846Z Cache hit for: node-modules-Linux
+lint	Cache dependencies	2026-08-31T12:44:24.4705226Z (node:2252) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+lint	Cache dependencies	2026-08-31T12:44:25.2334692Z Received 10861486 of 10861486 (100.0%), 16.5 MBs/sec
+lint	Cache dependencies	2026-08-31T12:44:25.2335890Z Cache Size: ~10 MB (10861486 B)
+lint	Cache dependencies	2026-08-31T12:44:25.2368222Z [command]/usr/bin/tar -xf /home/runner/work/_temp/b795ade2-292a-4cb3-bb36-6ab57a496b9d/cache.tzst -P -C /home/runner/work/ci-speedup-demo/ci-speedup-demo --use-compress-program unzstd
+lint	Cache dependencies	2026-08-31T12:44:25.5049938Z Cache restored successfully
+lint	Cache dependencies	2026-08-31T12:44:25.5134106Z Cache restored from key: node-modules-Linux
+lint	Run npm run lint	﻿2026-08-31T12:44:25.5270502Z ##[group]Run npm run lint
+lint	Run npm run lint	2026-08-31T12:44:25.5270858Z ^[[36;1mnpm run lint^[[0m
+lint	Run npm run lint	2026-08-31T12:44:25.5313251Z shell: /usr/bin/bash -e {0}
+lint	Run npm run lint	2026-08-31T12:44:25.5313594Z ##[endgroup]
+lint	Run npm run lint	2026-08-31T12:44:25.6365137Z 
+lint	Run npm run lint	2026-08-31T12:44:25.6365775Z > orderkit@1.0.0 lint
+lint	Run npm run lint	2026-08-31T12:44:25.6366736Z > eslint src test
+lint	Run npm run lint	2026-08-31T12:44:25.6367043Z 
+lint	Post Cache dependencies	﻿2026-08-31T12:44:26.0178365Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+lint	Post Cache dependencies	2026-08-31T12:44:26.0179891Z Post job cleanup.
+lint	Post Cache dependencies	2026-08-31T12:44:26.1311481Z Cache hit occurred on the primary key node-modules-Linux, not saving cache.
+lint	Post Cache dependencies	2026-08-31T12:44:26.1313702Z (node:2294) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+lint	Post Cache dependencies	2026-08-31T12:44:26.1315620Z (Use `node --trace-deprecation ...` to show where the warning was created)
+lint	Post Run actions/setup-node@v4	﻿2026-08-31T12:44:26.1425463Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+lint	Post Run actions/setup-node@v4	2026-08-31T12:44:26.1427083Z Post job cleanup.
+lint	Post Run actions/setup-node@v4	2026-08-31T12:44:26.2699881Z (node:2302) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+lint	Post Run actions/setup-node@v4	2026-08-31T12:44:26.2701637Z (Use `node --trace-deprecation ...` to show where the warning was created)
+lint	Post Run actions/checkout@v4	﻿2026-08-31T12:44:26.2937565Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+lint	Post Run actions/checkout@v4	2026-08-31T12:44:26.2939815Z Post job cleanup.
+lint	Post Run actions/checkout@v4	2026-08-31T12:44:26.3857689Z [command]/usr/bin/git version
+lint	Post Run actions/checkout@v4	2026-08-31T12:44:26.3911649Z git version 2.55.0
+lint	Post Run actions/checkout@v4	2026-08-31T12:44:26.3951058Z Temporarily overriding HOME='/home/runner/work/_temp/ddf2c24f-5ca9-4da5-8048-4f6a2b6bcf18' before making global git config changes
+lint	Post Run actions/checkout@v4	2026-08-31T12:44:26.3952666Z Adding repository directory to the temporary git global config as a safe directory
+lint	Post Run actions/checkout@v4	2026-08-31T12:44:26.3957602Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-speedup-demo/ci-speedup-demo
+lint	Post Run actions/checkout@v4	2026-08-31T12:44:26.3998091Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+lint	Post Run actions/checkout@v4	2026-08-31T12:44:26.4034168Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+lint	Post Run actions/checkout@v4	2026-08-31T12:44:26.4317619Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+lint	Post Run actions/checkout@v4	2026-08-31T12:44:26.4345852Z http.https://github.com/.extraheader
+lint	Post Run actions/checkout@v4	2026-08-31T12:44:26.4357609Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+lint	Post Run actions/checkout@v4	2026-08-31T12:44:26.4393136Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+lint	Post Run actions/checkout@v4	2026-08-31T12:44:26.4639683Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+lint	Post Run actions/checkout@v4	2026-08-31T12:44:26.4681612Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+lint	Complete job	﻿2026-08-31T12:44:26.5058868Z Cleaning up orphan processes
+lint	Complete job	2026-08-31T12:44:26.5336998Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/cache@v4, actions/checkout@v4, actions/setup-node@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+test (1)	Set up job	﻿2026-08-31T12:44:16.7432235Z Current runner version: '2.336.0'
+test (1)	Set up job	2026-08-31T12:44:16.7469076Z ##[group]Runner Image Provisioner
+test (1)	Set up job	2026-08-31T12:44:16.7470497Z Hosted Compute Agent
+test (1)	Set up job	2026-08-31T12:44:16.7471441Z Version: 20260819.586
+test (1)	Set up job	2026-08-31T12:44:16.7472433Z Commit: 3cc4a88dfa507ef76119ad1bb3eccc6378bb2b76
+test (1)	Set up job	2026-08-31T12:44:16.7473774Z Build Date: 2026-08-18T23:20:18Z
+test (1)	Set up job	2026-08-31T12:44:16.7474841Z Worker ID: {88931524-03e6-4579-b50f-ac2483c217d2}
+test (1)	Set up job	2026-08-31T12:44:16.7476010Z Azure Region: northcentralus
+test (1)	Set up job	2026-08-31T12:44:16.7477064Z ##[endgroup]
+test (1)	Set up job	2026-08-31T12:44:16.7479376Z ##[group]Operating System
+test (1)	Set up job	2026-08-31T12:44:16.7480526Z Ubuntu
+test (1)	Set up job	2026-08-31T12:44:16.7481304Z 24.04.4
+test (1)	Set up job	2026-08-31T12:44:16.7481960Z LTS
+test (1)	Set up job	2026-08-31T12:44:16.7482524Z ##[endgroup]
+test (1)	Set up job	2026-08-31T12:44:16.7483172Z ##[group]Runner Image
+test (1)	Set up job	2026-08-31T12:44:16.7483865Z Image: ubuntu-24.04
+test (1)	Set up job	2026-08-31T12:44:16.7484477Z Version: 20260823.283.1
+test (1)	Set up job	2026-08-31T12:44:16.7485553Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260823.283/images/ubuntu/Ubuntu2404-Readme.md
+test (1)	Set up job	2026-08-31T12:44:16.7487458Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260823.283
+test (1)	Set up job	2026-08-31T12:44:16.7488520Z ##[endgroup]
+test (1)	Set up job	2026-08-31T12:44:16.7490036Z ##[group]GITHUB_TOKEN Permissions
+test (1)	Set up job	2026-08-31T12:44:16.7492664Z Contents: read
+test (1)	Set up job	2026-08-31T12:44:16.7493316Z Metadata: read
+test (1)	Set up job	2026-08-31T12:44:16.7494043Z Packages: read
+test (1)	Set up job	2026-08-31T12:44:16.7494629Z ##[endgroup]
+test (1)	Set up job	2026-08-31T12:44:16.7496720Z Secret source: Actions
+test (1)	Set up job	2026-08-31T12:44:16.7498147Z Prepare workflow directory
+test (1)	Set up job	2026-08-31T12:44:16.7879384Z Prepare all required actions
+test (1)	Set up job	2026-08-31T12:44:16.7926705Z Getting action download info
+test (1)	Set up job	2026-08-31T12:44:17.0689633Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+test (1)	Set up job	2026-08-31T12:44:17.5679676Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+test (1)	Set up job	2026-08-31T12:44:17.9123878Z Download action repository 'actions/cache@v4' (SHA:0057852bfaa89a56745cba8c7296529d2fc39830)
+test (1)	Set up job	2026-08-31T12:44:18.3518267Z Complete job name: test (1)
+test (1)	Run actions/checkout@v4	﻿2026-08-31T12:44:18.4367739Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.4379243Z ##[group]Run actions/checkout@v4
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.4380718Z with:
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.4381832Z   repository: sambitmallick/ci-speedup-demo
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.4390653Z   token: ***
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.4391674Z   ssh-strict: true
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.4392732Z   ssh-user: git
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.4393790Z   persist-credentials: true
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.4394927Z   clean: true
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.4395966Z   sparse-checkout-cone-mode: true
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.4397168Z   fetch-depth: 1
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.4398187Z   fetch-tags: false
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.4399383Z   show-progress: true
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.4400435Z   lfs: false
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.4401429Z   submodules: false
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.4402537Z   set-safe-directory: true
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.4403719Z   allow-unsafe-pr-checkout: false
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.4405277Z ##[endgroup]
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5500106Z Syncing repository: sambitmallick/ci-speedup-demo
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5504203Z ##[group]Getting Git version info
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5506542Z Working directory is '/home/runner/work/ci-speedup-demo/ci-speedup-demo'
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5510820Z [command]/usr/bin/git version
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5565056Z git version 2.55.0
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5597699Z ##[endgroup]
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5607981Z Temporarily overriding HOME='/home/runner/work/_temp/5e3d0cd7-4a80-44e9-87b4-76808115996e' before making global git config changes
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5612850Z Adding repository directory to the temporary git global config as a safe directory
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5617322Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-speedup-demo/ci-speedup-demo
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5664345Z Deleting the contents of '/home/runner/work/ci-speedup-demo/ci-speedup-demo'
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5668038Z ##[group]Initializing the repository
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5672785Z [command]/usr/bin/git init /home/runner/work/ci-speedup-demo/ci-speedup-demo
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5783980Z hint: Using 'master' as the name for the initial branch. This default branch name
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5787188Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5790422Z hint: to use in all of your new repositories, which will suppress this warning,
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5792972Z hint: call:
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5794307Z hint:
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5795840Z hint: 	git config --global init.defaultBranch <name>
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5797765Z hint:
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5799734Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5802708Z hint: 'development'. The just-created branch can be renamed via this command:
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5805147Z hint:
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5806439Z hint: 	git branch -m <name>
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5807960Z hint:
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5815037Z hint: Disable this message with "git config set advice.defaultBranchName false"
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5818817Z Initialized empty Git repository in /home/runner/work/ci-speedup-demo/ci-speedup-demo/.git/
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5826436Z [command]/usr/bin/git remote add origin https://github.com/sambitmallick/ci-speedup-demo
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5878787Z ##[endgroup]
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5881189Z ##[group]Disabling automatic garbage collection
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5883415Z [command]/usr/bin/git config --local gc.auto 0
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5925329Z ##[endgroup]
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5927451Z ##[group]Setting up auth
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5930013Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.5961576Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.6370065Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.6413349Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.6668514Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.6707281Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.6948920Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.6989224Z ##[endgroup]
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.6991311Z ##[group]Fetching the repository
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:18.6999863Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +d64aa3d544e45defd408a92fbbb6db084fb78434:refs/remotes/origin/main
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:19.0584199Z From https://github.com/sambitmallick/ci-speedup-demo
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:19.0586979Z  * [new ref]         d64aa3d544e45defd408a92fbbb6db084fb78434 -> origin/main
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:19.0593099Z ##[endgroup]
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:19.0595689Z ##[group]Determining the checkout info
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:19.0598347Z ##[endgroup]
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:19.0600497Z [command]/usr/bin/git sparse-checkout disable
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:19.0653274Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:19.0692065Z ##[group]Checking out the ref
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:19.0693775Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:19.0779064Z Switched to a new branch 'main'
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:19.0784164Z branch 'main' set up to track 'origin/main'.
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:19.0791468Z ##[endgroup]
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:19.0837465Z [command]/usr/bin/git log -1 --format=%H
+test (1)	Run actions/checkout@v4	2026-08-31T12:44:19.0868557Z d64aa3d544e45defd408a92fbbb6db084fb78434
+test (1)	Run actions/setup-node@v4	﻿2026-08-31T12:44:19.1216276Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+test (1)	Run actions/setup-node@v4	2026-08-31T12:44:19.1221461Z ##[group]Run actions/setup-node@v4
+test (1)	Run actions/setup-node@v4	2026-08-31T12:44:19.1222493Z with:
+test (1)	Run actions/setup-node@v4	2026-08-31T12:44:19.1223300Z   node-version: 20
+test (1)	Run actions/setup-node@v4	2026-08-31T12:44:19.1224168Z   always-auth: false
+test (1)	Run actions/setup-node@v4	2026-08-31T12:44:19.1225057Z   check-latest: false
+test (1)	Run actions/setup-node@v4	2026-08-31T12:44:19.1232948Z   token: ***
+test (1)	Run actions/setup-node@v4	2026-08-31T12:44:19.1233785Z ##[endgroup]
+test (1)	Run actions/setup-node@v4	2026-08-31T12:44:19.2690678Z Attempting to download 20...
+test (1)	Run actions/setup-node@v4	2026-08-31T12:44:19.2768024Z (node:2226) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+test (1)	Run actions/setup-node@v4	2026-08-31T12:44:19.2772086Z (Use `node --trace-deprecation ...` to show where the warning was created)
+test (1)	Run actions/setup-node@v4	2026-08-31T12:44:19.9211452Z Acquiring 20.20.2 - x64 from https://github.com/actions/node-versions/releases/download/20.20.2-23521894959/node-20.20.2-linux-x64.tar.gz
+test (1)	Run actions/setup-node@v4	2026-08-31T12:44:20.2999508Z Extracting ...
+test (1)	Run actions/setup-node@v4	2026-08-31T12:44:20.3119482Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/bd1c7722-2a62-4d27-b033-7f27bf4e4ff6 -f /home/runner/work/_temp/394943d6-aee1-465c-b613-4ba60cc05868
+test (1)	Run actions/setup-node@v4	2026-08-31T12:44:21.4314795Z Adding to the cache ...
+test (1)	Run actions/setup-node@v4	2026-08-31T12:44:23.0043104Z ##[group]Environment details
+test (1)	Run actions/setup-node@v4	2026-08-31T12:44:23.2266167Z node: v20.20.2
+test (1)	Run actions/setup-node@v4	2026-08-31T12:44:23.2266750Z npm: 10.8.2
+test (1)	Run actions/setup-node@v4	2026-08-31T12:44:23.2267040Z yarn: 1.22.22
+test (1)	Run actions/setup-node@v4	2026-08-31T12:44:23.2267906Z ##[endgroup]
+test (1)	Cache dependencies	﻿2026-08-31T12:44:23.2491295Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+test (1)	Cache dependencies	2026-08-31T12:44:23.2492556Z ##[group]Run actions/cache@v4
+test (1)	Cache dependencies	2026-08-31T12:44:23.2492814Z with:
+test (1)	Cache dependencies	2026-08-31T12:44:23.2493019Z   path: node_modules
+test (1)	Cache dependencies	2026-08-31T12:44:23.2493254Z   key: node-modules-Linux
+test (1)	Cache dependencies	2026-08-31T12:44:23.2493511Z   enableCrossOsArchive: false
+test (1)	Cache dependencies	2026-08-31T12:44:23.2493771Z   fail-on-cache-miss: false
+test (1)	Cache dependencies	2026-08-31T12:44:23.2494028Z   lookup-only: false
+test (1)	Cache dependencies	2026-08-31T12:44:23.2494245Z   save-always: false
+test (1)	Cache dependencies	2026-08-31T12:44:23.2494489Z ##[endgroup]
+test (1)	Cache dependencies	2026-08-31T12:44:23.3602363Z (node:2262) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+test (1)	Cache dependencies	2026-08-31T12:44:23.3603816Z (Use `node --trace-deprecation ...` to show where the warning was created)
+test (1)	Cache dependencies	2026-08-31T12:44:23.4643315Z Cache hit for: node-modules-Linux
+test (1)	Cache dependencies	2026-08-31T12:44:23.4740053Z (node:2262) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+test (1)	Cache dependencies	2026-08-31T12:44:23.9773852Z Received 10861486 of 10861486 (100.0%), 25.8 MBs/sec
+test (1)	Cache dependencies	2026-08-31T12:44:23.9774852Z Cache Size: ~10 MB (10861486 B)
+test (1)	Cache dependencies	2026-08-31T12:44:23.9801634Z [command]/usr/bin/tar -xf /home/runner/work/_temp/7bc1b385-6e24-4f1f-874a-3fc25f86fe2b/cache.tzst -P -C /home/runner/work/ci-speedup-demo/ci-speedup-demo --use-compress-program unzstd
+test (1)	Cache dependencies	2026-08-31T12:44:24.2446721Z Cache restored successfully
+test (1)	Cache dependencies	2026-08-31T12:44:24.2533461Z Cache restored from key: node-modules-Linux
+test (1)	Dependency receipt	﻿2026-08-31T12:44:24.2687775Z ##[group]Run npm run dep-receipt
+test (1)	Dependency receipt	2026-08-31T12:44:24.2688200Z ^[[36;1mnpm run dep-receipt^[[0m
+test (1)	Dependency receipt	2026-08-31T12:44:24.2732545Z shell: /usr/bin/bash -e {0}
+test (1)	Dependency receipt	2026-08-31T12:44:24.2732844Z ##[endgroup]
+test (1)	Dependency receipt	2026-08-31T12:44:24.3834129Z 
+test (1)	Dependency receipt	2026-08-31T12:44:24.3834960Z > orderkit@1.0.0 dep-receipt
+test (1)	Dependency receipt	2026-08-31T12:44:24.3835601Z > node scripts/dep-receipt.js
+test (1)	Dependency receipt	2026-08-31T12:44:24.3835912Z 
+test (1)	Dependency receipt	2026-08-31T12:44:24.4130233Z ── dependency receipt ─────────────────────────
+test (1)	Dependency receipt	2026-08-31T12:44:24.4133075Z   slugify declared in package.json : 1.6.5
+test (1)	Dependency receipt	2026-08-31T12:44:24.4133680Z   slugify actually installed       : 1.6.5
+test (1)	Dependency receipt	2026-08-31T12:44:24.4134180Z   match                            : yes
+test (1)	Dependency receipt	2026-08-31T12:44:24.4134852Z ───────────────────────────────────────────────
+test (1)	Test (shard 1 of 4)	﻿2026-08-31T12:44:24.4242088Z ##[group]Run npm test -- --shard=1/4
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:24.4242454Z ^[[36;1mnpm test -- --shard=1/4^[[0m
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:24.4284458Z shell: /usr/bin/bash -e {0}
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:24.4284753Z ##[endgroup]
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:24.5475832Z 
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:24.5476291Z > orderkit@1.0.0 test
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:24.5476633Z > jest --shard=1/4
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:24.5476793Z 
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:25.6337609Z PASS test/cart.test.js
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:25.6768790Z PASS test/validate.test.js
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:30.6651694Z FAIL test/eload.integration.test.js (5.617 s)
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:30.6652767Z   ● load eload (integration) › processes a batch of 220 orders
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:30.6653244Z 
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:30.6653494Z     thrown: "Exceeded timeout of 5000 ms for a test.
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:30.6654598Z     Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:30.6655389Z 
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:30.6655720Z     ^[[0m ^[[90m 15 |^[[39m   })^[[33m;^[[39m
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:30.6656268Z      ^[[90m 16 |^[[39m
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:30.6657332Z     ^[[31m^[[1m>^[[22m^[[39m^[[90m 17 |^[[39m   test(^[[32m"processes a batch of 220 orders"^[[39m^[[33m,^[[39m ^[[36masync^[[39m () ^[[33m=>^[[39m {
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:30.6658379Z      ^[[90m    |^[[39m   ^[[31m^[[1m^^[[22m^[[39m
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:30.6660395Z      ^[[90m 18 |^[[39m     ^[[36mconst^[[39m res ^[[33m=^[[39m ^[[36mawait^[[39m processBatch(^[[33mArray^[[39m^[[33m.^[[39m^[[36mfrom^[[39m({ length^[[33m:^[[39m ^[[35m220^[[39m }^[[33m,^[[39m (_^[[33m,^[[39m i) ^[[33m=>^[[39m mk(i ^[[33m+^[[39m ^[[35m1^[[39m)))^[[33m;^[[39m
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:30.6662225Z      ^[[90m 19 |^[[39m     expect(res)^[[33m.^[[39mtoHaveLength(^[[35m220^[[39m)^[[33m;^[[39m
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:30.6663739Z      ^[[90m 20 |^[[39m     expect(res^[[33m.^[[39mevery((r) ^[[33m=>^[[39m r^[[33m.^[[39mtotalCents ^[[33m>^[[39m ^[[35m0^[[39m))^[[33m.^[[39mtoBe(^[[36mtrue^[[39m)^[[33m;^[[39m^[[0m
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:30.6664612Z 
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:30.6664909Z       at test (test/eload.integration.test.js:17:3)
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:30.6665713Z       at Object.describe (test/eload.integration.test.js:5:1)
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:30.6666214Z 
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:31.1739139Z A worker process has failed to exit gracefully and has been force exited. This is likely caused by tests leaking due to improper teardown. Try running with --detectOpenHandles to find leaks. Active timers can also cause this, ensure that .unref() was called on them.
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:31.1751782Z Test Suites: 1 failed, 2 passed, 3 total
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:31.1752260Z Tests:       1 failed, 21 passed, 22 total
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:31.1752590Z Snapshots:   0 total
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:31.1752832Z Time:        6.246 s
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:31.1753067Z Ran all test suites.
+test (1)	Test (shard 1 of 4)	2026-08-31T12:44:31.1890145Z ##[error]Process completed with exit code 1.
+test (1)	Post Run actions/checkout@v4	﻿2026-08-31T12:44:31.2009378Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+test (1)	Post Run actions/checkout@v4	2026-08-31T12:44:31.2010624Z Post job cleanup.
+test (1)	Post Run actions/checkout@v4	2026-08-31T12:44:31.2889783Z [command]/usr/bin/git version
+test (1)	Post Run actions/checkout@v4	2026-08-31T12:44:31.2935735Z git version 2.55.0
+test (1)	Post Run actions/checkout@v4	2026-08-31T12:44:31.2979056Z Temporarily overriding HOME='/home/runner/work/_temp/fd3287fa-abff-4372-a143-069cadbad4d0' before making global git config changes
+test (1)	Post Run actions/checkout@v4	2026-08-31T12:44:31.2980370Z Adding repository directory to the temporary git global config as a safe directory
+test (1)	Post Run actions/checkout@v4	2026-08-31T12:44:31.2986213Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-speedup-demo/ci-speedup-demo
+test (1)	Post Run actions/checkout@v4	2026-08-31T12:44:31.3031501Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test (1)	Post Run actions/checkout@v4	2026-08-31T12:44:31.3069215Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test (1)	Post Run actions/checkout@v4	2026-08-31T12:44:31.3340066Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test (1)	Post Run actions/checkout@v4	2026-08-31T12:44:31.3370529Z http.https://github.com/.extraheader
+test (1)	Post Run actions/checkout@v4	2026-08-31T12:44:31.3383152Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+test (1)	Post Run actions/checkout@v4	2026-08-31T12:44:31.3421525Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test (1)	Post Run actions/checkout@v4	2026-08-31T12:44:31.3697150Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test (1)	Post Run actions/checkout@v4	2026-08-31T12:44:31.3741525Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test (1)	Complete job	﻿2026-08-31T12:44:31.4200570Z Cleaning up orphan processes
+test (1)	Complete job	2026-08-31T12:44:31.4491903Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/cache@v4, actions/checkout@v4, actions/setup-node@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build	Set up job	﻿2026-08-31T12:44:18.5939693Z Current runner version: '2.337.0'
+build	Set up job	2026-08-31T12:44:18.5964776Z ##[group]Runner Image Provisioner
+build	Set up job	2026-08-31T12:44:18.5965951Z Hosted Compute Agent
+build	Set up job	2026-08-31T12:44:18.5966763Z Version: 20260819.586
+build	Set up job	2026-08-31T12:44:18.5967478Z Commit: 3cc4a88dfa507ef76119ad1bb3eccc6378bb2b76
+build	Set up job	2026-08-31T12:44:18.5968264Z Build Date: 2026-08-18T23:20:18Z
+build	Set up job	2026-08-31T12:44:18.5969095Z Worker ID: {a219f280-e1a4-4cb0-9a30-ea617d5eb214}
+build	Set up job	2026-08-31T12:44:18.5969879Z Azure Region: westus2
+build	Set up job	2026-08-31T12:44:18.5970555Z ##[endgroup]
+build	Set up job	2026-08-31T12:44:18.5972273Z ##[group]Operating System
+build	Set up job	2026-08-31T12:44:18.5973021Z Ubuntu
+build	Set up job	2026-08-31T12:44:18.5973701Z 24.04.4
+build	Set up job	2026-08-31T12:44:18.5974233Z LTS
+build	Set up job	2026-08-31T12:44:18.5974859Z ##[endgroup]
+build	Set up job	2026-08-31T12:44:18.5975747Z ##[group]Runner Image
+build	Set up job	2026-08-31T12:44:18.5976370Z Image: ubuntu-24.04
+build	Set up job	2026-08-31T12:44:18.5977073Z Version: 20260823.283.1
+build	Set up job	2026-08-31T12:44:18.5978162Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260823.283/images/ubuntu/Ubuntu2404-Readme.md
+build	Set up job	2026-08-31T12:44:18.5980003Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260823.283
+build	Set up job	2026-08-31T12:44:18.5980960Z ##[endgroup]
+build	Set up job	2026-08-31T12:44:18.5982599Z ##[group]GITHUB_TOKEN Permissions
+build	Set up job	2026-08-31T12:44:18.5984726Z Contents: read
+build	Set up job	2026-08-31T12:44:18.5985797Z Metadata: read
+build	Set up job	2026-08-31T12:44:18.5986406Z Packages: read
+build	Set up job	2026-08-31T12:44:18.5987010Z ##[endgroup]
+build	Set up job	2026-08-31T12:44:18.5989066Z Secret source: Actions
+build	Set up job	2026-08-31T12:44:18.5990167Z Prepare workflow directory
+build	Set up job	2026-08-31T12:44:18.6605657Z Prepare all required actions
+build	Set up job	2026-08-31T12:44:18.6652860Z Getting action download info
+build	Set up job	2026-08-31T12:44:19.0043551Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+build	Set up job	2026-08-31T12:44:19.8807975Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+build	Set up job	2026-08-31T12:44:19.9727609Z Download action repository 'actions/cache@v4' (SHA:0057852bfaa89a56745cba8c7296529d2fc39830)
+build	Set up job	2026-08-31T12:44:20.1765678Z Complete job name: build
+build	Run actions/checkout@v4	﻿2026-08-31T12:44:20.2551586Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build	Run actions/checkout@v4	2026-08-31T12:44:20.2561842Z ##[group]Run actions/checkout@v4
+build	Run actions/checkout@v4	2026-08-31T12:44:20.2562689Z with:
+build	Run actions/checkout@v4	2026-08-31T12:44:20.2563241Z   repository: sambitmallick/ci-speedup-demo
+build	Run actions/checkout@v4	2026-08-31T12:44:20.2567936Z   token: ***
+build	Run actions/checkout@v4	2026-08-31T12:44:20.2568442Z   ssh-strict: true
+build	Run actions/checkout@v4	2026-08-31T12:44:20.2568940Z   ssh-user: git
+build	Run actions/checkout@v4	2026-08-31T12:44:20.2569433Z   persist-credentials: true
+build	Run actions/checkout@v4	2026-08-31T12:44:20.2569969Z   clean: true
+build	Run actions/checkout@v4	2026-08-31T12:44:20.2570464Z   sparse-checkout-cone-mode: true
+build	Run actions/checkout@v4	2026-08-31T12:44:20.2571031Z   fetch-depth: 1
+build	Run actions/checkout@v4	2026-08-31T12:44:20.2571516Z   fetch-tags: false
+build	Run actions/checkout@v4	2026-08-31T12:44:20.2572026Z   show-progress: true
+build	Run actions/checkout@v4	2026-08-31T12:44:20.2572516Z   lfs: false
+build	Run actions/checkout@v4	2026-08-31T12:44:20.2573002Z   submodules: false
+build	Run actions/checkout@v4	2026-08-31T12:44:20.2573599Z   set-safe-directory: true
+build	Run actions/checkout@v4	2026-08-31T12:44:20.2574179Z   allow-unsafe-pr-checkout: false
+build	Run actions/checkout@v4	2026-08-31T12:44:20.2575223Z ##[endgroup]
+build	Run actions/checkout@v4	2026-08-31T12:44:20.3618653Z Syncing repository: sambitmallick/ci-speedup-demo
+build	Run actions/checkout@v4	2026-08-31T12:44:20.3621594Z ##[group]Getting Git version info
+build	Run actions/checkout@v4	2026-08-31T12:44:20.3623270Z Working directory is '/home/runner/work/ci-speedup-demo/ci-speedup-demo'
+build	Run actions/checkout@v4	2026-08-31T12:44:20.3624536Z [command]/usr/bin/git version
+build	Run actions/checkout@v4	2026-08-31T12:44:20.3764457Z git version 2.55.0
+build	Run actions/checkout@v4	2026-08-31T12:44:20.3789133Z ##[endgroup]
+build	Run actions/checkout@v4	2026-08-31T12:44:20.3810514Z Temporarily overriding HOME='/home/runner/work/_temp/894cfac2-ad4e-4110-bf57-debd9280ec1e' before making global git config changes
+build	Run actions/checkout@v4	2026-08-31T12:44:20.3812129Z Adding repository directory to the temporary git global config as a safe directory
+build	Run actions/checkout@v4	2026-08-31T12:44:20.3818318Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-speedup-demo/ci-speedup-demo
+build	Run actions/checkout@v4	2026-08-31T12:44:20.3874493Z Deleting the contents of '/home/runner/work/ci-speedup-demo/ci-speedup-demo'
+build	Run actions/checkout@v4	2026-08-31T12:44:20.3880425Z ##[group]Initializing the repository
+build	Run actions/checkout@v4	2026-08-31T12:44:20.3887080Z [command]/usr/bin/git init /home/runner/work/ci-speedup-demo/ci-speedup-demo
+build	Run actions/checkout@v4	2026-08-31T12:44:20.3988445Z hint: Using 'master' as the name for the initial branch. This default branch name
+build	Run actions/checkout@v4	2026-08-31T12:44:20.3990536Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+build	Run actions/checkout@v4	2026-08-31T12:44:20.3992461Z hint: to use in all of your new repositories, which will suppress this warning,
+build	Run actions/checkout@v4	2026-08-31T12:44:20.3994310Z hint: call:
+build	Run actions/checkout@v4	2026-08-31T12:44:20.3995443Z hint:
+build	Run actions/checkout@v4	2026-08-31T12:44:20.3996138Z hint: 	git config --global init.defaultBranch <name>
+build	Run actions/checkout@v4	2026-08-31T12:44:20.3997476Z hint:
+build	Run actions/checkout@v4	2026-08-31T12:44:20.3998480Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build	Run actions/checkout@v4	2026-08-31T12:44:20.3999538Z hint: 'development'. The just-created branch can be renamed via this command:
+build	Run actions/checkout@v4	2026-08-31T12:44:20.4000361Z hint:
+build	Run actions/checkout@v4	2026-08-31T12:44:20.4000833Z hint: 	git branch -m <name>
+build	Run actions/checkout@v4	2026-08-31T12:44:20.4001368Z hint:
+build	Run actions/checkout@v4	2026-08-31T12:44:20.4002054Z hint: Disable this message with "git config set advice.defaultBranchName false"
+build	Run actions/checkout@v4	2026-08-31T12:44:20.4003779Z Initialized empty Git repository in /home/runner/work/ci-speedup-demo/ci-speedup-demo/.git/
+build	Run actions/checkout@v4	2026-08-31T12:44:20.4007332Z [command]/usr/bin/git remote add origin https://github.com/sambitmallick/ci-speedup-demo
+build	Run actions/checkout@v4	2026-08-31T12:44:20.4055756Z ##[endgroup]
+build	Run actions/checkout@v4	2026-08-31T12:44:20.4056715Z ##[group]Disabling automatic garbage collection
+build	Run actions/checkout@v4	2026-08-31T12:44:20.4059859Z [command]/usr/bin/git config --local gc.auto 0
+build	Run actions/checkout@v4	2026-08-31T12:44:20.4096541Z ##[endgroup]
+build	Run actions/checkout@v4	2026-08-31T12:44:20.4097454Z ##[group]Setting up auth
+build	Run actions/checkout@v4	2026-08-31T12:44:20.4104450Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	Run actions/checkout@v4	2026-08-31T12:44:20.4140001Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	Run actions/checkout@v4	2026-08-31T12:44:20.4524565Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	Run actions/checkout@v4	2026-08-31T12:44:20.4566567Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	Run actions/checkout@v4	2026-08-31T12:44:20.4794414Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build	Run actions/checkout@v4	2026-08-31T12:44:20.4832870Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build	Run actions/checkout@v4	2026-08-31T12:44:20.5060237Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build	Run actions/checkout@v4	2026-08-31T12:44:20.5101104Z ##[endgroup]
+build	Run actions/checkout@v4	2026-08-31T12:44:20.5102815Z ##[group]Fetching the repository
+build	Run actions/checkout@v4	2026-08-31T12:44:20.5113172Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +d64aa3d544e45defd408a92fbbb6db084fb78434:refs/remotes/origin/main
+build	Run actions/checkout@v4	2026-08-31T12:44:20.9043978Z From https://github.com/sambitmallick/ci-speedup-demo
+build	Run actions/checkout@v4	2026-08-31T12:44:20.9046350Z  * [new ref]         d64aa3d544e45defd408a92fbbb6db084fb78434 -> origin/main
+build	Run actions/checkout@v4	2026-08-31T12:44:20.9051118Z ##[endgroup]
+build	Run actions/checkout@v4	2026-08-31T12:44:20.9052727Z ##[group]Determining the checkout info
+build	Run actions/checkout@v4	2026-08-31T12:44:20.9054484Z ##[endgroup]
+build	Run actions/checkout@v4	2026-08-31T12:44:20.9061224Z [command]/usr/bin/git sparse-checkout disable
+build	Run actions/checkout@v4	2026-08-31T12:44:20.9117670Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+build	Run actions/checkout@v4	2026-08-31T12:44:20.9157859Z ##[group]Checking out the ref
+build	Run actions/checkout@v4	2026-08-31T12:44:20.9164664Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+build	Run actions/checkout@v4	2026-08-31T12:44:20.9262242Z Switched to a new branch 'main'
+build	Run actions/checkout@v4	2026-08-31T12:44:20.9268259Z branch 'main' set up to track 'origin/main'.
+build	Run actions/checkout@v4	2026-08-31T12:44:20.9274086Z ##[endgroup]
+build	Run actions/checkout@v4	2026-08-31T12:44:20.9317999Z [command]/usr/bin/git log -1 --format=%H
+build	Run actions/checkout@v4	2026-08-31T12:44:20.9344002Z d64aa3d544e45defd408a92fbbb6db084fb78434
+build	Run actions/setup-node@v4	﻿2026-08-31T12:44:20.9667351Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build	Run actions/setup-node@v4	2026-08-31T12:44:20.9670795Z ##[group]Run actions/setup-node@v4
+build	Run actions/setup-node@v4	2026-08-31T12:44:20.9671668Z with:
+build	Run actions/setup-node@v4	2026-08-31T12:44:20.9672390Z   node-version: 20
+build	Run actions/setup-node@v4	2026-08-31T12:44:20.9673151Z   always-auth: false
+build	Run actions/setup-node@v4	2026-08-31T12:44:20.9673920Z   check-latest: false
+build	Run actions/setup-node@v4	2026-08-31T12:44:20.9678938Z   token: ***
+build	Run actions/setup-node@v4	2026-08-31T12:44:20.9679671Z ##[endgroup]
+build	Run actions/setup-node@v4	2026-08-31T12:44:21.1132438Z Attempting to download 20...
+build	Run actions/setup-node@v4	2026-08-31T12:44:21.1241023Z (node:2110) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build	Run actions/setup-node@v4	2026-08-31T12:44:21.1243278Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build	Run actions/setup-node@v4	2026-08-31T12:44:22.0968787Z Acquiring 20.20.2 - x64 from https://github.com/actions/node-versions/releases/download/20.20.2-23521894959/node-20.20.2-linux-x64.tar.gz
+build	Run actions/setup-node@v4	2026-08-31T12:44:22.5525977Z Extracting ...
+build	Run actions/setup-node@v4	2026-08-31T12:44:22.5643701Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/c0a2227e-3b7e-435f-9d03-eeae5fd7eda8 -f /home/runner/work/_temp/45974da9-df31-4a88-bc4f-5f9a3502df4b
+build	Run actions/setup-node@v4	2026-08-31T12:44:23.5854323Z Adding to the cache ...
+build	Run actions/setup-node@v4	2026-08-31T12:44:25.4290257Z ##[group]Environment details
+build	Run actions/setup-node@v4	2026-08-31T12:44:25.6617109Z node: v20.20.2
+build	Run actions/setup-node@v4	2026-08-31T12:44:25.6617706Z npm: 10.8.2
+build	Run actions/setup-node@v4	2026-08-31T12:44:25.6618184Z yarn: 1.22.22
+build	Run actions/setup-node@v4	2026-08-31T12:44:25.6618944Z ##[endgroup]
+build	Cache dependencies	﻿2026-08-31T12:44:25.6857612Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build	Cache dependencies	2026-08-31T12:44:25.6858958Z ##[group]Run actions/cache@v4
+build	Cache dependencies	2026-08-31T12:44:25.6859206Z with:
+build	Cache dependencies	2026-08-31T12:44:25.6859405Z   path: node_modules
+build	Cache dependencies	2026-08-31T12:44:25.6859640Z   key: node-modules-Linux
+build	Cache dependencies	2026-08-31T12:44:25.6859891Z   enableCrossOsArchive: false
+build	Cache dependencies	2026-08-31T12:44:25.6860177Z   fail-on-cache-miss: false
+build	Cache dependencies	2026-08-31T12:44:25.6860410Z   lookup-only: false
+build	Cache dependencies	2026-08-31T12:44:25.6860624Z   save-always: false
+build	Cache dependencies	2026-08-31T12:44:25.6860838Z ##[endgroup]
+build	Cache dependencies	2026-08-31T12:44:25.7971112Z (node:2146) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build	Cache dependencies	2026-08-31T12:44:25.7973077Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build	Cache dependencies	2026-08-31T12:44:26.0462585Z Cache hit for: node-modules-Linux
+build	Cache dependencies	2026-08-31T12:44:26.0570173Z (node:2146) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+build	Cache dependencies	2026-08-31T12:44:27.3496597Z Received 0 of 10861486 (0.0%), 0.0 MBs/sec
+build	Cache dependencies	2026-08-31T12:44:27.4981096Z Received 10861486 of 10861486 (100.0%), 9.0 MBs/sec
+build	Cache dependencies	2026-08-31T12:44:27.4982014Z Cache Size: ~10 MB (10861486 B)
+build	Cache dependencies	2026-08-31T12:44:27.5009699Z [command]/usr/bin/tar -xf /home/runner/work/_temp/a3933749-fcde-46ae-ba69-f6341725de7a/cache.tzst -P -C /home/runner/work/ci-speedup-demo/ci-speedup-demo --use-compress-program unzstd
+build	Cache dependencies	2026-08-31T12:44:27.7700204Z Cache restored successfully
+build	Cache dependencies	2026-08-31T12:44:27.7784738Z Cache restored from key: node-modules-Linux
+build	Run npm run build	﻿2026-08-31T12:44:27.7930426Z ##[group]Run npm run build
+build	Run npm run build	2026-08-31T12:44:27.7930846Z ^[[36;1mnpm run build^[[0m
+build	Run npm run build	2026-08-31T12:44:27.7972864Z shell: /usr/bin/bash -e {0}
+build	Run npm run build	2026-08-31T12:44:27.7973158Z ##[endgroup]
+build	Run npm run build	2026-08-31T12:44:27.9039165Z 
+build	Run npm run build	2026-08-31T12:44:27.9039878Z > orderkit@1.0.0 build
+build	Run npm run build	2026-08-31T12:44:27.9040706Z > esbuild src/index.js --bundle --platform=node --outfile=dist/orderkit.js
+build	Run npm run build	2026-08-31T12:44:27.9041503Z 
+build	Run npm run build	2026-08-31T12:44:27.9139436Z 
+build	Run npm run build	2026-08-31T12:44:27.9140034Z   dist/orderkit.js  20.8kb
+build	Run npm run build	2026-08-31T12:44:27.9140337Z 
+build	Run npm run build	2026-08-31T12:44:27.9140692Z ⚡ Done in 4ms
+build	Post Cache dependencies	﻿2026-08-31T12:44:27.9272958Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build	Post Cache dependencies	2026-08-31T12:44:27.9274226Z Post job cleanup.
+build	Post Cache dependencies	2026-08-31T12:44:28.0414145Z Cache hit occurred on the primary key node-modules-Linux, not saving cache.
+build	Post Cache dependencies	2026-08-31T12:44:28.0416390Z (node:2185) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build	Post Cache dependencies	2026-08-31T12:44:28.0417403Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build	Post Run actions/setup-node@v4	﻿2026-08-31T12:44:28.0526178Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build	Post Run actions/setup-node@v4	2026-08-31T12:44:28.0527525Z Post job cleanup.
+build	Post Run actions/setup-node@v4	2026-08-31T12:44:28.1884761Z (node:2193) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build	Post Run actions/setup-node@v4	2026-08-31T12:44:28.1886540Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build	Post Run actions/checkout@v4	﻿2026-08-31T12:44:28.2106835Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build	Post Run actions/checkout@v4	2026-08-31T12:44:28.2108126Z Post job cleanup.
+build	Post Run actions/checkout@v4	2026-08-31T12:44:28.2976383Z [command]/usr/bin/git version
+build	Post Run actions/checkout@v4	2026-08-31T12:44:28.3021309Z git version 2.55.0
+build	Post Run actions/checkout@v4	2026-08-31T12:44:28.3066020Z Temporarily overriding HOME='/home/runner/work/_temp/62889f84-40c1-442b-bcec-180d01db4495' before making global git config changes
+build	Post Run actions/checkout@v4	2026-08-31T12:44:28.3067412Z Adding repository directory to the temporary git global config as a safe directory
+build	Post Run actions/checkout@v4	2026-08-31T12:44:28.3071800Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-speedup-demo/ci-speedup-demo
+build	Post Run actions/checkout@v4	2026-08-31T12:44:28.3113630Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	Post Run actions/checkout@v4	2026-08-31T12:44:28.3150469Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	Post Run actions/checkout@v4	2026-08-31T12:44:28.3399567Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	Post Run actions/checkout@v4	2026-08-31T12:44:28.3427766Z http.https://github.com/.extraheader
+build	Post Run actions/checkout@v4	2026-08-31T12:44:28.3442819Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+build	Post Run actions/checkout@v4	2026-08-31T12:44:28.3478209Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	Post Run actions/checkout@v4	2026-08-31T12:44:28.3736487Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build	Post Run actions/checkout@v4	2026-08-31T12:44:28.3773288Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build	Complete job	﻿2026-08-31T12:44:28.4179722Z Cleaning up orphan processes
+build	Complete job	2026-08-31T12:44:28.4438831Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/cache@v4, actions/checkout@v4, actions/setup-node@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+test (3)	Set up job	﻿2026-08-31T12:44:16.7122345Z Current runner version: '2.337.0'
+test (3)	Set up job	2026-08-31T12:44:16.7158129Z ##[group]Runner Image Provisioner
+test (3)	Set up job	2026-08-31T12:44:16.7159821Z Hosted Compute Agent
+test (3)	Set up job	2026-08-31T12:44:16.7160950Z Version: 20260819.586
+test (3)	Set up job	2026-08-31T12:44:16.7162058Z Commit: 3cc4a88dfa507ef76119ad1bb3eccc6378bb2b76
+test (3)	Set up job	2026-08-31T12:44:16.7163343Z Build Date: 2026-08-18T23:20:18Z
+test (3)	Set up job	2026-08-31T12:44:16.7164550Z Worker ID: {521fb5bc-8cb7-4bf6-96af-22192eb63a41}
+test (3)	Set up job	2026-08-31T12:44:16.7165787Z Azure Region: eastus
+test (3)	Set up job	2026-08-31T12:44:16.7166838Z ##[endgroup]
+test (3)	Set up job	2026-08-31T12:44:16.7169080Z ##[group]Operating System
+test (3)	Set up job	2026-08-31T12:44:16.7170469Z Ubuntu
+test (3)	Set up job	2026-08-31T12:44:16.7171410Z 24.04.4
+test (3)	Set up job	2026-08-31T12:44:16.7172333Z LTS
+test (3)	Set up job	2026-08-31T12:44:16.7173256Z ##[endgroup]
+test (3)	Set up job	2026-08-31T12:44:16.7174252Z ##[group]Runner Image
+test (3)	Set up job	2026-08-31T12:44:16.7175366Z Image: ubuntu-24.04
+test (3)	Set up job	2026-08-31T12:44:16.7176286Z Version: 20260823.283.1
+test (3)	Set up job	2026-08-31T12:44:16.7178168Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260823.283/images/ubuntu/Ubuntu2404-Readme.md
+test (3)	Set up job	2026-08-31T12:44:16.7181472Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260823.283
+test (3)	Set up job	2026-08-31T12:44:16.7183726Z ##[endgroup]
+test (3)	Set up job	2026-08-31T12:44:16.7185765Z ##[group]GITHUB_TOKEN Permissions
+test (3)	Set up job	2026-08-31T12:44:16.7188657Z Contents: read
+test (3)	Set up job	2026-08-31T12:44:16.7189886Z Metadata: read
+test (3)	Set up job	2026-08-31T12:44:16.7190946Z Packages: read
+test (3)	Set up job	2026-08-31T12:44:16.7191918Z ##[endgroup]
+test (3)	Set up job	2026-08-31T12:44:16.7194831Z Secret source: Actions
+test (3)	Set up job	2026-08-31T12:44:16.7196864Z Prepare workflow directory
+test (3)	Set up job	2026-08-31T12:44:16.7667976Z Prepare all required actions
+test (3)	Set up job	2026-08-31T12:44:16.7737698Z Getting action download info
+test (3)	Set up job	2026-08-31T12:44:16.9754269Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+test (3)	Set up job	2026-08-31T12:44:17.0838404Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+test (3)	Set up job	2026-08-31T12:44:17.1706890Z Download action repository 'actions/cache@v4' (SHA:0057852bfaa89a56745cba8c7296529d2fc39830)
+test (3)	Set up job	2026-08-31T12:44:17.3828384Z Complete job name: test (3)
+test (3)	Run actions/checkout@v4	﻿2026-08-31T12:44:17.4523310Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.4532290Z ##[group]Run actions/checkout@v4
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.4533047Z with:
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.4533529Z   repository: sambitmallick/ci-speedup-demo
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.4537341Z   token: ***
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.4537824Z   ssh-strict: true
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.4538266Z   ssh-user: git
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.4538711Z   persist-credentials: true
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.4539434Z   clean: true
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.4539901Z   sparse-checkout-cone-mode: true
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.4540424Z   fetch-depth: 1
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.4540858Z   fetch-tags: false
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.4541290Z   show-progress: true
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.4541729Z   lfs: false
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.4542153Z   submodules: false
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.4542625Z   set-safe-directory: true
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.4543128Z   allow-unsafe-pr-checkout: false
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.4543924Z ##[endgroup]
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5522818Z Syncing repository: sambitmallick/ci-speedup-demo
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5525751Z ##[group]Getting Git version info
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5527016Z Working directory is '/home/runner/work/ci-speedup-demo/ci-speedup-demo'
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5528910Z [command]/usr/bin/git version
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5626777Z git version 2.55.0
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5651671Z ##[endgroup]
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5667894Z Temporarily overriding HOME='/home/runner/work/_temp/8fbce0b5-befd-464a-aa8d-7970dfdff5a2' before making global git config changes
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5670636Z Adding repository directory to the temporary git global config as a safe directory
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5676014Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-speedup-demo/ci-speedup-demo
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5733280Z Deleting the contents of '/home/runner/work/ci-speedup-demo/ci-speedup-demo'
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5737012Z ##[group]Initializing the repository
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5742478Z [command]/usr/bin/git init /home/runner/work/ci-speedup-demo/ci-speedup-demo
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5879825Z hint: Using 'master' as the name for the initial branch. This default branch name
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5882280Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5883950Z hint: to use in all of your new repositories, which will suppress this warning,
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5885569Z hint: call:
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5886595Z hint:
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5887399Z hint: 	git config --global init.defaultBranch <name>
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5888411Z hint:
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5889588Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5891177Z hint: 'development'. The just-created branch can be renamed via this command:
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5892423Z hint:
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5893068Z hint: 	git branch -m <name>
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5893827Z hint:
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5894926Z hint: Disable this message with "git config set advice.defaultBranchName false"
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5896765Z Initialized empty Git repository in /home/runner/work/ci-speedup-demo/ci-speedup-demo/.git/
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5900172Z [command]/usr/bin/git remote add origin https://github.com/sambitmallick/ci-speedup-demo
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5953215Z ##[endgroup]
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5954521Z ##[group]Disabling automatic garbage collection
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5956714Z [command]/usr/bin/git config --local gc.auto 0
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5992007Z ##[endgroup]
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5993180Z ##[group]Setting up auth
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.5997505Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.6035771Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.6448691Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.6486518Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.6711892Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.6750336Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.6995187Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.7047631Z ##[endgroup]
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.7058564Z ##[group]Fetching the repository
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.7061396Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +d64aa3d544e45defd408a92fbbb6db084fb78434:refs/remotes/origin/main
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.9629141Z From https://github.com/sambitmallick/ci-speedup-demo
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.9630940Z  * [new ref]         d64aa3d544e45defd408a92fbbb6db084fb78434 -> origin/main
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.9634096Z ##[endgroup]
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.9635304Z ##[group]Determining the checkout info
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.9636701Z ##[endgroup]
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.9643148Z [command]/usr/bin/git sparse-checkout disable
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.9695680Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.9726943Z ##[group]Checking out the ref
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.9731451Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.9812755Z Switched to a new branch 'main'
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.9818981Z branch 'main' set up to track 'origin/main'.
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.9823930Z ##[endgroup]
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.9865091Z [command]/usr/bin/git log -1 --format=%H
+test (3)	Run actions/checkout@v4	2026-08-31T12:44:17.9891615Z d64aa3d544e45defd408a92fbbb6db084fb78434
+test (3)	Run actions/setup-node@v4	﻿2026-08-31T12:44:18.0170566Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+test (3)	Run actions/setup-node@v4	2026-08-31T12:44:18.0173231Z ##[group]Run actions/setup-node@v4
+test (3)	Run actions/setup-node@v4	2026-08-31T12:44:18.0173744Z with:
+test (3)	Run actions/setup-node@v4	2026-08-31T12:44:18.0174144Z   node-version: 20
+test (3)	Run actions/setup-node@v4	2026-08-31T12:44:18.0174581Z   always-auth: false
+test (3)	Run actions/setup-node@v4	2026-08-31T12:44:18.0175025Z   check-latest: false
+test (3)	Run actions/setup-node@v4	2026-08-31T12:44:18.0178624Z   token: ***
+test (3)	Run actions/setup-node@v4	2026-08-31T12:44:18.0179056Z ##[endgroup]
+test (3)	Run actions/setup-node@v4	2026-08-31T12:44:18.1603577Z Attempting to download 20...
+test (3)	Run actions/setup-node@v4	2026-08-31T12:44:18.1710372Z (node:2243) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+test (3)	Run actions/setup-node@v4	2026-08-31T12:44:18.1712725Z (Use `node --trace-deprecation ...` to show where the warning was created)
+test (3)	Run actions/setup-node@v4	2026-08-31T12:44:18.4925330Z Acquiring 20.20.2 - x64 from https://github.com/actions/node-versions/releases/download/20.20.2-23521894959/node-20.20.2-linux-x64.tar.gz
+test (3)	Run actions/setup-node@v4	2026-08-31T12:44:18.8125707Z Extracting ...
+test (3)	Run actions/setup-node@v4	2026-08-31T12:44:18.8235530Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/4dd9b646-483c-4ae1-84d2-2a1cbbbf2dcc -f /home/runner/work/_temp/ceef9d3d-e34e-470f-a794-c8b24d11b2a3
+test (3)	Run actions/setup-node@v4	2026-08-31T12:44:19.9706149Z Adding to the cache ...
+test (3)	Run actions/setup-node@v4	2026-08-31T12:44:22.9178615Z ##[group]Environment details
+test (3)	Run actions/setup-node@v4	2026-08-31T12:44:23.1382064Z node: v20.20.2
+test (3)	Run actions/setup-node@v4	2026-08-31T12:44:23.1383856Z npm: 10.8.2
+test (3)	Run actions/setup-node@v4	2026-08-31T12:44:23.1384350Z yarn: 1.22.22
+test (3)	Run actions/setup-node@v4	2026-08-31T12:44:23.1385398Z ##[endgroup]
+test (3)	Cache dependencies	﻿2026-08-31T12:44:23.1586174Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+test (3)	Cache dependencies	2026-08-31T12:44:23.1587571Z ##[group]Run actions/cache@v4
+test (3)	Cache dependencies	2026-08-31T12:44:23.1587855Z with:
+test (3)	Cache dependencies	2026-08-31T12:44:23.1588089Z   path: node_modules
+test (3)	Cache dependencies	2026-08-31T12:44:23.1588359Z   key: node-modules-Linux
+test (3)	Cache dependencies	2026-08-31T12:44:23.1588648Z   enableCrossOsArchive: false
+test (3)	Cache dependencies	2026-08-31T12:44:23.1588969Z   fail-on-cache-miss: false
+test (3)	Cache dependencies	2026-08-31T12:44:23.1589428Z   lookup-only: false
+test (3)	Cache dependencies	2026-08-31T12:44:23.1589688Z   save-always: false
+test (3)	Cache dependencies	2026-08-31T12:44:23.1589937Z ##[endgroup]
+test (3)	Cache dependencies	2026-08-31T12:44:23.2662072Z (node:2280) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+test (3)	Cache dependencies	2026-08-31T12:44:23.2664073Z (Use `node --trace-deprecation ...` to show where the warning was created)
+test (3)	Cache dependencies	2026-08-31T12:44:23.3281492Z Cache hit for: node-modules-Linux
+test (3)	Cache dependencies	2026-08-31T12:44:23.3387125Z (node:2280) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+test (3)	Cache dependencies	2026-08-31T12:44:23.4860304Z Received 10861486 of 10861486 (100.0%), 83.5 MBs/sec
+test (3)	Cache dependencies	2026-08-31T12:44:23.4861395Z Cache Size: ~10 MB (10861486 B)
+test (3)	Cache dependencies	2026-08-31T12:44:23.4892466Z [command]/usr/bin/tar -xf /home/runner/work/_temp/4be09413-fcfb-4dea-90e5-61e4ca564c3e/cache.tzst -P -C /home/runner/work/ci-speedup-demo/ci-speedup-demo --use-compress-program unzstd
+test (3)	Cache dependencies	2026-08-31T12:44:23.7735347Z Cache restored successfully
+test (3)	Cache dependencies	2026-08-31T12:44:23.7816839Z Cache restored from key: node-modules-Linux
+test (3)	Dependency receipt	﻿2026-08-31T12:44:23.7958834Z ##[group]Run npm run dep-receipt
+test (3)	Dependency receipt	2026-08-31T12:44:23.7959553Z ^[[36;1mnpm run dep-receipt^[[0m
+test (3)	Dependency receipt	2026-08-31T12:44:23.8000824Z shell: /usr/bin/bash -e {0}
+test (3)	Dependency receipt	2026-08-31T12:44:23.8001124Z ##[endgroup]
+test (3)	Dependency receipt	2026-08-31T12:44:23.9061678Z 
+test (3)	Dependency receipt	2026-08-31T12:44:23.9062132Z > orderkit@1.0.0 dep-receipt
+test (3)	Dependency receipt	2026-08-31T12:44:23.9062773Z > node scripts/dep-receipt.js
+test (3)	Dependency receipt	2026-08-31T12:44:23.9063129Z 
+test (3)	Dependency receipt	2026-08-31T12:44:23.9352213Z ── dependency receipt ─────────────────────────
+test (3)	Dependency receipt	2026-08-31T12:44:23.9355439Z   slugify declared in package.json : 1.6.5
+test (3)	Dependency receipt	2026-08-31T12:44:23.9356324Z   slugify actually installed       : 1.6.5
+test (3)	Dependency receipt	2026-08-31T12:44:23.9357071Z   match                            : yes
+test (3)	Dependency receipt	2026-08-31T12:44:23.9357867Z ───────────────────────────────────────────────
+test (3)	Test (shard 3 of 4)	﻿2026-08-31T12:44:23.9461838Z ##[group]Run npm test -- --shard=3/4
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:23.9462202Z ^[[36;1mnpm test -- --shard=3/4^[[0m
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:23.9500928Z shell: /usr/bin/bash -e {0}
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:23.9501213Z ##[endgroup]
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:24.0657128Z 
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:24.0657645Z > orderkit@1.0.0 test
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:24.0658263Z > jest --shard=3/4
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:24.0658562Z 
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2486327Z FAIL test/tload.integration.test.js (5.656 s)
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2490436Z   ● load tload (integration) › processes a batch of 220 orders
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2491118Z 
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2491467Z     thrown: "Exceeded timeout of 5000 ms for a test.
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2492936Z     Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2493939Z 
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2494361Z     ^[[0m ^[[90m 15 |^[[39m   })^[[33m;^[[39m
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2494938Z      ^[[90m 16 |^[[39m
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2496120Z     ^[[31m^[[1m>^[[22m^[[39m^[[90m 17 |^[[39m   test(^[[32m"processes a batch of 220 orders"^[[39m^[[33m,^[[39m ^[[36masync^[[39m () ^[[33m=>^[[39m {
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2497427Z      ^[[90m    |^[[39m   ^[[31m^[[1m^^[[22m^[[39m
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2499898Z      ^[[90m 18 |^[[39m     ^[[36mconst^[[39m res ^[[33m=^[[39m ^[[36mawait^[[39m processBatch(^[[33mArray^[[39m^[[33m.^[[39m^[[36mfrom^[[39m({ length^[[33m:^[[39m ^[[35m220^[[39m }^[[33m,^[[39m (_^[[33m,^[[39m i) ^[[33m=>^[[39m mk(i ^[[33m+^[[39m ^[[35m1^[[39m)))^[[33m;^[[39m
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2501956Z      ^[[90m 19 |^[[39m     expect(res)^[[33m.^[[39mtoHaveLength(^[[35m220^[[39m)^[[33m;^[[39m
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2503632Z      ^[[90m 20 |^[[39m     expect(res^[[33m.^[[39mevery((r) ^[[33m=>^[[39m r^[[33m.^[[39mtotalCents ^[[33m>^[[39m ^[[35m0^[[39m))^[[33m.^[[39mtoBe(^[[36mtrue^[[39m)^[[33m;^[[39m^[[0m
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2504588Z 
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2504964Z       at test (test/tload.integration.test.js:17:3)
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2505786Z       at Object.describe (test/tload.integration.test.js:5:1)
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2506292Z 
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2547430Z FAIL test/oload.integration.test.js (5.652 s)
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2548117Z   ● load oload (integration) › processes a batch of 220 orders
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2548415Z 
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2548721Z     thrown: "Exceeded timeout of 5000 ms for a test.
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2549815Z     Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2550387Z 
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2550581Z     ^[[0m ^[[90m 15 |^[[39m   })^[[33m;^[[39m
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2550901Z      ^[[90m 16 |^[[39m
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2551571Z     ^[[31m^[[1m>^[[22m^[[39m^[[90m 17 |^[[39m   test(^[[32m"processes a batch of 220 orders"^[[39m^[[33m,^[[39m ^[[36masync^[[39m () ^[[33m=>^[[39m {
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2552197Z      ^[[90m    |^[[39m   ^[[31m^[[1m^^[[22m^[[39m
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2553313Z      ^[[90m 18 |^[[39m     ^[[36mconst^[[39m res ^[[33m=^[[39m ^[[36mawait^[[39m processBatch(^[[33mArray^[[39m^[[33m.^[[39m^[[36mfrom^[[39m({ length^[[33m:^[[39m ^[[35m220^[[39m }^[[33m,^[[39m (_^[[33m,^[[39m i) ^[[33m=>^[[39m mk(i ^[[33m+^[[39m ^[[35m1^[[39m)))^[[33m;^[[39m
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2554390Z      ^[[90m 19 |^[[39m     expect(res)^[[33m.^[[39mtoHaveLength(^[[35m220^[[39m)^[[33m;^[[39m
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2555379Z      ^[[90m 20 |^[[39m     expect(res^[[33m.^[[39mevery((r) ^[[33m=>^[[39m r^[[33m.^[[39mtotalCents ^[[33m>^[[39m ^[[35m0^[[39m))^[[33m.^[[39mtoBe(^[[36mtrue^[[39m)^[[33m;^[[39m^[[0m
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2555901Z 
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2556080Z       at test (test/oload.integration.test.js:17:3)
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2556525Z       at Object.describe (test/oload.integration.test.js:5:1)
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2556809Z 
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2630791Z FAIL test/nload.integration.test.js (5.663 s)
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2632289Z   ● load nload (integration) › processes a batch of 220 orders
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2632812Z 
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2633139Z     thrown: "Exceeded timeout of 5000 ms for a test.
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2634475Z     Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2635868Z 
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2636121Z     ^[[0m ^[[90m 15 |^[[39m   })^[[33m;^[[39m
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2636438Z      ^[[90m 16 |^[[39m
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2637094Z     ^[[31m^[[1m>^[[22m^[[39m^[[90m 17 |^[[39m   test(^[[32m"processes a batch of 220 orders"^[[39m^[[33m,^[[39m ^[[36masync^[[39m () ^[[33m=>^[[39m {
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2637711Z      ^[[90m    |^[[39m   ^[[31m^[[1m^^[[22m^[[39m
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2638818Z      ^[[90m 18 |^[[39m     ^[[36mconst^[[39m res ^[[33m=^[[39m ^[[36mawait^[[39m processBatch(^[[33mArray^[[39m^[[33m.^[[39m^[[36mfrom^[[39m({ length^[[33m:^[[39m ^[[35m220^[[39m }^[[33m,^[[39m (_^[[33m,^[[39m i) ^[[33m=>^[[39m mk(i ^[[33m+^[[39m ^[[35m1^[[39m)))^[[33m;^[[39m
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2640129Z      ^[[90m 19 |^[[39m     expect(res)^[[33m.^[[39mtoHaveLength(^[[35m220^[[39m)^[[33m;^[[39m
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2641013Z      ^[[90m 20 |^[[39m     expect(res^[[33m.^[[39mevery((r) ^[[33m=>^[[39m r^[[33m.^[[39mtotalCents ^[[33m>^[[39m ^[[35m0^[[39m))^[[33m.^[[39mtoBe(^[[36mtrue^[[39m)^[[33m;^[[39m^[[0m
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2641510Z 
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2641683Z       at test (test/nload.integration.test.js:17:3)
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2642102Z       at Object.describe (test/nload.integration.test.js:5:1)
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.2642366Z 
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.7746898Z A worker process has failed to exit gracefully and has been force exited. This is likely caused by tests leaking due to improper teardown. Try running with --detectOpenHandles to find leaks. Active timers can also cause this, ensure that .unref() was called on them.
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.7759113Z Test Suites: 3 failed, 3 total
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.7759873Z Tests:       3 failed, 3 passed, 6 total
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.7760392Z Snapshots:   0 total
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.7760632Z Time:        6.339 s
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.7760865Z Ran all test suites.
+test (3)	Test (shard 3 of 4)	2026-08-31T12:44:30.7897267Z ##[error]Process completed with exit code 1.
+test (3)	Post Run actions/checkout@v4	﻿2026-08-31T12:44:30.8044249Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+test (3)	Post Run actions/checkout@v4	2026-08-31T12:44:30.8045552Z Post job cleanup.
+test (3)	Post Run actions/checkout@v4	2026-08-31T12:44:30.8897047Z [command]/usr/bin/git version
+test (3)	Post Run actions/checkout@v4	2026-08-31T12:44:30.8939876Z git version 2.55.0
+test (3)	Post Run actions/checkout@v4	2026-08-31T12:44:30.8981432Z Temporarily overriding HOME='/home/runner/work/_temp/b48ed4b8-1153-479e-a60a-f47043d80a2a' before making global git config changes
+test (3)	Post Run actions/checkout@v4	2026-08-31T12:44:30.8983052Z Adding repository directory to the temporary git global config as a safe directory
+test (3)	Post Run actions/checkout@v4	2026-08-31T12:44:30.8988111Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-speedup-demo/ci-speedup-demo
+test (3)	Post Run actions/checkout@v4	2026-08-31T12:44:30.9026601Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test (3)	Post Run actions/checkout@v4	2026-08-31T12:44:30.9065601Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test (3)	Post Run actions/checkout@v4	2026-08-31T12:44:30.9314884Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test (3)	Post Run actions/checkout@v4	2026-08-31T12:44:30.9341885Z http.https://github.com/.extraheader
+test (3)	Post Run actions/checkout@v4	2026-08-31T12:44:30.9354513Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+test (3)	Post Run actions/checkout@v4	2026-08-31T12:44:30.9391831Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test (3)	Post Run actions/checkout@v4	2026-08-31T12:44:30.9678372Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test (3)	Post Run actions/checkout@v4	2026-08-31T12:44:30.9722386Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test (3)	Complete job	﻿2026-08-31T12:44:31.0113410Z Cleaning up orphan processes
+test (3)	Complete job	2026-08-31T12:44:31.0409128Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/cache@v4, actions/checkout@v4, actions/setup-node@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+test (2)	Set up job	﻿2026-08-31T12:44:17.0327849Z Current runner version: '2.337.0'
+test (2)	Set up job	2026-08-31T12:44:17.0348855Z ##[group]Runner Image Provisioner
+test (2)	Set up job	2026-08-31T12:44:17.0349623Z Hosted Compute Agent
+test (2)	Set up job	2026-08-31T12:44:17.0350199Z Version: 20260819.586
+test (2)	Set up job	2026-08-31T12:44:17.0350760Z Commit: 3cc4a88dfa507ef76119ad1bb3eccc6378bb2b76
+test (2)	Set up job	2026-08-31T12:44:17.0351400Z Build Date: 2026-08-18T23:20:18Z
+test (2)	Set up job	2026-08-31T12:44:17.0351974Z Worker ID: {df950b87-4511-48f8-9dc7-1821e5b950f3}
+test (2)	Set up job	2026-08-31T12:44:17.0352569Z Azure Region: westcentralus
+test (2)	Set up job	2026-08-31T12:44:17.0353191Z ##[endgroup]
+test (2)	Set up job	2026-08-31T12:44:17.0354611Z ##[group]Operating System
+test (2)	Set up job	2026-08-31T12:44:17.0355123Z Ubuntu
+test (2)	Set up job	2026-08-31T12:44:17.0355653Z 24.04.4
+test (2)	Set up job	2026-08-31T12:44:17.0356093Z LTS
+test (2)	Set up job	2026-08-31T12:44:17.0356579Z ##[endgroup]
+test (2)	Set up job	2026-08-31T12:44:17.0357093Z ##[group]Runner Image
+test (2)	Set up job	2026-08-31T12:44:17.0357584Z Image: ubuntu-24.04
+test (2)	Set up job	2026-08-31T12:44:17.0358104Z Version: 20260823.283.1
+test (2)	Set up job	2026-08-31T12:44:17.0358956Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260823.283/images/ubuntu/Ubuntu2404-Readme.md
+test (2)	Set up job	2026-08-31T12:44:17.0360417Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260823.283
+test (2)	Set up job	2026-08-31T12:44:17.0361177Z ##[endgroup]
+test (2)	Set up job	2026-08-31T12:44:17.0362180Z ##[group]GITHUB_TOKEN Permissions
+test (2)	Set up job	2026-08-31T12:44:17.0363916Z Contents: read
+test (2)	Set up job	2026-08-31T12:44:17.0364908Z Metadata: read
+test (2)	Set up job	2026-08-31T12:44:17.0365380Z Packages: read
+test (2)	Set up job	2026-08-31T12:44:17.0365865Z ##[endgroup]
+test (2)	Set up job	2026-08-31T12:44:17.0367567Z Secret source: Actions
+test (2)	Set up job	2026-08-31T12:44:17.0368508Z Prepare workflow directory
+test (2)	Set up job	2026-08-31T12:44:17.0625898Z Prepare all required actions
+test (2)	Set up job	2026-08-31T12:44:17.0665104Z Getting action download info
+test (2)	Set up job	2026-08-31T12:44:17.3771194Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+test (2)	Set up job	2026-08-31T12:44:17.6609941Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+test (2)	Set up job	2026-08-31T12:44:17.7738533Z Download action repository 'actions/cache@v4' (SHA:0057852bfaa89a56745cba8c7296529d2fc39830)
+test (2)	Set up job	2026-08-31T12:44:18.3938429Z Complete job name: test (2)
+test (2)	Run actions/checkout@v4	﻿2026-08-31T12:44:18.4584489Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.4593102Z ##[group]Run actions/checkout@v4
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.4594279Z with:
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.4594813Z   repository: sambitmallick/ci-speedup-demo
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.4601212Z   token: ***
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.4601561Z   ssh-strict: true
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.4601916Z   ssh-user: git
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.4602323Z   persist-credentials: true
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.4602742Z   clean: true
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.4603104Z   sparse-checkout-cone-mode: true
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.4603766Z   fetch-depth: 1
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.4604121Z   fetch-tags: false
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.4604490Z   show-progress: true
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.4604860Z   lfs: false
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.4605229Z   submodules: false
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.4605628Z   set-safe-directory: true
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.4606079Z   allow-unsafe-pr-checkout: false
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.4606814Z ##[endgroup]
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.5471481Z Syncing repository: sambitmallick/ci-speedup-demo
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.5473980Z ##[group]Getting Git version info
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.5475191Z Working directory is '/home/runner/work/ci-speedup-demo/ci-speedup-demo'
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.5476857Z [command]/usr/bin/git version
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.6730098Z git version 2.55.0
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.6747042Z ##[endgroup]
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.6760524Z Temporarily overriding HOME='/home/runner/work/_temp/53064b40-74a8-4a6e-b91b-0282f78e0797' before making global git config changes
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.6762860Z Adding repository directory to the temporary git global config as a safe directory
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.6765438Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-speedup-demo/ci-speedup-demo
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.6817761Z Deleting the contents of '/home/runner/work/ci-speedup-demo/ci-speedup-demo'
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.6821158Z ##[group]Initializing the repository
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.6825023Z [command]/usr/bin/git init /home/runner/work/ci-speedup-demo/ci-speedup-demo
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.7034843Z hint: Using 'master' as the name for the initial branch. This default branch name
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.7036311Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.7037304Z hint: to use in all of your new repositories, which will suppress this warning,
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.7038077Z hint: call:
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.7038404Z hint:
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.7038857Z hint: 	git config --global init.defaultBranch <name>
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.7039426Z hint:
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.7039958Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.7040938Z hint: 'development'. The just-created branch can be renamed via this command:
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.7041698Z hint:
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.7042033Z hint: 	git branch -m <name>
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.7042442Z hint:
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.7043025Z hint: Disable this message with "git config set advice.defaultBranchName false"
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.7047778Z Initialized empty Git repository in /home/runner/work/ci-speedup-demo/ci-speedup-demo/.git/
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.7055228Z [command]/usr/bin/git remote add origin https://github.com/sambitmallick/ci-speedup-demo
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.7093409Z ##[endgroup]
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.7094274Z ##[group]Disabling automatic garbage collection
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.7096290Z [command]/usr/bin/git config --local gc.auto 0
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.7122937Z ##[endgroup]
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.7128393Z ##[group]Setting up auth
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.7129258Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.7156527Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.9235846Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.9268547Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.9457995Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.9491752Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.9696603Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.9731113Z ##[endgroup]
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.9732276Z ##[group]Fetching the repository
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:18.9740219Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +d64aa3d544e45defd408a92fbbb6db084fb78434:refs/remotes/origin/main
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:19.6243814Z From https://github.com/sambitmallick/ci-speedup-demo
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:19.6245317Z  * [new ref]         d64aa3d544e45defd408a92fbbb6db084fb78434 -> origin/main
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:19.6247987Z ##[endgroup]
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:19.6248545Z ##[group]Determining the checkout info
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:19.6250181Z ##[endgroup]
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:19.6254954Z [command]/usr/bin/git sparse-checkout disable
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:19.6295919Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:19.6322384Z ##[group]Checking out the ref
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:19.6325713Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:19.7479162Z Switched to a new branch 'main'
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:19.7481977Z branch 'main' set up to track 'origin/main'.
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:19.7487478Z ##[endgroup]
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:19.7526153Z [command]/usr/bin/git log -1 --format=%H
+test (2)	Run actions/checkout@v4	2026-08-31T12:44:19.7549030Z d64aa3d544e45defd408a92fbbb6db084fb78434
+test (2)	Run actions/setup-node@v4	﻿2026-08-31T12:44:19.7768755Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+test (2)	Run actions/setup-node@v4	2026-08-31T12:44:19.7770128Z ##[group]Run actions/setup-node@v4
+test (2)	Run actions/setup-node@v4	2026-08-31T12:44:19.7770380Z with:
+test (2)	Run actions/setup-node@v4	2026-08-31T12:44:19.7770581Z   node-version: 20
+test (2)	Run actions/setup-node@v4	2026-08-31T12:44:19.7770858Z   always-auth: false
+test (2)	Run actions/setup-node@v4	2026-08-31T12:44:19.7771181Z   check-latest: false
+test (2)	Run actions/setup-node@v4	2026-08-31T12:44:19.7774697Z   token: ***
+test (2)	Run actions/setup-node@v4	2026-08-31T12:44:19.7775038Z ##[endgroup]
+test (2)	Run actions/setup-node@v4	2026-08-31T12:44:20.1784370Z Attempting to download 20...
+test (2)	Run actions/setup-node@v4	2026-08-31T12:44:20.1813790Z (node:2046) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+test (2)	Run actions/setup-node@v4	2026-08-31T12:44:20.1814788Z (Use `node --trace-deprecation ...` to show where the warning was created)
+test (2)	Run actions/setup-node@v4	2026-08-31T12:44:21.2036452Z Acquiring 20.20.2 - x64 from https://github.com/actions/node-versions/releases/download/20.20.2-23521894959/node-20.20.2-linux-x64.tar.gz
+test (2)	Run actions/setup-node@v4	2026-08-31T12:44:22.1932502Z Extracting ...
+test (2)	Run actions/setup-node@v4	2026-08-31T12:44:22.2027802Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/a58855f1-31a4-47c2-ae7c-7688646edb0b -f /home/runner/work/_temp/495bd099-888d-4fcb-bda4-1d531341f7d2
+test (2)	Run actions/setup-node@v4	2026-08-31T12:44:23.0569161Z Adding to the cache ...
+test (2)	Run actions/setup-node@v4	2026-08-31T12:44:24.9470527Z ##[group]Environment details
+test (2)	Run actions/setup-node@v4	2026-08-31T12:44:25.2154837Z node: v20.20.2
+test (2)	Run actions/setup-node@v4	2026-08-31T12:44:25.2155257Z npm: 10.8.2
+test (2)	Run actions/setup-node@v4	2026-08-31T12:44:25.2155673Z yarn: 1.22.22
+test (2)	Run actions/setup-node@v4	2026-08-31T12:44:25.2156351Z ##[endgroup]
+test (2)	Cache dependencies	﻿2026-08-31T12:44:25.2328687Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+test (2)	Cache dependencies	2026-08-31T12:44:25.2329680Z ##[group]Run actions/cache@v4
+test (2)	Cache dependencies	2026-08-31T12:44:25.2329880Z with:
+test (2)	Cache dependencies	2026-08-31T12:44:25.2330044Z   path: node_modules
+test (2)	Cache dependencies	2026-08-31T12:44:25.2330232Z   key: node-modules-Linux
+test (2)	Cache dependencies	2026-08-31T12:44:25.2330440Z   enableCrossOsArchive: false
+test (2)	Cache dependencies	2026-08-31T12:44:25.2330677Z   fail-on-cache-miss: false
+test (2)	Cache dependencies	2026-08-31T12:44:25.2330871Z   lookup-only: false
+test (2)	Cache dependencies	2026-08-31T12:44:25.2331048Z   save-always: false
+test (2)	Cache dependencies	2026-08-31T12:44:25.2331220Z ##[endgroup]
+test (2)	Cache dependencies	2026-08-31T12:44:25.3174542Z (node:2083) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+test (2)	Cache dependencies	2026-08-31T12:44:25.3175691Z (Use `node --trace-deprecation ...` to show where the warning was created)
+test (2)	Cache dependencies	2026-08-31T12:44:25.5785933Z Cache hit for: node-modules-Linux
+test (2)	Cache dependencies	2026-08-31T12:44:25.5865852Z (node:2083) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+test (2)	Cache dependencies	2026-08-31T12:44:26.6591755Z Received 10861486 of 10861486 (100.0%), 12.0 MBs/sec
+test (2)	Cache dependencies	2026-08-31T12:44:26.6592361Z Cache Size: ~10 MB (10861486 B)
+test (2)	Cache dependencies	2026-08-31T12:44:26.6614748Z [command]/usr/bin/tar -xf /home/runner/work/_temp/1cba395f-e03a-4450-8cc5-7ff03f91f15c/cache.tzst -P -C /home/runner/work/ci-speedup-demo/ci-speedup-demo --use-compress-program unzstd
+test (2)	Cache dependencies	2026-08-31T12:44:26.8517578Z Cache restored successfully
+test (2)	Cache dependencies	2026-08-31T12:44:26.8582953Z Cache restored from key: node-modules-Linux
+test (2)	Dependency receipt	﻿2026-08-31T12:44:26.8706722Z ##[group]Run npm run dep-receipt
+test (2)	Dependency receipt	2026-08-31T12:44:26.8707063Z ^[[36;1mnpm run dep-receipt^[[0m
+test (2)	Dependency receipt	2026-08-31T12:44:26.8742507Z shell: /usr/bin/bash -e {0}
+test (2)	Dependency receipt	2026-08-31T12:44:26.8742751Z ##[endgroup]
+test (2)	Dependency receipt	2026-08-31T12:44:26.9605209Z 
+test (2)	Dependency receipt	2026-08-31T12:44:26.9605763Z > orderkit@1.0.0 dep-receipt
+test (2)	Dependency receipt	2026-08-31T12:44:26.9606155Z > node scripts/dep-receipt.js
+test (2)	Dependency receipt	2026-08-31T12:44:26.9606302Z 
+test (2)	Dependency receipt	2026-08-31T12:44:26.9841632Z ── dependency receipt ─────────────────────────
+test (2)	Dependency receipt	2026-08-31T12:44:26.9844605Z   slugify declared in package.json : 1.6.5
+test (2)	Dependency receipt	2026-08-31T12:44:26.9845127Z   slugify actually installed       : 1.6.5
+test (2)	Dependency receipt	2026-08-31T12:44:26.9845586Z   match                            : yes
+test (2)	Dependency receipt	2026-08-31T12:44:26.9846187Z ───────────────────────────────────────────────
+test (2)	Test (shard 2 of 4)	﻿2026-08-31T12:44:26.9934810Z ##[group]Run npm test -- --shard=2/4
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:26.9935107Z ^[[36;1mnpm test -- --shard=2/4^[[0m
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:26.9968403Z shell: /usr/bin/bash -e {0}
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:26.9968629Z ##[endgroup]
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:27.0988036Z 
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:27.0988705Z > orderkit@1.0.0 test
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:27.0989145Z > jest --shard=2/4
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:27.0989344Z 
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:27.9649969Z PASS test/money.test.js
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9525298Z FAIL test/dload.integration.test.js (5.468 s)
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9526296Z   ● load dload (integration) › processes a batch of 220 orders
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9526650Z 
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9526879Z     thrown: "Exceeded timeout of 5000 ms for a test.
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9527867Z     Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9528528Z 
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9528789Z     ^[[0m ^[[90m 15 |^[[39m   })^[[33m;^[[39m
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9529177Z      ^[[90m 16 |^[[39m
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9530295Z     ^[[31m^[[1m>^[[22m^[[39m^[[90m 17 |^[[39m   test(^[[32m"processes a batch of 220 orders"^[[39m^[[33m,^[[39m ^[[36masync^[[39m () ^[[33m=>^[[39m {
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9531111Z      ^[[90m    |^[[39m   ^[[31m^[[1m^^[[22m^[[39m
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9532572Z      ^[[90m 18 |^[[39m     ^[[36mconst^[[39m res ^[[33m=^[[39m ^[[36mawait^[[39m processBatch(^[[33mArray^[[39m^[[33m.^[[39m^[[36mfrom^[[39m({ length^[[33m:^[[39m ^[[35m220^[[39m }^[[33m,^[[39m (_^[[33m,^[[39m i) ^[[33m=>^[[39m mk(i ^[[33m+^[[39m ^[[35m1^[[39m)))^[[33m;^[[39m
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9534080Z      ^[[90m 19 |^[[39m     expect(res)^[[33m.^[[39mtoHaveLength(^[[35m220^[[39m)^[[33m;^[[39m
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9535198Z      ^[[90m 20 |^[[39m     expect(res^[[33m.^[[39mevery((r) ^[[33m=>^[[39m r^[[33m.^[[39mtotalCents ^[[33m>^[[39m ^[[35m0^[[39m))^[[33m.^[[39mtoBe(^[[36mtrue^[[39m)^[[33m;^[[39m^[[0m
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9535805Z 
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9536036Z       at test (test/dload.integration.test.js:17:3)
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9536571Z       at Object.describe (test/dload.integration.test.js:5:1)
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9536907Z 
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9576331Z FAIL test/uload.integration.test.js (5.457 s)
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9577120Z   ● load uload (integration) › processes a batch of 220 orders
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9577368Z 
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9577581Z     thrown: "Exceeded timeout of 5000 ms for a test.
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9578467Z     Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9579100Z 
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9579357Z     ^[[0m ^[[90m 15 |^[[39m   })^[[33m;^[[39m
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9579712Z      ^[[90m 16 |^[[39m
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9580394Z     ^[[31m^[[1m>^[[22m^[[39m^[[90m 17 |^[[39m   test(^[[32m"processes a batch of 220 orders"^[[39m^[[33m,^[[39m ^[[36masync^[[39m () ^[[33m=>^[[39m {
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9581005Z      ^[[90m    |^[[39m   ^[[31m^[[1m^^[[22m^[[39m
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9582294Z      ^[[90m 18 |^[[39m     ^[[36mconst^[[39m res ^[[33m=^[[39m ^[[36mawait^[[39m processBatch(^[[33mArray^[[39m^[[33m.^[[39m^[[36mfrom^[[39m({ length^[[33m:^[[39m ^[[35m220^[[39m }^[[33m,^[[39m (_^[[33m,^[[39m i) ^[[33m=>^[[39m mk(i ^[[33m+^[[39m ^[[35m1^[[39m)))^[[33m;^[[39m
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9583718Z      ^[[90m 19 |^[[39m     expect(res)^[[33m.^[[39mtoHaveLength(^[[35m220^[[39m)^[[33m;^[[39m
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9584788Z      ^[[90m 20 |^[[39m     expect(res^[[33m.^[[39mevery((r) ^[[33m=>^[[39m r^[[33m.^[[39mtotalCents ^[[33m>^[[39m ^[[35m0^[[39m))^[[33m.^[[39mtoBe(^[[36mtrue^[[39m)^[[33m;^[[39m^[[0m
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9585299Z 
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9585483Z       at test (test/uload.integration.test.js:17:3)
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9585942Z       at Object.describe (test/uload.integration.test.js:5:1)
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:32.9586602Z 
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:33.4661749Z A worker process has failed to exit gracefully and has been force exited. This is likely caused by tests leaking due to improper teardown. Try running with --detectOpenHandles to find leaks. Active timers can also cause this, ensure that .unref() was called on them.
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:33.4675655Z Test Suites: 2 failed, 1 passed, 3 total
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:33.4676560Z Tests:       2 failed, 10 passed, 12 total
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:33.4676931Z Snapshots:   0 total
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:33.4677221Z Time:        6.079 s
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:33.4677436Z Ran all test suites.
+test (2)	Test (shard 2 of 4)	2026-08-31T12:44:33.5156015Z ##[error]The operation was canceled.
+test (2)	Post Run actions/checkout@v4	﻿2026-08-31T12:44:33.5245945Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+test (2)	Post Run actions/checkout@v4	2026-08-31T12:44:33.5246892Z Post job cleanup.
+test (2)	Post Run actions/checkout@v4	2026-08-31T12:44:33.5940836Z [command]/usr/bin/git version
+test (2)	Post Run actions/checkout@v4	2026-08-31T12:44:33.5978257Z git version 2.55.0
+test (2)	Post Run actions/checkout@v4	2026-08-31T12:44:33.6011687Z Temporarily overriding HOME='/home/runner/work/_temp/a60cb3f2-73d0-4790-8720-f491fc611dde' before making global git config changes
+test (2)	Post Run actions/checkout@v4	2026-08-31T12:44:33.6012984Z Adding repository directory to the temporary git global config as a safe directory
+test (2)	Post Run actions/checkout@v4	2026-08-31T12:44:33.6016220Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-speedup-demo/ci-speedup-demo
+test (2)	Post Run actions/checkout@v4	2026-08-31T12:44:33.6100420Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test (2)	Post Run actions/checkout@v4	2026-08-31T12:44:33.6137612Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test (2)	Post Run actions/checkout@v4	2026-08-31T12:44:33.6349872Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test (2)	Post Run actions/checkout@v4	2026-08-31T12:44:33.7042232Z http.https://github.com/.extraheader
+test (2)	Post Run actions/checkout@v4	2026-08-31T12:44:33.7055067Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+test (2)	Post Run actions/checkout@v4	2026-08-31T12:44:33.7219719Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test (2)	Post Run actions/checkout@v4	2026-08-31T12:44:33.7414632Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test (2)	Post Run actions/checkout@v4	2026-08-31T12:44:33.7442930Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test (2)	Complete job	﻿2026-08-31T12:44:33.7757739Z Cleaning up orphan processes
+test (2)	Complete job	2026-08-31T12:44:33.7967916Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/cache@v4, actions/checkout@v4, actions/setup-node@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+test (4)	Set up job	﻿2026-08-31T12:44:16.5227000Z Current runner version: '2.337.0'
+test (4)	Set up job	2026-08-31T12:44:16.5256965Z ##[group]Runner Image Provisioner
+test (4)	Set up job	2026-08-31T12:44:16.5257855Z Hosted Compute Agent
+test (4)	Set up job	2026-08-31T12:44:16.5258533Z Version: 20260819.586
+test (4)	Set up job	2026-08-31T12:44:16.5260121Z Commit: 3cc4a88dfa507ef76119ad1bb3eccc6378bb2b76
+test (4)	Set up job	2026-08-31T12:44:16.5261562Z Build Date: 2026-08-18T23:20:18Z
+test (4)	Set up job	2026-08-31T12:44:16.5262764Z Worker ID: {99ed44f8-5af2-41ed-9a27-ba7d5ee7b0c2}
+test (4)	Set up job	2026-08-31T12:44:16.5263566Z Azure Region: eastus
+test (4)	Set up job	2026-08-31T12:44:16.5264190Z ##[endgroup]
+test (4)	Set up job	2026-08-31T12:44:16.5266993Z ##[group]Operating System
+test (4)	Set up job	2026-08-31T12:44:16.5267941Z Ubuntu
+test (4)	Set up job	2026-08-31T12:44:16.5268563Z 24.04.4
+test (4)	Set up job	2026-08-31T12:44:16.5269115Z LTS
+test (4)	Set up job	2026-08-31T12:44:16.5270042Z ##[endgroup]
+test (4)	Set up job	2026-08-31T12:44:16.5270701Z ##[group]Runner Image
+test (4)	Set up job	2026-08-31T12:44:16.5271334Z Image: ubuntu-24.04
+test (4)	Set up job	2026-08-31T12:44:16.5271897Z Version: 20260823.283.1
+test (4)	Set up job	2026-08-31T12:44:16.5273672Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260823.283/images/ubuntu/Ubuntu2404-Readme.md
+test (4)	Set up job	2026-08-31T12:44:16.5276986Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260823.283
+test (4)	Set up job	2026-08-31T12:44:16.5278837Z ##[endgroup]
+test (4)	Set up job	2026-08-31T12:44:16.5282212Z ##[group]GITHUB_TOKEN Permissions
+test (4)	Set up job	2026-08-31T12:44:16.5285129Z Contents: read
+test (4)	Set up job	2026-08-31T12:44:16.5286290Z Metadata: read
+test (4)	Set up job	2026-08-31T12:44:16.5287415Z Packages: read
+test (4)	Set up job	2026-08-31T12:44:16.5288380Z ##[endgroup]
+test (4)	Set up job	2026-08-31T12:44:16.5291546Z Secret source: Actions
+test (4)	Set up job	2026-08-31T12:44:16.5293183Z Prepare workflow directory
+test (4)	Set up job	2026-08-31T12:44:16.5778029Z Prepare all required actions
+test (4)	Set up job	2026-08-31T12:44:16.5849039Z Getting action download info
+test (4)	Set up job	2026-08-31T12:44:16.7990611Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+test (4)	Set up job	2026-08-31T12:44:16.9132456Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+test (4)	Set up job	2026-08-31T12:44:16.9983164Z Download action repository 'actions/cache@v4' (SHA:0057852bfaa89a56745cba8c7296529d2fc39830)
+test (4)	Set up job	2026-08-31T12:44:17.2151758Z Complete job name: test (4)
+test (4)	Run actions/checkout@v4	﻿2026-08-31T12:44:17.2964930Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.2974068Z ##[group]Run actions/checkout@v4
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.2974827Z with:
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.2975316Z   repository: sambitmallick/ci-speedup-demo
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.2979147Z   token: ***
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.2979897Z   ssh-strict: true
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.2980347Z   ssh-user: git
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.2980807Z   persist-credentials: true
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.2981289Z   clean: true
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.2981730Z   sparse-checkout-cone-mode: true
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.2982249Z   fetch-depth: 1
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.2982682Z   fetch-tags: false
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.2983122Z   show-progress: true
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.2983566Z   lfs: false
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.2984005Z   submodules: false
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.2984498Z   set-safe-directory: true
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.2985002Z   allow-unsafe-pr-checkout: false
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.2985824Z ##[endgroup]
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4005085Z Syncing repository: sambitmallick/ci-speedup-demo
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4007562Z ##[group]Getting Git version info
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4008558Z Working directory is '/home/runner/work/ci-speedup-demo/ci-speedup-demo'
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4009940Z [command]/usr/bin/git version
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4142439Z git version 2.55.0
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4168233Z ##[endgroup]
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4184957Z Temporarily overriding HOME='/home/runner/work/_temp/eca2e942-dd3f-43ae-89ed-e43d45db2d60' before making global git config changes
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4187444Z Adding repository directory to the temporary git global config as a safe directory
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4192300Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-speedup-demo/ci-speedup-demo
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4248373Z Deleting the contents of '/home/runner/work/ci-speedup-demo/ci-speedup-demo'
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4252888Z ##[group]Initializing the repository
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4259691Z [command]/usr/bin/git init /home/runner/work/ci-speedup-demo/ci-speedup-demo
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4370438Z hint: Using 'master' as the name for the initial branch. This default branch name
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4371704Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4372675Z hint: to use in all of your new repositories, which will suppress this warning,
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4373720Z hint: call:
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4374166Z hint:
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4374718Z hint: 	git config --global init.defaultBranch <name>
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4375371Z hint:
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4375984Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4376942Z hint: 'development'. The just-created branch can be renamed via this command:
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4377734Z hint:
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4378178Z hint: 	git branch -m <name>
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4378704Z hint:
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4379798Z hint: Disable this message with "git config set advice.defaultBranchName false"
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4385810Z Initialized empty Git repository in /home/runner/work/ci-speedup-demo/ci-speedup-demo/.git/
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4397998Z [command]/usr/bin/git remote add origin https://github.com/sambitmallick/ci-speedup-demo
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4470833Z ##[endgroup]
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4472194Z ##[group]Disabling automatic garbage collection
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4472922Z [command]/usr/bin/git config --local gc.auto 0
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4503710Z ##[endgroup]
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4504882Z ##[group]Setting up auth
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4511031Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4546930Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4953625Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.4995032Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.5231933Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.5277837Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.5532950Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.5581710Z ##[endgroup]
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.5583724Z ##[group]Fetching the repository
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.5596839Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +d64aa3d544e45defd408a92fbbb6db084fb78434:refs/remotes/origin/main
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.8100605Z From https://github.com/sambitmallick/ci-speedup-demo
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.8102331Z  * [new ref]         d64aa3d544e45defd408a92fbbb6db084fb78434 -> origin/main
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.8106004Z ##[endgroup]
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.8107323Z ##[group]Determining the checkout info
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.8109752Z ##[endgroup]
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.8116318Z [command]/usr/bin/git sparse-checkout disable
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.8173871Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.8206381Z ##[group]Checking out the ref
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.8212010Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.8296984Z Switched to a new branch 'main'
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.8304426Z branch 'main' set up to track 'origin/main'.
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.8309246Z ##[endgroup]
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.8351901Z [command]/usr/bin/git log -1 --format=%H
+test (4)	Run actions/checkout@v4	2026-08-31T12:44:17.8378254Z d64aa3d544e45defd408a92fbbb6db084fb78434
+test (4)	Run actions/setup-node@v4	﻿2026-08-31T12:44:17.8657790Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+test (4)	Run actions/setup-node@v4	2026-08-31T12:44:17.8660828Z ##[group]Run actions/setup-node@v4
+test (4)	Run actions/setup-node@v4	2026-08-31T12:44:17.8661369Z with:
+test (4)	Run actions/setup-node@v4	2026-08-31T12:44:17.8661771Z   node-version: 20
+test (4)	Run actions/setup-node@v4	2026-08-31T12:44:17.8662222Z   always-auth: false
+test (4)	Run actions/setup-node@v4	2026-08-31T12:44:17.8662671Z   check-latest: false
+test (4)	Run actions/setup-node@v4	2026-08-31T12:44:17.8666346Z   token: ***
+test (4)	Run actions/setup-node@v4	2026-08-31T12:44:17.8666776Z ##[endgroup]
+test (4)	Run actions/setup-node@v4	2026-08-31T12:44:18.0182264Z Attempting to download 20...
+test (4)	Run actions/setup-node@v4	2026-08-31T12:44:18.0291671Z (node:2174) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+test (4)	Run actions/setup-node@v4	2026-08-31T12:44:18.0294268Z (Use `node --trace-deprecation ...` to show where the warning was created)
+test (4)	Run actions/setup-node@v4	2026-08-31T12:44:18.4374900Z Acquiring 20.20.2 - x64 from https://github.com/actions/node-versions/releases/download/20.20.2-23521894959/node-20.20.2-linux-x64.tar.gz
+test (4)	Run actions/setup-node@v4	2026-08-31T12:44:18.7703192Z Extracting ...
+test (4)	Run actions/setup-node@v4	2026-08-31T12:44:18.7817605Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/253e7e11-0e84-4dd5-a716-cd4866ddcd5a -f /home/runner/work/_temp/08d84c57-6c0f-46fa-a67e-9f56ef7e7f7d
+test (4)	Run actions/setup-node@v4	2026-08-31T12:44:19.8013589Z Adding to the cache ...
+test (4)	Run actions/setup-node@v4	2026-08-31T12:44:21.5635909Z ##[group]Environment details
+test (4)	Run actions/setup-node@v4	2026-08-31T12:44:21.7938595Z node: v20.20.2
+test (4)	Run actions/setup-node@v4	2026-08-31T12:44:21.7939684Z npm: 10.8.2
+test (4)	Run actions/setup-node@v4	2026-08-31T12:44:21.7940215Z yarn: 1.22.22
+test (4)	Run actions/setup-node@v4	2026-08-31T12:44:21.7941175Z ##[endgroup]
+test (4)	Cache dependencies	﻿2026-08-31T12:44:21.8156200Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+test (4)	Cache dependencies	2026-08-31T12:44:21.8157614Z ##[group]Run actions/cache@v4
+test (4)	Cache dependencies	2026-08-31T12:44:21.8157906Z with:
+test (4)	Cache dependencies	2026-08-31T12:44:21.8158158Z   path: node_modules
+test (4)	Cache dependencies	2026-08-31T12:44:21.8158426Z   key: node-modules-Linux
+test (4)	Cache dependencies	2026-08-31T12:44:21.8158720Z   enableCrossOsArchive: false
+test (4)	Cache dependencies	2026-08-31T12:44:21.8159026Z   fail-on-cache-miss: false
+test (4)	Cache dependencies	2026-08-31T12:44:21.8159541Z   lookup-only: false
+test (4)	Cache dependencies	2026-08-31T12:44:21.8159872Z   save-always: false
+test (4)	Cache dependencies	2026-08-31T12:44:21.8160124Z ##[endgroup]
+test (4)	Cache dependencies	2026-08-31T12:44:21.9295408Z (node:2210) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+test (4)	Cache dependencies	2026-08-31T12:44:21.9297301Z (Use `node --trace-deprecation ...` to show where the warning was created)
+test (4)	Cache dependencies	2026-08-31T12:44:22.0072443Z Cache hit for: node-modules-Linux
+test (4)	Cache dependencies	2026-08-31T12:44:22.0187634Z (node:2210) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+test (4)	Cache dependencies	2026-08-31T12:44:22.1619536Z Received 10861486 of 10861486 (100.0%), 86.3 MBs/sec
+test (4)	Cache dependencies	2026-08-31T12:44:22.1621272Z Cache Size: ~10 MB (10861486 B)
+test (4)	Cache dependencies	2026-08-31T12:44:22.1653089Z [command]/usr/bin/tar -xf /home/runner/work/_temp/9ab1c2e8-f9bd-4ea4-9646-ddd4b3407010/cache.tzst -P -C /home/runner/work/ci-speedup-demo/ci-speedup-demo --use-compress-program unzstd
+test (4)	Cache dependencies	2026-08-31T12:44:22.4756808Z Cache restored successfully
+test (4)	Cache dependencies	2026-08-31T12:44:22.4843494Z Cache restored from key: node-modules-Linux
+test (4)	Dependency receipt	﻿2026-08-31T12:44:22.4985157Z ##[group]Run npm run dep-receipt
+test (4)	Dependency receipt	2026-08-31T12:44:22.4985573Z ^[[36;1mnpm run dep-receipt^[[0m
+test (4)	Dependency receipt	2026-08-31T12:44:22.5026941Z shell: /usr/bin/bash -e {0}
+test (4)	Dependency receipt	2026-08-31T12:44:22.5027253Z ##[endgroup]
+test (4)	Dependency receipt	2026-08-31T12:44:22.6124130Z 
+test (4)	Dependency receipt	2026-08-31T12:44:22.6124882Z > orderkit@1.0.0 dep-receipt
+test (4)	Dependency receipt	2026-08-31T12:44:22.6125427Z > node scripts/dep-receipt.js
+test (4)	Dependency receipt	2026-08-31T12:44:22.6125683Z 
+test (4)	Dependency receipt	2026-08-31T12:44:22.6423626Z ── dependency receipt ─────────────────────────
+test (4)	Dependency receipt	2026-08-31T12:44:22.6426899Z   slugify declared in package.json : 1.6.5
+test (4)	Dependency receipt	2026-08-31T12:44:22.6427745Z   slugify actually installed       : 1.6.5
+test (4)	Dependency receipt	2026-08-31T12:44:22.6430437Z   match                            : yes
+test (4)	Dependency receipt	2026-08-31T12:44:22.6431523Z ───────────────────────────────────────────────
+test (4)	Test (shard 4 of 4)	﻿2026-08-31T12:44:22.6538950Z ##[group]Run npm test -- --shard=4/4
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:22.6539613Z ^[[36;1mnpm test -- --shard=4/4^[[0m
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:22.6578362Z shell: /usr/bin/bash -e {0}
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:22.6578654Z ##[endgroup]
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:22.7752650Z 
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:22.7753278Z > orderkit@1.0.0 test
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:22.7753676Z > jest --shard=4/4
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:22.7753850Z 
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:23.9471371Z PASS test/slug.test.js
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0119903Z FAIL test/aload.integration.test.js (5.718 s)
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0121218Z   ● load aload (integration) › processes a batch of 220 orders
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0121745Z 
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0122099Z     thrown: "Exceeded timeout of 5000 ms for a test.
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0123571Z     Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0124607Z 
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0125086Z     ^[[0m ^[[90m 15 |^[[39m   })^[[33m;^[[39m
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0125684Z      ^[[90m 16 |^[[39m
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0127061Z     ^[[31m^[[1m>^[[22m^[[39m^[[90m 17 |^[[39m   test(^[[32m"processes a batch of 220 orders"^[[39m^[[33m,^[[39m ^[[36masync^[[39m () ^[[33m=>^[[39m {
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0128278Z      ^[[90m    |^[[39m   ^[[31m^[[1m^^[[22m^[[39m
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0130753Z      ^[[90m 18 |^[[39m     ^[[36mconst^[[39m res ^[[33m=^[[39m ^[[36mawait^[[39m processBatch(^[[33mArray^[[39m^[[33m.^[[39m^[[36mfrom^[[39m({ length^[[33m:^[[39m ^[[35m220^[[39m }^[[33m,^[[39m (_^[[33m,^[[39m i) ^[[33m=>^[[39m mk(i ^[[33m+^[[39m ^[[35m1^[[39m)))^[[33m;^[[39m
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0132871Z      ^[[90m 19 |^[[39m     expect(res)^[[33m.^[[39mtoHaveLength(^[[35m220^[[39m)^[[33m;^[[39m
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0134793Z      ^[[90m 20 |^[[39m     expect(res^[[33m.^[[39mevery((r) ^[[33m=>^[[39m r^[[33m.^[[39mtotalCents ^[[33m>^[[39m ^[[35m0^[[39m))^[[33m.^[[39mtoBe(^[[36mtrue^[[39m)^[[33m;^[[39m^[[0m
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0135821Z 
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0136246Z       at test (test/aload.integration.test.js:17:3)
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0137117Z       at Object.describe (test/aload.integration.test.js:5:1)
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0137628Z 
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0226240Z FAIL test/bload.integration.test.js (5.733 s)
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0227270Z   ● load bload (integration) › processes a batch of 220 orders
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0228998Z 
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0229297Z     thrown: "Exceeded timeout of 5000 ms for a test.
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0230802Z     Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0231380Z 
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0231611Z     ^[[0m ^[[90m 15 |^[[39m   })^[[33m;^[[39m
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0231923Z      ^[[90m 16 |^[[39m
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0232593Z     ^[[31m^[[1m>^[[22m^[[39m^[[90m 17 |^[[39m   test(^[[32m"processes a batch of 220 orders"^[[39m^[[33m,^[[39m ^[[36masync^[[39m () ^[[33m=>^[[39m {
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0233205Z      ^[[90m    |^[[39m   ^[[31m^[[1m^^[[22m^[[39m
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0234303Z      ^[[90m 18 |^[[39m     ^[[36mconst^[[39m res ^[[33m=^[[39m ^[[36mawait^[[39m processBatch(^[[33mArray^[[39m^[[33m.^[[39m^[[36mfrom^[[39m({ length^[[33m:^[[39m ^[[35m220^[[39m }^[[33m,^[[39m (_^[[33m,^[[39m i) ^[[33m=>^[[39m mk(i ^[[33m+^[[39m ^[[35m1^[[39m)))^[[33m;^[[39m
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0235369Z      ^[[90m 19 |^[[39m     expect(res)^[[33m.^[[39mtoHaveLength(^[[35m220^[[39m)^[[33m;^[[39m
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0236271Z      ^[[90m 20 |^[[39m     expect(res^[[33m.^[[39mevery((r) ^[[33m=>^[[39m r^[[33m.^[[39mtotalCents ^[[33m>^[[39m ^[[35m0^[[39m))^[[33m.^[[39mtoBe(^[[36mtrue^[[39m)^[[33m;^[[39m^[[0m
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0236763Z 
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0236966Z       at test (test/bload.integration.test.js:17:3)
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0237438Z       at Object.describe (test/bload.integration.test.js:5:1)
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.0237990Z 
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.5323693Z A worker process has failed to exit gracefully and has been force exited. This is likely caused by tests leaking due to improper teardown. Try running with --detectOpenHandles to find leaks. Active timers can also cause this, ensure that .unref() was called on them.
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.5336614Z Test Suites: 2 failed, 1 passed, 3 total
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.5338018Z Tests:       2 failed, 10 passed, 12 total
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.5338663Z Snapshots:   0 total
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.5339112Z Time:        6.378 s
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.5339858Z Ran all test suites.
+test (4)	Test (shard 4 of 4)	2026-08-31T12:44:29.5465454Z ##[error]Process completed with exit code 1.
+test (4)	Post Run actions/checkout@v4	﻿2026-08-31T12:44:29.5613801Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+test (4)	Post Run actions/checkout@v4	2026-08-31T12:44:29.5615090Z Post job cleanup.
+test (4)	Post Run actions/checkout@v4	2026-08-31T12:44:29.6447390Z [command]/usr/bin/git version
+test (4)	Post Run actions/checkout@v4	2026-08-31T12:44:29.6490510Z git version 2.55.0
+test (4)	Post Run actions/checkout@v4	2026-08-31T12:44:29.6570339Z Temporarily overriding HOME='/home/runner/work/_temp/c2a0becd-1a4d-448a-974a-b7d47c931320' before making global git config changes
+test (4)	Post Run actions/checkout@v4	2026-08-31T12:44:29.6572313Z Adding repository directory to the temporary git global config as a safe directory
+test (4)	Post Run actions/checkout@v4	2026-08-31T12:44:29.6573897Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-speedup-demo/ci-speedup-demo
+test (4)	Post Run actions/checkout@v4	2026-08-31T12:44:29.6603015Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+test (4)	Post Run actions/checkout@v4	2026-08-31T12:44:29.6638536Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+test (4)	Post Run actions/checkout@v4	2026-08-31T12:44:29.6884322Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+test (4)	Post Run actions/checkout@v4	2026-08-31T12:44:29.6912217Z http.https://github.com/.extraheader
+test (4)	Post Run actions/checkout@v4	2026-08-31T12:44:29.6924091Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+test (4)	Post Run actions/checkout@v4	2026-08-31T12:44:29.6958691Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+test (4)	Post Run actions/checkout@v4	2026-08-31T12:44:29.7254497Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+test (4)	Post Run actions/checkout@v4	2026-08-31T12:44:29.7293105Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+test (4)	Complete job	﻿2026-08-31T12:44:29.7681585Z Cleaning up orphan processes
+test (4)	Complete job	2026-08-31T12:44:29.8010650Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/cache@v4, actions/checkout@v4, actions/setup-node@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

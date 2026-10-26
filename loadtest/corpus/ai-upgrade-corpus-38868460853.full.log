@@ -1,0 +1,203 @@
+check	UNKNOWN STEP	﻿2026-10-16T07:38:10.7333932Z Current runner version: '2.337.0'
+check	UNKNOWN STEP	2026-10-16T07:38:10.7352469Z ##[group]Runner Image Provisioner
+check	UNKNOWN STEP	2026-10-16T07:38:10.7353226Z Hosted Compute Agent
+check	UNKNOWN STEP	2026-10-16T07:38:10.7353569Z Version: 20261012.601
+check	UNKNOWN STEP	2026-10-16T07:38:10.7353999Z Commit: f3dc54e1fb89da6852db922499a0233137369e1d
+check	UNKNOWN STEP	2026-10-16T07:38:10.7354428Z Build Date: 2026-10-12T17:48:21Z
+check	UNKNOWN STEP	2026-10-16T07:38:10.7354858Z Worker ID: {9bde2e4a-d92b-4e14-8777-f91122064bb4}
+check	UNKNOWN STEP	2026-10-16T07:38:10.7355315Z Region: westus3
+check	UNKNOWN STEP	2026-10-16T07:38:10.7355649Z Cloud: Azure
+check	UNKNOWN STEP	2026-10-16T07:38:10.7356014Z ##[endgroup]
+check	UNKNOWN STEP	2026-10-16T07:38:10.7356798Z ##[group]Operating System
+check	UNKNOWN STEP	2026-10-16T07:38:10.7357216Z Ubuntu
+check	UNKNOWN STEP	2026-10-16T07:38:10.7357572Z 24.04.5
+check	UNKNOWN STEP	2026-10-16T07:38:10.7357883Z LTS
+check	UNKNOWN STEP	2026-10-16T07:38:10.7358229Z ##[endgroup]
+check	UNKNOWN STEP	2026-10-16T07:38:10.7358564Z ##[group]Runner Image
+check	UNKNOWN STEP	2026-10-16T07:38:10.7358921Z Image: ubuntu-24.04
+check	UNKNOWN STEP	2026-10-16T07:38:10.7359399Z Version: 20261012.334.1
+check	UNKNOWN STEP	2026-10-16T07:38:10.7360143Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261012.334/images/ubuntu/Ubuntu2404-Readme.md
+check	UNKNOWN STEP	2026-10-16T07:38:10.7361201Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261012.334
+check	UNKNOWN STEP	2026-10-16T07:38:10.7361745Z ##[endgroup]
+check	UNKNOWN STEP	2026-10-16T07:38:10.7362535Z ##[group]GITHUB_TOKEN Permissions
+check	UNKNOWN STEP	2026-10-16T07:38:10.7363887Z Contents: read
+check	UNKNOWN STEP	2026-10-16T07:38:10.7364289Z Metadata: read
+check	UNKNOWN STEP	2026-10-16T07:38:10.7364625Z Packages: read
+check	UNKNOWN STEP	2026-10-16T07:38:10.7365015Z ##[endgroup]
+check	UNKNOWN STEP	2026-10-16T07:38:10.7366374Z Secret source: Dependabot
+check	UNKNOWN STEP	2026-10-16T07:38:10.7366943Z Cache mode: write
+check	UNKNOWN STEP	2026-10-16T07:38:10.7367371Z Prepare workflow directory
+check	UNKNOWN STEP	2026-10-16T07:38:10.7573588Z Prepare all required actions
+check	UNKNOWN STEP	2026-10-16T07:38:10.7605112Z Getting action download info
+check	UNKNOWN STEP	2026-10-16T07:38:11.0437353Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+check	UNKNOWN STEP	2026-10-16T07:38:11.1428016Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+check	UNKNOWN STEP	2026-10-16T07:38:11.3469954Z Complete job name: check
+check	UNKNOWN STEP	2026-10-16T07:38:11.3994274Z ##[group]Run actions/checkout@v4
+check	UNKNOWN STEP	2026-10-16T07:38:11.3994865Z with:
+check	UNKNOWN STEP	2026-10-16T07:38:11.3995196Z   repository: sambitmallick/ai-upgrade-corpus
+check	UNKNOWN STEP	2026-10-16T07:38:11.3997982Z   token: ***
+check	UNKNOWN STEP	2026-10-16T07:38:11.3998254Z   ssh-strict: true
+check	UNKNOWN STEP	2026-10-16T07:38:11.3998546Z   ssh-user: git
+check	UNKNOWN STEP	2026-10-16T07:38:11.3998820Z   persist-credentials: true
+check	UNKNOWN STEP	2026-10-16T07:38:11.3999116Z   clean: true
+check	UNKNOWN STEP	2026-10-16T07:38:11.3999386Z   sparse-checkout-cone-mode: true
+check	UNKNOWN STEP	2026-10-16T07:38:11.3999697Z   fetch-depth: 1
+check	UNKNOWN STEP	2026-10-16T07:38:11.3999955Z   fetch-tags: false
+check	UNKNOWN STEP	2026-10-16T07:38:11.4000216Z   show-progress: true
+check	UNKNOWN STEP	2026-10-16T07:38:11.4000474Z   lfs: false
+check	UNKNOWN STEP	2026-10-16T07:38:11.4000911Z   submodules: false
+check	UNKNOWN STEP	2026-10-16T07:38:11.4001200Z   set-safe-directory: true
+check	UNKNOWN STEP	2026-10-16T07:38:11.4001503Z   allow-unsafe-pr-checkout: false
+check	UNKNOWN STEP	2026-10-16T07:38:11.4001899Z ##[endgroup]
+check	UNKNOWN STEP	2026-10-16T07:38:11.4669010Z Syncing repository: sambitmallick/ai-upgrade-corpus
+check	UNKNOWN STEP	2026-10-16T07:38:11.4670865Z ##[group]Getting Git version info
+check	UNKNOWN STEP	2026-10-16T07:38:11.4671664Z Working directory is '/home/runner/work/ai-upgrade-corpus/ai-upgrade-corpus'
+check	UNKNOWN STEP	2026-10-16T07:38:11.4680820Z [command]/usr/bin/git version
+check	UNKNOWN STEP	2026-10-16T07:38:11.4768505Z git version 2.55.0
+check	UNKNOWN STEP	2026-10-16T07:38:11.4782382Z ##[endgroup]
+check	UNKNOWN STEP	2026-10-16T07:38:11.4793030Z Temporarily overriding HOME='/home/runner/work/_temp/561cbe10-bd8a-4c5c-a7d6-70c853590836' before making global git config changes
+check	UNKNOWN STEP	2026-10-16T07:38:11.4794454Z Adding repository directory to the temporary git global config as a safe directory
+check	UNKNOWN STEP	2026-10-16T07:38:11.4797184Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ai-upgrade-corpus/ai-upgrade-corpus
+check	UNKNOWN STEP	2026-10-16T07:38:11.4843237Z Deleting the contents of '/home/runner/work/ai-upgrade-corpus/ai-upgrade-corpus'
+check	UNKNOWN STEP	2026-10-16T07:38:11.4850151Z ##[group]Initializing the repository
+check	UNKNOWN STEP	2026-10-16T07:38:11.4892783Z [command]/usr/bin/git init /home/runner/work/ai-upgrade-corpus/ai-upgrade-corpus
+check	UNKNOWN STEP	2026-10-16T07:38:11.4934814Z hint: Using 'master' as the name for the initial branch. This default branch name
+check	UNKNOWN STEP	2026-10-16T07:38:11.4936117Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+check	UNKNOWN STEP	2026-10-16T07:38:11.4937123Z hint: to use in all of your new repositories, which will suppress this warning,
+check	UNKNOWN STEP	2026-10-16T07:38:11.4938301Z hint: call:
+check	UNKNOWN STEP	2026-10-16T07:38:11.4938715Z hint:
+check	UNKNOWN STEP	2026-10-16T07:38:11.4939246Z hint: 	git config --global init.defaultBranch <name>
+check	UNKNOWN STEP	2026-10-16T07:38:11.4939890Z hint:
+check	UNKNOWN STEP	2026-10-16T07:38:11.4940424Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+check	UNKNOWN STEP	2026-10-16T07:38:11.4942271Z hint: 'development'. The just-created branch can be renamed via this command:
+check	UNKNOWN STEP	2026-10-16T07:38:11.4943048Z hint:
+check	UNKNOWN STEP	2026-10-16T07:38:11.4943447Z hint: 	git branch -m <name>
+check	UNKNOWN STEP	2026-10-16T07:38:11.4943886Z hint:
+check	UNKNOWN STEP	2026-10-16T07:38:11.4944519Z hint: Disable this message with "git config set advice.defaultBranchName false"
+check	UNKNOWN STEP	2026-10-16T07:38:11.4945721Z Initialized empty Git repository in /home/runner/work/ai-upgrade-corpus/ai-upgrade-corpus/.git/
+check	UNKNOWN STEP	2026-10-16T07:38:11.4947706Z [command]/usr/bin/git remote add origin https://github.com/sambitmallick/ai-upgrade-corpus
+check	UNKNOWN STEP	2026-10-16T07:38:11.4999600Z ##[endgroup]
+check	UNKNOWN STEP	2026-10-16T07:38:11.5000412Z ##[group]Disabling automatic garbage collection
+check	UNKNOWN STEP	2026-10-16T07:38:11.5006144Z [command]/usr/bin/git config --local gc.auto 0
+check	UNKNOWN STEP	2026-10-16T07:38:11.5036331Z ##[endgroup]
+check	UNKNOWN STEP	2026-10-16T07:38:11.5036879Z ##[group]Setting up auth
+check	UNKNOWN STEP	2026-10-16T07:38:11.5044473Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+check	UNKNOWN STEP	2026-10-16T07:38:11.5076570Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+check	UNKNOWN STEP	2026-10-16T07:38:11.5370150Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+check	UNKNOWN STEP	2026-10-16T07:38:11.5403084Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+check	UNKNOWN STEP	2026-10-16T07:38:11.5585764Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+check	UNKNOWN STEP	2026-10-16T07:38:11.5618050Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+check	UNKNOWN STEP	2026-10-16T07:38:11.5803410Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+check	UNKNOWN STEP	2026-10-16T07:38:11.5838500Z ##[endgroup]
+check	UNKNOWN STEP	2026-10-16T07:38:11.5839079Z ##[group]Fetching the repository
+check	UNKNOWN STEP	2026-10-16T07:38:11.5845051Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +2d4a835f5d40ba669913558dc1ae7189824d9fa8:refs/remotes/pull/3/merge
+check	UNKNOWN STEP	2026-10-16T07:38:12.0446236Z From https://github.com/sambitmallick/ai-upgrade-corpus
+check	UNKNOWN STEP	2026-10-16T07:38:12.0446844Z  * [new ref]         2d4a835f5d40ba669913558dc1ae7189824d9fa8 -> pull/3/merge
+check	UNKNOWN STEP	2026-10-16T07:38:12.0450124Z ##[endgroup]
+check	UNKNOWN STEP	2026-10-16T07:38:12.0450881Z ##[group]Determining the checkout info
+check	UNKNOWN STEP	2026-10-16T07:38:12.0452316Z ##[endgroup]
+check	UNKNOWN STEP	2026-10-16T07:38:12.0462590Z [command]/usr/bin/git sparse-checkout disable
+check	UNKNOWN STEP	2026-10-16T07:38:12.0505478Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+check	UNKNOWN STEP	2026-10-16T07:38:12.0531251Z ##[group]Checking out the ref
+check	UNKNOWN STEP	2026-10-16T07:38:12.0533494Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/3/merge
+check	UNKNOWN STEP	2026-10-16T07:38:12.0589978Z Note: switching to 'refs/remotes/pull/3/merge'.
+check	UNKNOWN STEP	2026-10-16T07:38:12.0590363Z 
+check	UNKNOWN STEP	2026-10-16T07:38:12.0590744Z You are in 'detached HEAD' state. You can look around, make experimental
+check	UNKNOWN STEP	2026-10-16T07:38:12.0591310Z changes and commit them, and you can discard any commits you make in this
+check	UNKNOWN STEP	2026-10-16T07:38:12.0591807Z state without impacting any branches by switching back to a branch.
+check	UNKNOWN STEP	2026-10-16T07:38:12.0592079Z 
+check	UNKNOWN STEP	2026-10-16T07:38:12.0592275Z If you want to create a new branch to retain commits you create, you may
+check	UNKNOWN STEP	2026-10-16T07:38:12.0592755Z do so (now or later) by using -c with the switch command. Example:
+check	UNKNOWN STEP	2026-10-16T07:38:12.0593193Z 
+check	UNKNOWN STEP	2026-10-16T07:38:12.0593316Z   git switch -c <new-branch-name>
+check	UNKNOWN STEP	2026-10-16T07:38:12.0593499Z 
+check	UNKNOWN STEP	2026-10-16T07:38:12.0593616Z Or undo this operation with:
+check	UNKNOWN STEP	2026-10-16T07:38:12.0593788Z 
+check	UNKNOWN STEP	2026-10-16T07:38:12.0593895Z   git switch -
+check	UNKNOWN STEP	2026-10-16T07:38:12.0594028Z 
+check	UNKNOWN STEP	2026-10-16T07:38:12.0594249Z Turn off this advice by setting config variable advice.detachedHead to false
+check	UNKNOWN STEP	2026-10-16T07:38:12.0594553Z 
+check	UNKNOWN STEP	2026-10-16T07:38:12.0594932Z HEAD is now at 2d4a835 Merge f31702ac0f64985fa92975e697db5aa68b195dc9 into 48f73ee0aa2228ce05e88793c885c78e760bd479
+check	UNKNOWN STEP	2026-10-16T07:38:12.0598083Z ##[endgroup]
+check	UNKNOWN STEP	2026-10-16T07:38:12.0629708Z [command]/usr/bin/git log -1 --format=%H
+check	UNKNOWN STEP	2026-10-16T07:38:12.0651395Z 2d4a835f5d40ba669913558dc1ae7189824d9fa8
+check	UNKNOWN STEP	2026-10-16T07:38:12.0852629Z ##[group]Run actions/setup-node@v4
+check	UNKNOWN STEP	2026-10-16T07:38:12.0852939Z with:
+check	UNKNOWN STEP	2026-10-16T07:38:12.0908675Z   node-version: 24
+check	UNKNOWN STEP	2026-10-16T07:38:12.0909095Z   cache: npm
+check	UNKNOWN STEP	2026-10-16T07:38:12.0909489Z   always-auth: false
+check	UNKNOWN STEP	2026-10-16T07:38:12.0909964Z   check-latest: false
+check	UNKNOWN STEP	2026-10-16T07:38:12.0913562Z   token: ***
+check	UNKNOWN STEP	2026-10-16T07:38:12.0913933Z ##[endgroup]
+check	UNKNOWN STEP	2026-10-16T07:38:12.1960304Z Found in cache @ /opt/hostedtoolcache/node/24.21.0/x64
+check	UNKNOWN STEP	2026-10-16T07:38:12.1964649Z (node:2081) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+check	UNKNOWN STEP	2026-10-16T07:38:12.1965783Z (Use `node --trace-deprecation ...` to show where the warning was created)
+check	UNKNOWN STEP	2026-10-16T07:38:12.1966913Z ##[group]Environment details
+check	UNKNOWN STEP	2026-10-16T07:38:19.2766487Z node: v24.21.0
+check	UNKNOWN STEP	2026-10-16T07:38:19.2767038Z npm: 11.19.0
+check	UNKNOWN STEP	2026-10-16T07:38:19.2767298Z yarn: 1.22.22
+check	UNKNOWN STEP	2026-10-16T07:38:19.2768443Z ##[endgroup]
+check	UNKNOWN STEP	2026-10-16T07:38:19.2779954Z [command]/opt/hostedtoolcache/node/24.21.0/x64/bin/npm config get cache
+check	UNKNOWN STEP	2026-10-16T07:38:20.0150113Z /home/runner/.npm
+check	UNKNOWN STEP	2026-10-16T07:38:20.2431129Z npm cache is not found
+check	UNKNOWN STEP	2026-10-16T07:38:20.2562918Z ##[group]Run npm ci
+check	UNKNOWN STEP	2026-10-16T07:38:20.2563194Z ^[[36;1mnpm ci^[[0m
+check	UNKNOWN STEP	2026-10-16T07:38:20.2811796Z shell: /usr/bin/bash -e {0}
+check	UNKNOWN STEP	2026-10-16T07:38:20.2812073Z ##[endgroup]
+check	UNKNOWN STEP	2026-10-16T07:38:22.5135670Z 
+check	UNKNOWN STEP	2026-10-16T07:38:22.5140927Z added 4 packages, and audited 5 packages in 2s
+check	UNKNOWN STEP	2026-10-16T07:38:22.5141207Z 
+check	UNKNOWN STEP	2026-10-16T07:38:22.5141365Z 1 package is looking for funding
+check	UNKNOWN STEP	2026-10-16T07:38:22.5141938Z   run `npm fund` for details
+check	UNKNOWN STEP	2026-10-16T07:38:22.5142277Z 
+check	UNKNOWN STEP	2026-10-16T07:38:22.5142414Z found 0 vulnerabilities
+check	UNKNOWN STEP	2026-10-16T07:38:22.5522095Z ##[group]Run npm run build
+check	UNKNOWN STEP	2026-10-16T07:38:22.5522376Z ^[[36;1mnpm run build^[[0m
+check	UNKNOWN STEP	2026-10-16T07:38:22.5580844Z shell: /usr/bin/bash -e {0}
+check	UNKNOWN STEP	2026-10-16T07:38:22.5581006Z ##[endgroup]
+check	UNKNOWN STEP	2026-10-16T07:38:22.6377961Z 
+check	UNKNOWN STEP	2026-10-16T07:38:22.6378674Z > signupkit@1.0.0 build
+check	UNKNOWN STEP	2026-10-16T07:38:22.6378948Z > tsc
+check	UNKNOWN STEP	2026-10-16T07:38:22.6379028Z 
+check	UNKNOWN STEP	2026-10-16T07:38:23.3832546Z ##[error]src/schemas.ts(16,18): error TS2339: Property 'ip' does not exist on type 'ZodString'.
+check	UNKNOWN STEP	2026-10-16T07:38:23.3839670Z ##[error]src/schemas.ts(19,12): error TS2554: Expected 2-3 arguments, but got 1.
+check	UNKNOWN STEP	2026-10-16T07:38:23.3841044Z ##[error]src/schemas.ts(24,53): error TS2769: No overload matches this call.
+check	UNKNOWN STEP	2026-10-16T07:38:23.3842016Z   Overload 1 of 2, '(def: number): ZodDefault<ZodPipe<ZodString, ZodTransform<number, string>>>', gave the following error.
+check	UNKNOWN STEP	2026-10-16T07:38:23.3842632Z     Argument of type 'string' is not assignable to parameter of type 'number'.
+check	UNKNOWN STEP	2026-10-16T07:38:23.3843350Z   Overload 2 of 2, '(def: () => number): ZodDefault<ZodPipe<ZodString, ZodTransform<number, string>>>', gave the following error.
+check	UNKNOWN STEP	2026-10-16T07:38:23.3843977Z     Argument of type 'string' is not assignable to parameter of type '() => number'.
+check	UNKNOWN STEP	2026-10-16T07:38:23.3844635Z ##[error]src/schemas.ts(26,14): error TS2769: No overload matches this call.
+check	UNKNOWN STEP	2026-10-16T07:38:23.3846039Z   Overload 1 of 2, '(def: { theme: "light" | "dark"; retries: number; }): ZodDefault<ZodObject<{ theme: ZodDefault<ZodEnum<{ light: "light"; dark: "dark"; }>>; retries: ZodDefault<ZodPipe<ZodString, ZodTransform<number, string>>>; }, $strip>>', gave the following error.
+check	UNKNOWN STEP	2026-10-16T07:38:23.3847449Z     Argument of type '{}' is not assignable to parameter of type '{ theme: "light" | "dark"; retries: number; }'.
+check	UNKNOWN STEP	2026-10-16T07:38:23.3848129Z       Type '{}' is missing the following properties from type '{ theme: "light" | "dark"; retries: number; }': theme, retries
+check	UNKNOWN STEP	2026-10-16T07:38:23.3849252Z   Overload 2 of 2, '(def: () => { theme: "light" | "dark"; retries: number; }): ZodDefault<ZodObject<{ theme: ZodDefault<ZodEnum<{ light: "light"; dark: "dark"; }>>; retries: ZodDefault<ZodPipe<ZodString, ZodTransform<...>>>; }, $strip>>', gave the following error.
+check	UNKNOWN STEP	2026-10-16T07:38:23.3850300Z     Argument of type '{}' is not assignable to parameter of type '() => { theme: "light" | "dark"; retries: number; }'.
+check	UNKNOWN STEP	2026-10-16T07:38:23.3851091Z       Type '{}' provides no match for the signature '(): { theme: "light" | "dark"; retries: number; }'.
+check	UNKNOWN STEP	2026-10-16T07:38:23.3851817Z ##[error]src/schemas.ts(32,46): error TS2769: No overload matches this call.
+check	UNKNOWN STEP	2026-10-16T07:38:23.3852848Z   Overload 1 of 2, '(def: number): ZodDefault<ZodPipe<ZodString, ZodTransform<number, string>>>', gave the following error.
+check	UNKNOWN STEP	2026-10-16T07:38:23.3853462Z     Argument of type 'string' is not assignable to parameter of type 'number'.
+check	UNKNOWN STEP	2026-10-16T07:38:23.3854106Z   Overload 2 of 2, '(def: () => number): ZodDefault<ZodPipe<ZodString, ZodTransform<number, string>>>', gave the following error.
+check	UNKNOWN STEP	2026-10-16T07:38:23.3854749Z     Argument of type 'string' is not assignable to parameter of type '() => number'.
+check	UNKNOWN STEP	2026-10-16T07:38:23.3855519Z ##[error]src/schemas.ts(33,29): error TS2339: Property 'ip' does not exist on type 'ZodString'.
+check	UNKNOWN STEP	2026-10-16T07:38:23.3856843Z ##[error]src/schemas.ts(39,34): error TS2339: Property 'args' does not exist on type 'ZodFunction<$ZodFunctionArgs, $ZodFunctionOut>'.
+check	UNKNOWN STEP	2026-10-16T07:38:23.3858080Z ##[error]src/validate.ts(8,14): error TS2339: Property 'errors' does not exist on type 'ZodError<unknown>'.
+check	UNKNOWN STEP	2026-10-16T07:38:23.3859130Z ##[error]src/validate.ts(8,26): error TS7006: Parameter 'e' implicitly has an 'any' type.
+check	UNKNOWN STEP	2026-10-16T07:38:23.3860378Z ##[error]test/schemas.test.ts(48,35): error TS7006: Parameter 'event' implicitly has an 'any' type.
+check	UNKNOWN STEP	2026-10-16T07:38:23.3861654Z ##[error]test/schemas.test.ts(48,42): error TS7006: Parameter 'bytes' implicitly has an 'any' type.
+check	UNKNOWN STEP	2026-10-16T07:38:23.4073884Z ##[error]Process completed with exit code 2.
+check	UNKNOWN STEP	2026-10-16T07:38:23.4169262Z Post job cleanup.
+check	UNKNOWN STEP	2026-10-16T07:38:23.4747088Z [command]/usr/bin/git version
+check	UNKNOWN STEP	2026-10-16T07:38:23.4779430Z git version 2.55.0
+check	UNKNOWN STEP	2026-10-16T07:38:23.4803972Z Temporarily overriding HOME='/home/runner/work/_temp/a1df0019-cd93-4a29-a8bf-81497d892be5' before making global git config changes
+check	UNKNOWN STEP	2026-10-16T07:38:23.4804981Z Adding repository directory to the temporary git global config as a safe directory
+check	UNKNOWN STEP	2026-10-16T07:38:23.4808722Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ai-upgrade-corpus/ai-upgrade-corpus
+check	UNKNOWN STEP	2026-10-16T07:38:23.4843706Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+check	UNKNOWN STEP	2026-10-16T07:38:23.4877346Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+check	UNKNOWN STEP	2026-10-16T07:38:23.5081777Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+check	UNKNOWN STEP	2026-10-16T07:38:23.5115253Z http.https://github.com/.extraheader
+check	UNKNOWN STEP	2026-10-16T07:38:23.5133891Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+check	UNKNOWN STEP	2026-10-16T07:38:23.5160693Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+check	UNKNOWN STEP	2026-10-16T07:38:23.5361544Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+check	UNKNOWN STEP	2026-10-16T07:38:23.5394979Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+check	UNKNOWN STEP	2026-10-16T07:38:23.5691223Z Cleaning up orphan processes
+check	UNKNOWN STEP	2026-10-16T07:38:23.5904029Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

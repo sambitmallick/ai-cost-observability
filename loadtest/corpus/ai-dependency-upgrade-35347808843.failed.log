@@ -1,0 +1,34 @@
+check	Run npm run build	﻿2026-09-18T13:01:47.6094876Z ##[group]Run npm run build
+check	Run npm run build	2026-09-18T13:01:47.6095237Z ^[[36;1mnpm run build^[[0m
+check	Run npm run build	2026-09-18T13:01:47.6117582Z shell: /usr/bin/bash -e {0}
+check	Run npm run build	2026-09-18T13:01:47.6117931Z ##[endgroup]
+check	Run npm run build	2026-09-18T13:01:47.6928523Z 
+check	Run npm run build	2026-09-18T13:01:47.6929566Z > signupkit@1.0.0 build
+check	Run npm run build	2026-09-18T13:01:47.6930167Z > tsc
+check	Run npm run build	2026-09-18T13:01:47.6930403Z 
+check	Run npm run build	2026-09-18T13:01:48.5053338Z ##[error]src/schemas.ts(16,18): error TS2339: Property 'ip' does not exist on type 'ZodString'.
+check	Run npm run build	2026-09-18T13:01:48.5061331Z ##[error]src/schemas.ts(19,12): error TS2554: Expected 2-3 arguments, but got 1.
+check	Run npm run build	2026-09-18T13:01:48.5062955Z ##[error]src/schemas.ts(24,53): error TS2769: No overload matches this call.
+check	Run npm run build	2026-09-18T13:01:48.5064201Z   Overload 1 of 2, '(def: number): ZodDefault<ZodPipe<ZodString, ZodTransform<number, string>>>', gave the following error.
+check	Run npm run build	2026-09-18T13:01:48.5065108Z     Argument of type 'string' is not assignable to parameter of type 'number'.
+check	Run npm run build	2026-09-18T13:01:48.5066287Z   Overload 2 of 2, '(def: () => number): ZodDefault<ZodPipe<ZodString, ZodTransform<number, string>>>', gave the following error.
+check	Run npm run build	2026-09-18T13:01:48.5067319Z     Argument of type 'string' is not assignable to parameter of type '() => number'.
+check	Run npm run build	2026-09-18T13:01:48.5068670Z ##[error]src/schemas.ts(26,14): error TS2769: No overload matches this call.
+check	Run npm run build	2026-09-18T13:01:48.5070841Z   Overload 1 of 2, '(def: { theme: "light" | "dark"; retries: number; }): ZodDefault<ZodObject<{ theme: ZodDefault<ZodEnum<{ light: "light"; dark: "dark"; }>>; retries: ZodDefault<ZodPipe<ZodString, ZodTransform<number, string>>>; }, $strip>>', gave the following error.
+check	Run npm run build	2026-09-18T13:01:48.5072325Z     Argument of type '{}' is not assignable to parameter of type '{ theme: "light" | "dark"; retries: number; }'.
+check	Run npm run build	2026-09-18T13:01:48.5073273Z       Type '{}' is missing the following properties from type '{ theme: "light" | "dark"; retries: number; }': theme, retries
+check	Run npm run build	2026-09-18T13:01:48.5074906Z   Overload 2 of 2, '(def: () => { theme: "light" | "dark"; retries: number; }): ZodDefault<ZodObject<{ theme: ZodDefault<ZodEnum<{ light: "light"; dark: "dark"; }>>; retries: ZodDefault<ZodPipe<ZodString, ZodTransform<...>>>; }, $strip>>', gave the following error.
+check	Run npm run build	2026-09-18T13:01:48.5076378Z     Argument of type '{}' is not assignable to parameter of type '() => { theme: "light" | "dark"; retries: number; }'.
+check	Run npm run build	2026-09-18T13:01:48.5077282Z       Type '{}' provides no match for the signature '(): { theme: "light" | "dark"; retries: number; }'.
+check	Run npm run build	2026-09-18T13:01:48.5078599Z ##[error]src/schemas.ts(32,46): error TS2769: No overload matches this call.
+check	Run npm run build	2026-09-18T13:01:48.5079930Z   Overload 1 of 2, '(def: number): ZodDefault<ZodPipe<ZodString, ZodTransform<number, string>>>', gave the following error.
+check	Run npm run build	2026-09-18T13:01:48.5080682Z     Argument of type 'string' is not assignable to parameter of type 'number'.
+check	Run npm run build	2026-09-18T13:01:48.5081568Z   Overload 2 of 2, '(def: () => number): ZodDefault<ZodPipe<ZodString, ZodTransform<number, string>>>', gave the following error.
+check	Run npm run build	2026-09-18T13:01:48.5082436Z     Argument of type 'string' is not assignable to parameter of type '() => number'.
+check	Run npm run build	2026-09-18T13:01:48.5083447Z ##[error]src/schemas.ts(33,29): error TS2339: Property 'ip' does not exist on type 'ZodString'.
+check	Run npm run build	2026-09-18T13:01:48.5085454Z ##[error]src/schemas.ts(39,34): error TS2339: Property 'args' does not exist on type 'ZodFunction<$ZodFunctionArgs, $ZodFunctionOut>'.
+check	Run npm run build	2026-09-18T13:01:48.5087341Z ##[error]src/validate.ts(8,14): error TS2339: Property 'errors' does not exist on type 'ZodError<unknown>'.
+check	Run npm run build	2026-09-18T13:01:48.5089212Z ##[error]src/validate.ts(8,26): error TS7006: Parameter 'e' implicitly has an 'any' type.
+check	Run npm run build	2026-09-18T13:01:48.5090916Z ##[error]test/schemas.test.ts(48,35): error TS7006: Parameter 'event' implicitly has an 'any' type.
+check	Run npm run build	2026-09-18T13:01:48.5092561Z ##[error]test/schemas.test.ts(48,42): error TS7006: Parameter 'bytes' implicitly has an 'any' type.
+check	Run npm run build	2026-09-18T13:01:48.5210993Z ##[error]Process completed with exit code 2.

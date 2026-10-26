@@ -1,0 +1,353 @@
+ci	UNKNOWN STEP	﻿2026-08-31T12:44:16.9366208Z Current runner version: '2.337.0'
+ci	UNKNOWN STEP	2026-08-31T12:44:16.9388876Z ##[group]Runner Image Provisioner
+ci	UNKNOWN STEP	2026-08-31T12:44:16.9389902Z Hosted Compute Agent
+ci	UNKNOWN STEP	2026-08-31T12:44:16.9390524Z Version: 20260819.586
+ci	UNKNOWN STEP	2026-08-31T12:44:16.9391176Z Commit: 3cc4a88dfa507ef76119ad1bb3eccc6378bb2b76
+ci	UNKNOWN STEP	2026-08-31T12:44:16.9391885Z Build Date: 2026-08-18T23:20:18Z
+ci	UNKNOWN STEP	2026-08-31T12:44:16.9392581Z Worker ID: {7ef3d606-b57d-4f07-af1f-17cf0d554bf0}
+ci	UNKNOWN STEP	2026-08-31T12:44:16.9393512Z Azure Region: centralus
+ci	UNKNOWN STEP	2026-08-31T12:44:16.9394064Z ##[endgroup]
+ci	UNKNOWN STEP	2026-08-31T12:44:16.9395508Z ##[group]Operating System
+ci	UNKNOWN STEP	2026-08-31T12:44:16.9396098Z Ubuntu
+ci	UNKNOWN STEP	2026-08-31T12:44:16.9396609Z 24.04.4
+ci	UNKNOWN STEP	2026-08-31T12:44:16.9397157Z LTS
+ci	UNKNOWN STEP	2026-08-31T12:44:16.9397634Z ##[endgroup]
+ci	UNKNOWN STEP	2026-08-31T12:44:16.9398220Z ##[group]Runner Image
+ci	UNKNOWN STEP	2026-08-31T12:44:16.9398782Z Image: ubuntu-24.04
+ci	UNKNOWN STEP	2026-08-31T12:44:16.9399394Z Version: 20260823.283.1
+ci	UNKNOWN STEP	2026-08-31T12:44:16.9400663Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260823.283/images/ubuntu/Ubuntu2404-Readme.md
+ci	UNKNOWN STEP	2026-08-31T12:44:16.9402185Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260823.283
+ci	UNKNOWN STEP	2026-08-31T12:44:16.9403322Z ##[endgroup]
+ci	UNKNOWN STEP	2026-08-31T12:44:16.9404544Z ##[group]GITHUB_TOKEN Permissions
+ci	UNKNOWN STEP	2026-08-31T12:44:16.9406771Z Contents: read
+ci	UNKNOWN STEP	2026-08-31T12:44:16.9407600Z Metadata: read
+ci	UNKNOWN STEP	2026-08-31T12:44:16.9408220Z Packages: read
+ci	UNKNOWN STEP	2026-08-31T12:44:16.9408750Z ##[endgroup]
+ci	UNKNOWN STEP	2026-08-31T12:44:16.9410777Z Secret source: Actions
+ci	UNKNOWN STEP	2026-08-31T12:44:16.9411806Z Prepare workflow directory
+ci	UNKNOWN STEP	2026-08-31T12:44:16.9722562Z Prepare all required actions
+ci	UNKNOWN STEP	2026-08-31T12:44:16.9770280Z Getting action download info
+ci	UNKNOWN STEP	2026-08-31T12:44:17.2388724Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+ci	UNKNOWN STEP	2026-08-31T12:44:17.4376099Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+ci	UNKNOWN STEP	2026-08-31T12:44:17.6379901Z Complete job name: ci
+ci	UNKNOWN STEP	2026-08-31T12:44:17.7032235Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+ci	UNKNOWN STEP	2026-08-31T12:44:17.7040672Z ##[group]Run actions/checkout@v4
+ci	UNKNOWN STEP	2026-08-31T12:44:17.7041399Z with:
+ci	UNKNOWN STEP	2026-08-31T12:44:17.7041982Z   repository: sambitmallick/ci-speedup-demo
+ci	UNKNOWN STEP	2026-08-31T12:44:17.7046005Z   token: ***
+ci	UNKNOWN STEP	2026-08-31T12:44:17.7046484Z   ssh-strict: true
+ci	UNKNOWN STEP	2026-08-31T12:44:17.7047023Z   ssh-user: git
+ci	UNKNOWN STEP	2026-08-31T12:44:17.7047527Z   persist-credentials: true
+ci	UNKNOWN STEP	2026-08-31T12:44:17.7048099Z   clean: true
+ci	UNKNOWN STEP	2026-08-31T12:44:17.7048614Z   sparse-checkout-cone-mode: true
+ci	UNKNOWN STEP	2026-08-31T12:44:17.7049198Z   fetch-depth: 1
+ci	UNKNOWN STEP	2026-08-31T12:44:17.7049700Z   fetch-tags: false
+ci	UNKNOWN STEP	2026-08-31T12:44:17.7050200Z   show-progress: true
+ci	UNKNOWN STEP	2026-08-31T12:44:17.7050768Z   lfs: false
+ci	UNKNOWN STEP	2026-08-31T12:44:17.7051326Z   submodules: false
+ci	UNKNOWN STEP	2026-08-31T12:44:17.7051879Z   set-safe-directory: true
+ci	UNKNOWN STEP	2026-08-31T12:44:17.7052465Z   allow-unsafe-pr-checkout: false
+ci	UNKNOWN STEP	2026-08-31T12:44:17.7053413Z ##[endgroup]
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8010618Z Syncing repository: sambitmallick/ci-speedup-demo
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8012354Z ##[group]Getting Git version info
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8013374Z Working directory is '/home/runner/work/ci-speedup-demo/ci-speedup-demo'
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8014624Z [command]/usr/bin/git version
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8290947Z git version 2.55.0
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8310380Z ##[endgroup]
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8323621Z Temporarily overriding HOME='/home/runner/work/_temp/b1fdd8ca-4d52-4e61-8c7e-9dfea26359f8' before making global git config changes
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8326005Z Adding repository directory to the temporary git global config as a safe directory
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8327925Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-speedup-demo/ci-speedup-demo
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8375374Z Deleting the contents of '/home/runner/work/ci-speedup-demo/ci-speedup-demo'
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8380801Z ##[group]Initializing the repository
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8385682Z [command]/usr/bin/git init /home/runner/work/ci-speedup-demo/ci-speedup-demo
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8473212Z hint: Using 'master' as the name for the initial branch. This default branch name
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8474905Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8476080Z hint: to use in all of your new repositories, which will suppress this warning,
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8476888Z hint: call:
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8477351Z hint:
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8477970Z hint: 	git config --global init.defaultBranch <name>
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8478628Z hint:
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8479245Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8480234Z hint: 'development'. The just-created branch can be renamed via this command:
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8481008Z hint:
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8481509Z hint: 	git branch -m <name>
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8482104Z hint:
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8482765Z hint: Disable this message with "git config set advice.defaultBranchName false"
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8487826Z Initialized empty Git repository in /home/runner/work/ci-speedup-demo/ci-speedup-demo/.git/
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8496847Z [command]/usr/bin/git remote add origin https://github.com/sambitmallick/ci-speedup-demo
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8575698Z ##[endgroup]
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8577010Z ##[group]Disabling automatic garbage collection
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8579733Z [command]/usr/bin/git config --local gc.auto 0
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8608867Z ##[endgroup]
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8610160Z ##[group]Setting up auth
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8616087Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8642630Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8954139Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+ci	UNKNOWN STEP	2026-08-31T12:44:17.8982332Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+ci	UNKNOWN STEP	2026-08-31T12:44:17.9170686Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+ci	UNKNOWN STEP	2026-08-31T12:44:17.9200156Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+ci	UNKNOWN STEP	2026-08-31T12:44:17.9379135Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+ci	UNKNOWN STEP	2026-08-31T12:44:17.9409979Z ##[endgroup]
+ci	UNKNOWN STEP	2026-08-31T12:44:17.9411048Z ##[group]Fetching the repository
+ci	UNKNOWN STEP	2026-08-31T12:44:17.9419670Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +d64aa3d544e45defd408a92fbbb6db084fb78434:refs/remotes/origin/main
+ci	UNKNOWN STEP	2026-08-31T12:44:18.3803411Z From https://github.com/sambitmallick/ci-speedup-demo
+ci	UNKNOWN STEP	2026-08-31T12:44:18.3805078Z  * [new ref]         d64aa3d544e45defd408a92fbbb6db084fb78434 -> origin/main
+ci	UNKNOWN STEP	2026-08-31T12:44:18.3808529Z ##[endgroup]
+ci	UNKNOWN STEP	2026-08-31T12:44:18.3809890Z ##[group]Determining the checkout info
+ci	UNKNOWN STEP	2026-08-31T12:44:18.3811873Z ##[endgroup]
+ci	UNKNOWN STEP	2026-08-31T12:44:18.3819023Z [command]/usr/bin/git sparse-checkout disable
+ci	UNKNOWN STEP	2026-08-31T12:44:18.3866608Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+ci	UNKNOWN STEP	2026-08-31T12:44:18.3892807Z ##[group]Checking out the ref
+ci	UNKNOWN STEP	2026-08-31T12:44:18.3897525Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+ci	UNKNOWN STEP	2026-08-31T12:44:18.4044799Z Switched to a new branch 'main'
+ci	UNKNOWN STEP	2026-08-31T12:44:18.4048152Z branch 'main' set up to track 'origin/main'.
+ci	UNKNOWN STEP	2026-08-31T12:44:18.4053556Z ##[endgroup]
+ci	UNKNOWN STEP	2026-08-31T12:44:18.4087199Z [command]/usr/bin/git log -1 --format=%H
+ci	UNKNOWN STEP	2026-08-31T12:44:18.4108465Z d64aa3d544e45defd408a92fbbb6db084fb78434
+ci	UNKNOWN STEP	2026-08-31T12:44:18.4398596Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+ci	UNKNOWN STEP	2026-08-31T12:44:18.4401767Z ##[group]Run actions/setup-node@v4
+ci	UNKNOWN STEP	2026-08-31T12:44:18.4402411Z with:
+ci	UNKNOWN STEP	2026-08-31T12:44:18.4402905Z   node-version: 20
+ci	UNKNOWN STEP	2026-08-31T12:44:18.4403846Z   always-auth: false
+ci	UNKNOWN STEP	2026-08-31T12:44:18.4404411Z   check-latest: false
+ci	UNKNOWN STEP	2026-08-31T12:44:18.4408147Z   token: ***
+ci	UNKNOWN STEP	2026-08-31T12:44:18.4408663Z ##[endgroup]
+ci	UNKNOWN STEP	2026-08-31T12:44:18.5751655Z Attempting to download 20...
+ci	UNKNOWN STEP	2026-08-31T12:44:18.5859549Z (node:2024) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+ci	UNKNOWN STEP	2026-08-31T12:44:18.5862185Z (Use `node --trace-deprecation ...` to show where the warning was created)
+ci	UNKNOWN STEP	2026-08-31T12:44:19.2008192Z Acquiring 20.20.2 - x64 from https://github.com/actions/node-versions/releases/download/20.20.2-23521894959/node-20.20.2-linux-x64.tar.gz
+ci	UNKNOWN STEP	2026-08-31T12:44:19.7716792Z Extracting ...
+ci	UNKNOWN STEP	2026-08-31T12:44:19.7822375Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/882b3a7b-e74d-4309-9458-8d472f0e8be9 -f /home/runner/work/_temp/1e609836-345e-4df4-a57a-5e028a5028e0
+ci	UNKNOWN STEP	2026-08-31T12:44:20.8766789Z Adding to the cache ...
+ci	UNKNOWN STEP	2026-08-31T12:44:22.6697667Z ##[group]Environment details
+ci	UNKNOWN STEP	2026-08-31T12:44:22.9436519Z node: v20.20.2
+ci	UNKNOWN STEP	2026-08-31T12:44:22.9437068Z npm: 10.8.2
+ci	UNKNOWN STEP	2026-08-31T12:44:22.9437427Z yarn: 1.22.22
+ci	UNKNOWN STEP	2026-08-31T12:44:22.9438225Z ##[endgroup]
+ci	UNKNOWN STEP	2026-08-31T12:44:22.9580535Z ##[group]Run npm ci
+ci	UNKNOWN STEP	2026-08-31T12:44:22.9580968Z ^[[36;1mnpm ci^[[0m
+ci	UNKNOWN STEP	2026-08-31T12:44:22.9611568Z shell: /usr/bin/bash -e {0}
+ci	UNKNOWN STEP	2026-08-31T12:44:22.9611974Z ##[endgroup]
+ci	UNKNOWN STEP	2026-08-31T12:44:24.2614556Z npm warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+ci	UNKNOWN STEP	2026-08-31T12:44:24.6426936Z npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+ci	UNKNOWN STEP	2026-08-31T12:44:24.7089184Z npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+ci	UNKNOWN STEP	2026-08-31T12:44:25.0758355Z npm warn deprecated @humanwhocodes/object-schema@2.0.3: Use @eslint/object-schema instead
+ci	UNKNOWN STEP	2026-08-31T12:44:25.0900941Z npm warn deprecated @humanwhocodes/config-array@0.11.14: Use @eslint/config-array instead
+ci	UNKNOWN STEP	2026-08-31T12:44:25.8652443Z npm warn deprecated eslint@8.57.0: This version is no longer supported. Please see https://eslint.org/version-support for other options.
+ci	UNKNOWN STEP	2026-08-31T12:44:26.0025356Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:26.0026537Z added 340 packages, and audited 341 packages in 3s
+ci	UNKNOWN STEP	2026-08-31T12:44:26.0032617Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:26.0033691Z 51 packages are looking for funding
+ci	UNKNOWN STEP	2026-08-31T12:44:26.0053627Z   run `npm fund` for details
+ci	UNKNOWN STEP	2026-08-31T12:44:26.0078468Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:26.0079262Z 1 moderate severity vulnerability
+ci	UNKNOWN STEP	2026-08-31T12:44:26.0079871Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:26.0084092Z To address all issues (including breaking changes), run:
+ci	UNKNOWN STEP	2026-08-31T12:44:26.0084826Z   npm audit fix --force
+ci	UNKNOWN STEP	2026-08-31T12:44:26.0097864Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:26.0098311Z Run `npm audit` for details.
+ci	UNKNOWN STEP	2026-08-31T12:44:26.0264076Z ##[group]Run npm run dep-receipt
+ci	UNKNOWN STEP	2026-08-31T12:44:26.0264478Z ^[[36;1mnpm run dep-receipt^[[0m
+ci	UNKNOWN STEP	2026-08-31T12:44:26.0291039Z shell: /usr/bin/bash -e {0}
+ci	UNKNOWN STEP	2026-08-31T12:44:26.0291499Z ##[endgroup]
+ci	UNKNOWN STEP	2026-08-31T12:44:26.1325260Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:26.1325744Z > orderkit@1.0.0 dep-receipt
+ci	UNKNOWN STEP	2026-08-31T12:44:26.1326561Z > node scripts/dep-receipt.js
+ci	UNKNOWN STEP	2026-08-31T12:44:26.1326916Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:26.1618929Z ── dependency receipt ─────────────────────────
+ci	UNKNOWN STEP	2026-08-31T12:44:26.1622095Z   slugify declared in package.json : 1.6.5
+ci	UNKNOWN STEP	2026-08-31T12:44:26.1623215Z   slugify actually installed       : 1.6.5
+ci	UNKNOWN STEP	2026-08-31T12:44:26.1623669Z   match                            : yes
+ci	UNKNOWN STEP	2026-08-31T12:44:26.1624223Z ───────────────────────────────────────────────
+ci	UNKNOWN STEP	2026-08-31T12:44:26.1709413Z ##[group]Run npm run lint
+ci	UNKNOWN STEP	2026-08-31T12:44:26.1709778Z ^[[36;1mnpm run lint^[[0m
+ci	UNKNOWN STEP	2026-08-31T12:44:26.1734368Z shell: /usr/bin/bash -e {0}
+ci	UNKNOWN STEP	2026-08-31T12:44:26.1734735Z ##[endgroup]
+ci	UNKNOWN STEP	2026-08-31T12:44:26.2768551Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:26.2769080Z > orderkit@1.0.0 lint
+ci	UNKNOWN STEP	2026-08-31T12:44:26.2769650Z > eslint src test
+ci	UNKNOWN STEP	2026-08-31T12:44:26.2769823Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:26.6430310Z ##[group]Run npm run build
+ci	UNKNOWN STEP	2026-08-31T12:44:26.6430697Z ^[[36;1mnpm run build^[[0m
+ci	UNKNOWN STEP	2026-08-31T12:44:26.6455318Z shell: /usr/bin/bash -e {0}
+ci	UNKNOWN STEP	2026-08-31T12:44:26.6455729Z ##[endgroup]
+ci	UNKNOWN STEP	2026-08-31T12:44:26.7481028Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:26.7481528Z > orderkit@1.0.0 build
+ci	UNKNOWN STEP	2026-08-31T12:44:26.7482201Z > esbuild src/index.js --bundle --platform=node --outfile=dist/orderkit.js
+ci	UNKNOWN STEP	2026-08-31T12:44:26.7482531Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:26.7588822Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:26.7589770Z   dist/orderkit.js  20.8kb
+ci	UNKNOWN STEP	2026-08-31T12:44:26.7590229Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:26.7590921Z ⚡ Done in 4ms
+ci	UNKNOWN STEP	2026-08-31T12:44:26.7667754Z ##[group]Run npm test -- --runInBand
+ci	UNKNOWN STEP	2026-08-31T12:44:26.7668135Z ^[[36;1mnpm test -- --runInBand^[[0m
+ci	UNKNOWN STEP	2026-08-31T12:44:26.7690414Z shell: /usr/bin/bash -e {0}
+ci	UNKNOWN STEP	2026-08-31T12:44:26.7690831Z ##[endgroup]
+ci	UNKNOWN STEP	2026-08-31T12:44:26.8725959Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:26.8726690Z > orderkit@1.0.0 test
+ci	UNKNOWN STEP	2026-08-31T12:44:26.8727129Z > jest --runInBand
+ci	UNKNOWN STEP	2026-08-31T12:44:26.8727294Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:27.4275061Z PASS test/cart.test.js
+ci	UNKNOWN STEP	2026-08-31T12:44:27.4724506Z PASS test/validate.test.js
+ci	UNKNOWN STEP	2026-08-31T12:44:32.5315344Z FAIL test/uload.integration.test.js (5.054 s)
+ci	UNKNOWN STEP	2026-08-31T12:44:32.5316605Z   ● load uload (integration) › processes a batch of 220 orders
+ci	UNKNOWN STEP	2026-08-31T12:44:32.5317192Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:32.5317492Z     thrown: "Exceeded timeout of 5000 ms for a test.
+ci	UNKNOWN STEP	2026-08-31T12:44:32.5318806Z     Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+ci	UNKNOWN STEP	2026-08-31T12:44:32.5319618Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:32.5320090Z     ^[[0m ^[[90m 15 |^[[39m   })^[[33m;^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:44:32.5320639Z      ^[[90m 16 |^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:44:32.5321392Z     ^[[31m^[[1m>^[[22m^[[39m^[[90m 17 |^[[39m   test(^[[32m"processes a batch of 220 orders"^[[39m^[[33m,^[[39m ^[[36masync^[[39m () ^[[33m=>^[[39m {
+ci	UNKNOWN STEP	2026-08-31T12:44:32.5322027Z      ^[[90m    |^[[39m   ^[[31m^[[1m^^[[22m^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:44:32.5323421Z      ^[[90m 18 |^[[39m     ^[[36mconst^[[39m res ^[[33m=^[[39m ^[[36mawait^[[39m processBatch(^[[33mArray^[[39m^[[33m.^[[39m^[[36mfrom^[[39m({ length^[[33m:^[[39m ^[[35m220^[[39m }^[[33m,^[[39m (_^[[33m,^[[39m i) ^[[33m=>^[[39m mk(i ^[[33m+^[[39m ^[[35m1^[[39m)))^[[33m;^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:44:32.5324489Z      ^[[90m 19 |^[[39m     expect(res)^[[33m.^[[39mtoHaveLength(^[[35m220^[[39m)^[[33m;^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:44:32.5325411Z      ^[[90m 20 |^[[39m     expect(res^[[33m.^[[39mevery((r) ^[[33m=>^[[39m r^[[33m.^[[39mtotalCents ^[[33m>^[[39m ^[[35m0^[[39m))^[[33m.^[[39mtoBe(^[[36mtrue^[[39m)^[[33m;^[[39m^[[0m
+ci	UNKNOWN STEP	2026-08-31T12:44:32.5325904Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:32.5326120Z       at test (test/uload.integration.test.js:17:3)
+ci	UNKNOWN STEP	2026-08-31T12:44:32.5326674Z       at Object.describe (test/uload.integration.test.js:5:1)
+ci	UNKNOWN STEP	2026-08-31T12:44:32.5326951Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:37.5747814Z FAIL test/tload.integration.test.js (5.041 s)
+ci	UNKNOWN STEP	2026-08-31T12:44:37.5748806Z   ● load tload (integration) › processes a batch of 220 orders
+ci	UNKNOWN STEP	2026-08-31T12:44:37.5749130Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:37.5749336Z     thrown: "Exceeded timeout of 5000 ms for a test.
+ci	UNKNOWN STEP	2026-08-31T12:44:37.5750157Z     Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+ci	UNKNOWN STEP	2026-08-31T12:44:37.5750688Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:37.5750921Z     ^[[0m ^[[90m 15 |^[[39m   })^[[33m;^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:44:37.5751310Z      ^[[90m 16 |^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:44:37.5752046Z     ^[[31m^[[1m>^[[22m^[[39m^[[90m 17 |^[[39m   test(^[[32m"processes a batch of 220 orders"^[[39m^[[33m,^[[39m ^[[36masync^[[39m () ^[[33m=>^[[39m {
+ci	UNKNOWN STEP	2026-08-31T12:44:37.5753274Z      ^[[90m    |^[[39m   ^[[31m^[[1m^^[[22m^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:44:37.5754525Z      ^[[90m 18 |^[[39m     ^[[36mconst^[[39m res ^[[33m=^[[39m ^[[36mawait^[[39m processBatch(^[[33mArray^[[39m^[[33m.^[[39m^[[36mfrom^[[39m({ length^[[33m:^[[39m ^[[35m220^[[39m }^[[33m,^[[39m (_^[[33m,^[[39m i) ^[[33m=>^[[39m mk(i ^[[33m+^[[39m ^[[35m1^[[39m)))^[[33m;^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:44:37.5755540Z      ^[[90m 19 |^[[39m     expect(res)^[[33m.^[[39mtoHaveLength(^[[35m220^[[39m)^[[33m;^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:44:37.5756469Z      ^[[90m 20 |^[[39m     expect(res^[[33m.^[[39mevery((r) ^[[33m=>^[[39m r^[[33m.^[[39mtotalCents ^[[33m>^[[39m ^[[35m0^[[39m))^[[33m.^[[39mtoBe(^[[36mtrue^[[39m)^[[33m;^[[39m^[[0m
+ci	UNKNOWN STEP	2026-08-31T12:44:37.5756968Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:37.5757195Z       at test (test/tload.integration.test.js:17:3)
+ci	UNKNOWN STEP	2026-08-31T12:44:37.5757670Z       at Object.describe (test/tload.integration.test.js:5:1)
+ci	UNKNOWN STEP	2026-08-31T12:44:37.5757949Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:42.6266682Z FAIL test/oload.integration.test.js (5.049 s)
+ci	UNKNOWN STEP	2026-08-31T12:44:42.6268771Z   ● load oload (integration) › processes a batch of 220 orders
+ci	UNKNOWN STEP	2026-08-31T12:44:42.6269308Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:42.6269593Z     thrown: "Exceeded timeout of 5000 ms for a test.
+ci	UNKNOWN STEP	2026-08-31T12:44:42.6271111Z     Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+ci	UNKNOWN STEP	2026-08-31T12:44:42.6271892Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:42.6272224Z     ^[[0m ^[[90m 15 |^[[39m   })^[[33m;^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:44:42.6272754Z      ^[[90m 16 |^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:44:42.6274122Z     ^[[31m^[[1m>^[[22m^[[39m^[[90m 17 |^[[39m   test(^[[32m"processes a batch of 220 orders"^[[39m^[[33m,^[[39m ^[[36masync^[[39m () ^[[33m=>^[[39m {
+ci	UNKNOWN STEP	2026-08-31T12:44:42.6275022Z      ^[[90m    |^[[39m   ^[[31m^[[1m^^[[22m^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:44:42.6276633Z      ^[[90m 18 |^[[39m     ^[[36mconst^[[39m res ^[[33m=^[[39m ^[[36mawait^[[39m processBatch(^[[33mArray^[[39m^[[33m.^[[39m^[[36mfrom^[[39m({ length^[[33m:^[[39m ^[[35m220^[[39m }^[[33m,^[[39m (_^[[33m,^[[39m i) ^[[33m=>^[[39m mk(i ^[[33m+^[[39m ^[[35m1^[[39m)))^[[33m;^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:44:42.6277993Z      ^[[90m 19 |^[[39m     expect(res)^[[33m.^[[39mtoHaveLength(^[[35m220^[[39m)^[[33m;^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:44:42.6279411Z      ^[[90m 20 |^[[39m     expect(res^[[33m.^[[39mevery((r) ^[[33m=>^[[39m r^[[33m.^[[39mtotalCents ^[[33m>^[[39m ^[[35m0^[[39m))^[[33m.^[[39mtoBe(^[[36mtrue^[[39m)^[[33m;^[[39m^[[0m
+ci	UNKNOWN STEP	2026-08-31T12:44:42.6280203Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:42.6280525Z       at test (test/oload.integration.test.js:17:3)
+ci	UNKNOWN STEP	2026-08-31T12:44:42.6281254Z       at Object.describe (test/oload.integration.test.js:5:1)
+ci	UNKNOWN STEP	2026-08-31T12:44:42.6281618Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:47.6867195Z FAIL test/nload.integration.test.js (5.056 s)
+ci	UNKNOWN STEP	2026-08-31T12:44:47.6868459Z   ● load nload (integration) › processes a batch of 220 orders
+ci	UNKNOWN STEP	2026-08-31T12:44:47.6869518Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:47.6869899Z     thrown: "Exceeded timeout of 5000 ms for a test.
+ci	UNKNOWN STEP	2026-08-31T12:44:47.6871412Z     Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+ci	UNKNOWN STEP	2026-08-31T12:44:47.6872359Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:47.6873408Z     ^[[0m ^[[90m 15 |^[[39m   })^[[33m;^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:44:47.6873980Z      ^[[90m 16 |^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:44:47.6875037Z     ^[[31m^[[1m>^[[22m^[[39m^[[90m 17 |^[[39m   test(^[[32m"processes a batch of 220 orders"^[[39m^[[33m,^[[39m ^[[36masync^[[39m () ^[[33m=>^[[39m {
+ci	UNKNOWN STEP	2026-08-31T12:44:47.6876104Z      ^[[90m    |^[[39m   ^[[31m^[[1m^^[[22m^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:44:47.6877860Z      ^[[90m 18 |^[[39m     ^[[36mconst^[[39m res ^[[33m=^[[39m ^[[36mawait^[[39m processBatch(^[[33mArray^[[39m^[[33m.^[[39m^[[36mfrom^[[39m({ length^[[33m:^[[39m ^[[35m220^[[39m }^[[33m,^[[39m (_^[[33m,^[[39m i) ^[[33m=>^[[39m mk(i ^[[33m+^[[39m ^[[35m1^[[39m)))^[[33m;^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:44:47.6879436Z      ^[[90m 19 |^[[39m     expect(res)^[[33m.^[[39mtoHaveLength(^[[35m220^[[39m)^[[33m;^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:44:47.6880909Z      ^[[90m 20 |^[[39m     expect(res^[[33m.^[[39mevery((r) ^[[33m=>^[[39m r^[[33m.^[[39mtotalCents ^[[33m>^[[39m ^[[35m0^[[39m))^[[33m.^[[39mtoBe(^[[36mtrue^[[39m)^[[33m;^[[39m^[[0m
+ci	UNKNOWN STEP	2026-08-31T12:44:47.6881684Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:47.6882027Z       at test (test/nload.integration.test.js:17:3)
+ci	UNKNOWN STEP	2026-08-31T12:44:47.6883272Z       at Object.describe (test/nload.integration.test.js:5:1)
+ci	UNKNOWN STEP	2026-08-31T12:44:47.6883789Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:52.7398711Z FAIL test/eload.integration.test.js (5.051 s)
+ci	UNKNOWN STEP	2026-08-31T12:44:52.7399619Z   ● load eload (integration) › processes a batch of 220 orders
+ci	UNKNOWN STEP	2026-08-31T12:44:52.7400246Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:52.7400451Z     thrown: "Exceeded timeout of 5000 ms for a test.
+ci	UNKNOWN STEP	2026-08-31T12:44:52.7401290Z     Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+ci	UNKNOWN STEP	2026-08-31T12:44:52.7401776Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:52.7402073Z     ^[[0m ^[[90m 15 |^[[39m   })^[[33m;^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:44:52.7402466Z      ^[[90m 16 |^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:44:52.7403528Z     ^[[31m^[[1m>^[[22m^[[39m^[[90m 17 |^[[39m   test(^[[32m"processes a batch of 220 orders"^[[39m^[[33m,^[[39m ^[[36masync^[[39m () ^[[33m=>^[[39m {
+ci	UNKNOWN STEP	2026-08-31T12:44:52.7404306Z      ^[[90m    |^[[39m   ^[[31m^[[1m^^[[22m^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:44:52.7405771Z      ^[[90m 18 |^[[39m     ^[[36mconst^[[39m res ^[[33m=^[[39m ^[[36mawait^[[39m processBatch(^[[33mArray^[[39m^[[33m.^[[39m^[[36mfrom^[[39m({ length^[[33m:^[[39m ^[[35m220^[[39m }^[[33m,^[[39m (_^[[33m,^[[39m i) ^[[33m=>^[[39m mk(i ^[[33m+^[[39m ^[[35m1^[[39m)))^[[33m;^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:44:52.7406993Z      ^[[90m 19 |^[[39m     expect(res)^[[33m.^[[39mtoHaveLength(^[[35m220^[[39m)^[[33m;^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:44:52.7407908Z      ^[[90m 20 |^[[39m     expect(res^[[33m.^[[39mevery((r) ^[[33m=>^[[39m r^[[33m.^[[39mtotalCents ^[[33m>^[[39m ^[[35m0^[[39m))^[[33m.^[[39mtoBe(^[[36mtrue^[[39m)^[[33m;^[[39m^[[0m
+ci	UNKNOWN STEP	2026-08-31T12:44:52.7408487Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:52.7408750Z       at test (test/eload.integration.test.js:17:3)
+ci	UNKNOWN STEP	2026-08-31T12:44:52.7409488Z       at Object.describe (test/eload.integration.test.js:5:1)
+ci	UNKNOWN STEP	2026-08-31T12:44:52.7409899Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:57.7903848Z FAIL test/dload.integration.test.js (5.046 s)
+ci	UNKNOWN STEP	2026-08-31T12:44:57.7904936Z   ● load dload (integration) › processes a batch of 220 orders
+ci	UNKNOWN STEP	2026-08-31T12:44:57.7905295Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:57.7905618Z     thrown: "Exceeded timeout of 5000 ms for a test.
+ci	UNKNOWN STEP	2026-08-31T12:44:57.7906486Z     Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+ci	UNKNOWN STEP	2026-08-31T12:44:57.7906976Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:57.7907193Z     ^[[0m ^[[90m 15 |^[[39m   })^[[33m;^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:44:57.7907610Z      ^[[90m 16 |^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:44:57.7908333Z     ^[[31m^[[1m>^[[22m^[[39m^[[90m 17 |^[[39m   test(^[[32m"processes a batch of 220 orders"^[[39m^[[33m,^[[39m ^[[36masync^[[39m () ^[[33m=>^[[39m {
+ci	UNKNOWN STEP	2026-08-31T12:44:57.7909016Z      ^[[90m    |^[[39m   ^[[31m^[[1m^^[[22m^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:44:57.7910113Z      ^[[90m 18 |^[[39m     ^[[36mconst^[[39m res ^[[33m=^[[39m ^[[36mawait^[[39m processBatch(^[[33mArray^[[39m^[[33m.^[[39m^[[36mfrom^[[39m({ length^[[33m:^[[39m ^[[35m220^[[39m }^[[33m,^[[39m (_^[[33m,^[[39m i) ^[[33m=>^[[39m mk(i ^[[33m+^[[39m ^[[35m1^[[39m)))^[[33m;^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:44:57.7911142Z      ^[[90m 19 |^[[39m     expect(res)^[[33m.^[[39mtoHaveLength(^[[35m220^[[39m)^[[33m;^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:44:57.7912075Z      ^[[90m 20 |^[[39m     expect(res^[[33m.^[[39mevery((r) ^[[33m=>^[[39m r^[[33m.^[[39mtotalCents ^[[33m>^[[39m ^[[35m0^[[39m))^[[33m.^[[39mtoBe(^[[36mtrue^[[39m)^[[33m;^[[39m^[[0m
+ci	UNKNOWN STEP	2026-08-31T12:44:57.7912584Z 
+ci	UNKNOWN STEP	2026-08-31T12:44:57.7912835Z       at test (test/dload.integration.test.js:17:3)
+ci	UNKNOWN STEP	2026-08-31T12:44:57.7913643Z       at Object.describe (test/dload.integration.test.js:5:1)
+ci	UNKNOWN STEP	2026-08-31T12:44:57.7913983Z 
+ci	UNKNOWN STEP	2026-08-31T12:45:02.8372195Z FAIL test/bload.integration.test.js (5.043 s)
+ci	UNKNOWN STEP	2026-08-31T12:45:02.8373735Z   ● load bload (integration) › processes a batch of 220 orders
+ci	UNKNOWN STEP	2026-08-31T12:45:02.8374031Z 
+ci	UNKNOWN STEP	2026-08-31T12:45:02.8374335Z     thrown: "Exceeded timeout of 5000 ms for a test.
+ci	UNKNOWN STEP	2026-08-31T12:45:02.8375142Z     Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+ci	UNKNOWN STEP	2026-08-31T12:45:02.8375667Z 
+ci	UNKNOWN STEP	2026-08-31T12:45:02.8375872Z     ^[[0m ^[[90m 15 |^[[39m   })^[[33m;^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:45:02.8376308Z      ^[[90m 16 |^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:45:02.8377371Z     ^[[31m^[[1m>^[[22m^[[39m^[[90m 17 |^[[39m   test(^[[32m"processes a batch of 220 orders"^[[39m^[[33m,^[[39m ^[[36masync^[[39m () ^[[33m=>^[[39m {
+ci	UNKNOWN STEP	2026-08-31T12:45:02.8378038Z      ^[[90m    |^[[39m   ^[[31m^[[1m^^[[22m^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:45:02.8379161Z      ^[[90m 18 |^[[39m     ^[[36mconst^[[39m res ^[[33m=^[[39m ^[[36mawait^[[39m processBatch(^[[33mArray^[[39m^[[33m.^[[39m^[[36mfrom^[[39m({ length^[[33m:^[[39m ^[[35m220^[[39m }^[[33m,^[[39m (_^[[33m,^[[39m i) ^[[33m=>^[[39m mk(i ^[[33m+^[[39m ^[[35m1^[[39m)))^[[33m;^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:45:02.8380215Z      ^[[90m 19 |^[[39m     expect(res)^[[33m.^[[39mtoHaveLength(^[[35m220^[[39m)^[[33m;^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:45:02.8381177Z      ^[[90m 20 |^[[39m     expect(res^[[33m.^[[39mevery((r) ^[[33m=>^[[39m r^[[33m.^[[39mtotalCents ^[[33m>^[[39m ^[[35m0^[[39m))^[[33m.^[[39mtoBe(^[[36mtrue^[[39m)^[[33m;^[[39m^[[0m
+ci	UNKNOWN STEP	2026-08-31T12:45:02.8381660Z 
+ci	UNKNOWN STEP	2026-08-31T12:45:02.8381851Z       at test (test/bload.integration.test.js:17:3)
+ci	UNKNOWN STEP	2026-08-31T12:45:02.8382342Z       at Object.describe (test/bload.integration.test.js:5:1)
+ci	UNKNOWN STEP	2026-08-31T12:45:02.8382657Z 
+ci	UNKNOWN STEP	2026-08-31T12:45:07.8728332Z FAIL test/aload.integration.test.js (5.033 s)
+ci	UNKNOWN STEP	2026-08-31T12:45:07.8730411Z   ● load aload (integration) › processes a batch of 220 orders
+ci	UNKNOWN STEP	2026-08-31T12:45:07.8731659Z 
+ci	UNKNOWN STEP	2026-08-31T12:45:07.8732207Z     thrown: "Exceeded timeout of 5000 ms for a test.
+ci	UNKNOWN STEP	2026-08-31T12:45:07.8733908Z     Add a timeout value to this test to increase the timeout, if this is a long-running test. See https://jestjs.io/docs/api#testname-fn-timeout."
+ci	UNKNOWN STEP	2026-08-31T12:45:07.8734875Z 
+ci	UNKNOWN STEP	2026-08-31T12:45:07.8735491Z     ^[[0m ^[[90m 15 |^[[39m   })^[[33m;^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:45:07.8736294Z      ^[[90m 16 |^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:45:07.8737672Z     ^[[31m^[[1m>^[[22m^[[39m^[[90m 17 |^[[39m   test(^[[32m"processes a batch of 220 orders"^[[39m^[[33m,^[[39m ^[[36masync^[[39m () ^[[33m=>^[[39m {
+ci	UNKNOWN STEP	2026-08-31T12:45:07.8738879Z      ^[[90m    |^[[39m   ^[[31m^[[1m^^[[22m^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:45:07.8740649Z      ^[[90m 18 |^[[39m     ^[[36mconst^[[39m res ^[[33m=^[[39m ^[[36mawait^[[39m processBatch(^[[33mArray^[[39m^[[33m.^[[39m^[[36mfrom^[[39m({ length^[[33m:^[[39m ^[[35m220^[[39m }^[[33m,^[[39m (_^[[33m,^[[39m i) ^[[33m=>^[[39m mk(i ^[[33m+^[[39m ^[[35m1^[[39m)))^[[33m;^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:45:07.8742549Z      ^[[90m 19 |^[[39m     expect(res)^[[33m.^[[39mtoHaveLength(^[[35m220^[[39m)^[[33m;^[[39m
+ci	UNKNOWN STEP	2026-08-31T12:45:07.8744392Z      ^[[90m 20 |^[[39m     expect(res^[[33m.^[[39mevery((r) ^[[33m=>^[[39m r^[[33m.^[[39mtotalCents ^[[33m>^[[39m ^[[35m0^[[39m))^[[33m.^[[39mtoBe(^[[36mtrue^[[39m)^[[33m;^[[39m^[[0m
+ci	UNKNOWN STEP	2026-08-31T12:45:07.8745333Z 
+ci	UNKNOWN STEP	2026-08-31T12:45:07.8746200Z       at test (test/aload.integration.test.js:17:3)
+ci	UNKNOWN STEP	2026-08-31T12:45:07.8746772Z       at Object.describe (test/aload.integration.test.js:5:1)
+ci	UNKNOWN STEP	2026-08-31T12:45:07.8747191Z 
+ci	UNKNOWN STEP	2026-08-31T12:45:07.9086755Z PASS test/slug.test.js
+ci	UNKNOWN STEP	2026-08-31T12:45:07.9514168Z PASS test/money.test.js
+ci	UNKNOWN STEP	2026-08-31T12:45:07.9525769Z 
+ci	UNKNOWN STEP	2026-08-31T12:45:07.9526445Z Test Suites: 8 failed, 4 passed, 12 total
+ci	UNKNOWN STEP	2026-08-31T12:45:07.9526918Z Tests:       8 failed, 44 passed, 52 total
+ci	UNKNOWN STEP	2026-08-31T12:45:07.9527419Z Snapshots:   0 total
+ci	UNKNOWN STEP	2026-08-31T12:45:07.9527747Z Time:        40.824 s
+ci	UNKNOWN STEP	2026-08-31T12:45:07.9528114Z Ran all test suites.
+ci	UNKNOWN STEP	2026-08-31T12:45:08.6698656Z ##[error]Process completed with exit code 1.
+ci	UNKNOWN STEP	2026-08-31T12:45:08.6849268Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+ci	UNKNOWN STEP	2026-08-31T12:45:08.6850523Z Post job cleanup.
+ci	UNKNOWN STEP	2026-08-31T12:45:08.7662526Z [command]/usr/bin/git version
+ci	UNKNOWN STEP	2026-08-31T12:45:08.7697591Z git version 2.55.0
+ci	UNKNOWN STEP	2026-08-31T12:45:08.7733903Z Temporarily overriding HOME='/home/runner/work/_temp/1d48c8c1-dbdd-443d-80c9-d090240ac3a0' before making global git config changes
+ci	UNKNOWN STEP	2026-08-31T12:45:08.7737433Z Adding repository directory to the temporary git global config as a safe directory
+ci	UNKNOWN STEP	2026-08-31T12:45:08.7740248Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ci-speedup-demo/ci-speedup-demo
+ci	UNKNOWN STEP	2026-08-31T12:45:08.7772649Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+ci	UNKNOWN STEP	2026-08-31T12:45:08.7802678Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+ci	UNKNOWN STEP	2026-08-31T12:45:08.8007792Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+ci	UNKNOWN STEP	2026-08-31T12:45:08.8029581Z http.https://github.com/.extraheader
+ci	UNKNOWN STEP	2026-08-31T12:45:08.8040146Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+ci	UNKNOWN STEP	2026-08-31T12:45:08.8070933Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+ci	UNKNOWN STEP	2026-08-31T12:45:08.8276727Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+ci	UNKNOWN STEP	2026-08-31T12:45:08.8313265Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+ci	UNKNOWN STEP	2026-08-31T12:45:08.8629239Z Cleaning up orphan processes
+ci	UNKNOWN STEP	2026-08-31T12:45:08.8892543Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/

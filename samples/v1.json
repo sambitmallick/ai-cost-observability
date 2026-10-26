@@ -1,0 +1,27 @@
+[
+ {
+  "feature": "explain",
+  "input": ":35:07.9291848Z ERROR: Package 'pulse-board' requires a different Python: 3.10.20 not in '>=3.12'\nbuild\tPackage install check\t2026-08-09T04:35:07.9807248Z ##[error]Process completed with exit code 1.\n",
+  "answer": "The job failed because the package `pulse-board` declares `requires-python >=3.12`, but the runner is using Python 3.10.20 (`/opt/hostedtoolcache/Python/3.10.20`), so pip refuses to install it.\n\nFix it one of two ways:\n1. Change the CI Python version to 3.12 or newer in the setup step, for example `actions/setup-python` with `python-version: \"3.12\"`. The package's declared minimum is the requirement you need to meet.\n2. If the package should support 3.10, lower `requires-python` in `pyproject.toml` to `>=3.10` and confirm the code actually runs there.\n\nCheck which one matches your intent before committing. The log does not show the `pyproject.toml` contents, so verify the declared range there."
+ },
+ {
+  "feature": "summarize",
+  "input": "are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/\n",
+  "answer": "**Summary: one job (`ci`) on ubuntu-24.04 failed at the test step.**\n\n**Passed:**\n- Checkout (`actions/checkout@v4`)\n- Setup Node 20.20.2 (`actions/setup-node@v4`)\n-"
+ },
+ {
+  "feature": "fix",
+  "input": "Z ##[error]test/schemas.test.ts(48,42): error TS7006: Parameter 'bytes' implicitly has an 'any' type.\ncheck\tRun npm run build\t2026-09-18T13:01:48.5210993Z ##[error]Process completed with exit code 2.\n",
+  "answer": "The build fails because `zod` is now v4 (the `ZodPipe`, `ZodTransform` and `$strip` types in the log are v4-only), and `src/schemas.ts`, `src/validate.ts` and the test still use v3 APIs. Every error here comes from that.\n\n**Check first:** run `npm ls zod` and look at the `zod` entry in `git diff` of `package.json` and `package-lock.json`. If a `^3.x` range or a regenerated lockfile pulled in v4 by accident, the fastest fix is to pin it back:\n\n```\nnpm install zod@^3 \n```\n\nCommit the updated `package.json` and lockfile. Use the major/minor you had before, which you can read from the previous lockfile.\n\n**If you want to stay on v4**, I can't see the source, so these are the v4 replacements for each error:\n\n| Error | v3 code | v4 replacement |\n|---|---|---|\n| `schemas.ts` 16, 33: `ip` doesn't exist on `ZodString` | `z.string().ip()` | `z.union([z.ipv4(), z.ipv6()])`, or `z.ipv4()` / `z.ipv6()` alone |\n| `schemas.ts` 24, 32: string passed to `.default()` on a string-to-number pipe | `.default(\"10\")` | `.default(10)` (v4 needs the output type), or `.prefault(\"10\")` to keep the old behavior |\n| `schemas.ts` 26: `{}` not assignable | `.default({})` on an object with inner defaults | `.prefault({})` |\n|"
+ },
+ {
+  "feature": "chat",
+  "input": "mand]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url\nlint\tUNKNOWN STEP\t2026-08-10T17:27:28.4090422Z Cleaning up orphan processes\n",
+  "answer": "The lint job failed because `ruff check .` found an unused import, which exits with code 1.\n\n`pulse/checks.py`, line 2: `import statistics` is unused (rule F401).\n\nFix it by deleting that line, or run:\n\n```\nruff check --fix .\n```\n\nThen commit the change. If you want to keep the import for the \"future aggregation helpers\" mentioned in the comment, add `# noqa: F401` to the end of the line. Deleting it is cleaner, since you can re-add it when you need it.\n\nCheckout, Python 3.12 setup, and the ruff install all succeeded, so nothing else in the log needs attention."
+ },
+ {
+  "feature": "chat",
+  "input": "What's the exact command to fix it?",
+  "answer": "```\nruff check --fix .\n```\n\nRun it from the repository root, then commit the change to `pulse/checks.py`. Ruff 0.5.7 is the version CI installs, so running the same version locally avoids surprises. If you don't have it, `pip install ruff==0.5.7` first."
+ }
+]

@@ -1,0 +1,185 @@
+build	Set up job	﻿2026-08-31T17:02:56.5501598Z Current runner version: '2.336.0'
+build	Set up job	2026-08-31T17:02:56.5528950Z ##[group]Runner Image Provisioner
+build	Set up job	2026-08-31T17:02:56.5529935Z Hosted Compute Agent
+build	Set up job	2026-08-31T17:02:56.5530537Z Version: 20260819.586
+build	Set up job	2026-08-31T17:02:56.5531209Z Commit: 3cc4a88dfa507ef76119ad1bb3eccc6378bb2b76
+build	Set up job	2026-08-31T17:02:56.5532002Z Build Date: 2026-08-18T23:20:18Z
+build	Set up job	2026-08-31T17:02:56.5532718Z Worker ID: {55e75323-9bfb-421c-886e-b3ce92c39a9a}
+build	Set up job	2026-08-31T17:02:56.5533423Z Azure Region: northcentralus
+build	Set up job	2026-08-31T17:02:56.5534604Z ##[endgroup]
+build	Set up job	2026-08-31T17:02:56.5536213Z ##[group]Operating System
+build	Set up job	2026-08-31T17:02:56.5536976Z Ubuntu
+build	Set up job	2026-08-31T17:02:56.5537505Z 24.04.4
+build	Set up job	2026-08-31T17:02:56.5537984Z LTS
+build	Set up job	2026-08-31T17:02:56.5538546Z ##[endgroup]
+build	Set up job	2026-08-31T17:02:56.5539087Z ##[group]Runner Image
+build	Set up job	2026-08-31T17:02:56.5539709Z Image: ubuntu-24.04
+build	Set up job	2026-08-31T17:02:56.5540357Z Version: 20260823.283.1
+build	Set up job	2026-08-31T17:02:56.5541415Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20260823.283/images/ubuntu/Ubuntu2404-Readme.md
+build	Set up job	2026-08-31T17:02:56.5543231Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20260823.283
+build	Set up job	2026-08-31T17:02:56.5544483Z ##[endgroup]
+build	Set up job	2026-08-31T17:02:56.5545726Z ##[group]GITHUB_TOKEN Permissions
+build	Set up job	2026-08-31T17:02:56.5548053Z Contents: read
+build	Set up job	2026-08-31T17:02:56.5548855Z Metadata: read
+build	Set up job	2026-08-31T17:02:56.5549394Z Packages: read
+build	Set up job	2026-08-31T17:02:56.5550060Z ##[endgroup]
+build	Set up job	2026-08-31T17:02:56.5552456Z Secret source: Actions
+build	Set up job	2026-08-31T17:02:56.5554315Z Prepare workflow directory
+build	Set up job	2026-08-31T17:02:56.5922527Z Prepare all required actions
+build	Set up job	2026-08-31T17:02:56.5974683Z Getting action download info
+build	Set up job	2026-08-31T17:02:56.8540167Z Download action repository 'actions/checkout@v4' (SHA:11d5960a326750d5838078e36cf38b85af677262)
+build	Set up job	2026-08-31T17:02:56.9751292Z Download action repository 'actions/setup-node@v4' (SHA:49933ea5288caeca8642d1e84afbd3f7d6820020)
+build	Set up job	2026-08-31T17:02:57.1720335Z Complete job name: build
+build	Run actions/checkout@v4	﻿2026-08-31T17:02:57.2494986Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build	Run actions/checkout@v4	2026-08-31T17:02:57.2504322Z ##[group]Run actions/checkout@v4
+build	Run actions/checkout@v4	2026-08-31T17:02:57.2505120Z with:
+build	Run actions/checkout@v4	2026-08-31T17:02:57.2505620Z   repository: sambitmallick/ai-pr-build-fixer
+build	Run actions/checkout@v4	2026-08-31T17:02:57.2509687Z   token: ***
+build	Run actions/checkout@v4	2026-08-31T17:02:57.2510127Z   ssh-strict: true
+build	Run actions/checkout@v4	2026-08-31T17:02:57.2510571Z   ssh-user: git
+build	Run actions/checkout@v4	2026-08-31T17:02:57.2511027Z   persist-credentials: true
+build	Run actions/checkout@v4	2026-08-31T17:02:57.2511527Z   clean: true
+build	Run actions/checkout@v4	2026-08-31T17:02:57.2511978Z   sparse-checkout-cone-mode: true
+build	Run actions/checkout@v4	2026-08-31T17:02:57.2512507Z   fetch-depth: 1
+build	Run actions/checkout@v4	2026-08-31T17:02:57.2512997Z   fetch-tags: false
+build	Run actions/checkout@v4	2026-08-31T17:02:57.2513445Z   show-progress: true
+build	Run actions/checkout@v4	2026-08-31T17:02:57.2514069Z   lfs: false
+build	Run actions/checkout@v4	2026-08-31T17:02:57.2514488Z   submodules: false
+build	Run actions/checkout@v4	2026-08-31T17:02:57.2515002Z   set-safe-directory: true
+build	Run actions/checkout@v4	2026-08-31T17:02:57.2515517Z   allow-unsafe-pr-checkout: false
+build	Run actions/checkout@v4	2026-08-31T17:02:57.2516302Z ##[endgroup]
+build	Run actions/checkout@v4	2026-08-31T17:02:57.3563375Z Syncing repository: sambitmallick/ai-pr-build-fixer
+build	Run actions/checkout@v4	2026-08-31T17:02:57.3566785Z ##[group]Getting Git version info
+build	Run actions/checkout@v4	2026-08-31T17:02:57.3567700Z Working directory is '/home/runner/work/ai-pr-build-fixer/ai-pr-build-fixer'
+build	Run actions/checkout@v4	2026-08-31T17:02:57.3568835Z [command]/usr/bin/git version
+build	Run actions/checkout@v4	2026-08-31T17:02:57.3675916Z git version 2.55.0
+build	Run actions/checkout@v4	2026-08-31T17:02:57.3700521Z ##[endgroup]
+build	Run actions/checkout@v4	2026-08-31T17:02:57.3718219Z Temporarily overriding HOME='/home/runner/work/_temp/5f32e241-96f6-4268-9e71-fe6dc086cfec' before making global git config changes
+build	Run actions/checkout@v4	2026-08-31T17:02:57.3720514Z Adding repository directory to the temporary git global config as a safe directory
+build	Run actions/checkout@v4	2026-08-31T17:02:57.3723881Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ai-pr-build-fixer/ai-pr-build-fixer
+build	Run actions/checkout@v4	2026-08-31T17:02:57.3785750Z Deleting the contents of '/home/runner/work/ai-pr-build-fixer/ai-pr-build-fixer'
+build	Run actions/checkout@v4	2026-08-31T17:02:57.3791767Z ##[group]Initializing the repository
+build	Run actions/checkout@v4	2026-08-31T17:02:57.3797446Z [command]/usr/bin/git init /home/runner/work/ai-pr-build-fixer/ai-pr-build-fixer
+build	Run actions/checkout@v4	2026-08-31T17:02:57.3942603Z hint: Using 'master' as the name for the initial branch. This default branch name
+build	Run actions/checkout@v4	2026-08-31T17:02:57.3948010Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+build	Run actions/checkout@v4	2026-08-31T17:02:57.3949501Z hint: to use in all of your new repositories, which will suppress this warning,
+build	Run actions/checkout@v4	2026-08-31T17:02:57.3950377Z hint: call:
+build	Run actions/checkout@v4	2026-08-31T17:02:57.3950819Z hint:
+build	Run actions/checkout@v4	2026-08-31T17:02:57.3951547Z hint: 	git config --global init.defaultBranch <name>
+build	Run actions/checkout@v4	2026-08-31T17:02:57.3952242Z hint:
+build	Run actions/checkout@v4	2026-08-31T17:02:57.3952876Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+build	Run actions/checkout@v4	2026-08-31T17:02:57.3954299Z hint: 'development'. The just-created branch can be renamed via this command:
+build	Run actions/checkout@v4	2026-08-31T17:02:57.3955418Z hint:
+build	Run actions/checkout@v4	2026-08-31T17:02:57.3955939Z hint: 	git branch -m <name>
+build	Run actions/checkout@v4	2026-08-31T17:02:57.3956463Z hint:
+build	Run actions/checkout@v4	2026-08-31T17:02:57.3957297Z hint: Disable this message with "git config set advice.defaultBranchName false"
+build	Run actions/checkout@v4	2026-08-31T17:02:57.3959020Z Initialized empty Git repository in /home/runner/work/ai-pr-build-fixer/ai-pr-build-fixer/.git/
+build	Run actions/checkout@v4	2026-08-31T17:02:57.3961386Z [command]/usr/bin/git remote add origin https://github.com/sambitmallick/ai-pr-build-fixer
+build	Run actions/checkout@v4	2026-08-31T17:02:57.4029166Z ##[endgroup]
+build	Run actions/checkout@v4	2026-08-31T17:02:57.4030050Z ##[group]Disabling automatic garbage collection
+build	Run actions/checkout@v4	2026-08-31T17:02:57.4030782Z [command]/usr/bin/git config --local gc.auto 0
+build	Run actions/checkout@v4	2026-08-31T17:02:57.4069044Z ##[endgroup]
+build	Run actions/checkout@v4	2026-08-31T17:02:57.4070591Z ##[group]Setting up auth
+build	Run actions/checkout@v4	2026-08-31T17:02:57.4079183Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	Run actions/checkout@v4	2026-08-31T17:02:57.4129055Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	Run actions/checkout@v4	2026-08-31T17:02:57.4562525Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	Run actions/checkout@v4	2026-08-31T17:02:57.4601873Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	Run actions/checkout@v4	2026-08-31T17:02:57.4838784Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build	Run actions/checkout@v4	2026-08-31T17:02:57.4879264Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build	Run actions/checkout@v4	2026-08-31T17:02:57.5114155Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+build	Run actions/checkout@v4	2026-08-31T17:02:57.5158790Z ##[endgroup]
+build	Run actions/checkout@v4	2026-08-31T17:02:57.5160325Z ##[group]Fetching the repository
+build	Run actions/checkout@v4	2026-08-31T17:02:57.5174022Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +d50b58a224096d1d1cb90ddb3df105aad2714483:refs/remotes/pull/1/merge
+build	Run actions/checkout@v4	2026-08-31T17:02:57.8294443Z From https://github.com/sambitmallick/ai-pr-build-fixer
+build	Run actions/checkout@v4	2026-08-31T17:02:57.8296241Z  * [new ref]         d50b58a224096d1d1cb90ddb3df105aad2714483 -> pull/1/merge
+build	Run actions/checkout@v4	2026-08-31T17:02:57.8299821Z ##[endgroup]
+build	Run actions/checkout@v4	2026-08-31T17:02:57.8301300Z ##[group]Determining the checkout info
+build	Run actions/checkout@v4	2026-08-31T17:02:57.8303506Z ##[endgroup]
+build	Run actions/checkout@v4	2026-08-31T17:02:57.8311888Z [command]/usr/bin/git sparse-checkout disable
+build	Run actions/checkout@v4	2026-08-31T17:02:57.8370496Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+build	Run actions/checkout@v4	2026-08-31T17:02:57.8414625Z ##[group]Checking out the ref
+build	Run actions/checkout@v4	2026-08-31T17:02:57.8419387Z [command]/usr/bin/git checkout --progress --force refs/remotes/pull/1/merge
+build	Run actions/checkout@v4	2026-08-31T17:02:57.8477994Z Note: switching to 'refs/remotes/pull/1/merge'.
+build	Run actions/checkout@v4	2026-08-31T17:02:57.8478537Z 
+build	Run actions/checkout@v4	2026-08-31T17:02:57.8478962Z You are in 'detached HEAD' state. You can look around, make experimental
+build	Run actions/checkout@v4	2026-08-31T17:02:57.8480070Z changes and commit them, and you can discard any commits you make in this
+build	Run actions/checkout@v4	2026-08-31T17:02:57.8481287Z state without impacting any branches by switching back to a branch.
+build	Run actions/checkout@v4	2026-08-31T17:02:57.8481817Z 
+build	Run actions/checkout@v4	2026-08-31T17:02:57.8482185Z If you want to create a new branch to retain commits you create, you may
+build	Run actions/checkout@v4	2026-08-31T17:02:57.8483011Z do so (now or later) by using -c with the switch command. Example:
+build	Run actions/checkout@v4	2026-08-31T17:02:57.8483493Z 
+build	Run actions/checkout@v4	2026-08-31T17:02:57.8484035Z   git switch -c <new-branch-name>
+build	Run actions/checkout@v4	2026-08-31T17:02:57.8484470Z 
+build	Run actions/checkout@v4	2026-08-31T17:02:57.8484694Z Or undo this operation with:
+build	Run actions/checkout@v4	2026-08-31T17:02:57.8485017Z 
+build	Run actions/checkout@v4	2026-08-31T17:02:57.8485208Z   git switch -
+build	Run actions/checkout@v4	2026-08-31T17:02:57.8485458Z 
+build	Run actions/checkout@v4	2026-08-31T17:02:57.8485860Z Turn off this advice by setting config variable advice.detachedHead to false
+build	Run actions/checkout@v4	2026-08-31T17:02:57.8486437Z 
+build	Run actions/checkout@v4	2026-08-31T17:02:57.8487256Z HEAD is now at d50b58a Merge b57fda14c05bae5785bf8c0a8fca7e8821a5516e into 0401964d7394a6f998f04f53f6d37471ccd8cf50
+build	Run actions/checkout@v4	2026-08-31T17:02:57.8492715Z ##[endgroup]
+build	Run actions/checkout@v4	2026-08-31T17:02:57.8546487Z [command]/usr/bin/git log -1 --format=%H
+build	Run actions/checkout@v4	2026-08-31T17:02:57.8568941Z d50b58a224096d1d1cb90ddb3df105aad2714483
+build	Run actions/setup-node@v4	﻿2026-08-31T17:02:57.8866279Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build	Run actions/setup-node@v4	2026-08-31T17:02:57.8868913Z ##[group]Run actions/setup-node@v4
+build	Run actions/setup-node@v4	2026-08-31T17:02:57.8869420Z with:
+build	Run actions/setup-node@v4	2026-08-31T17:02:57.8869821Z   node-version: 20
+build	Run actions/setup-node@v4	2026-08-31T17:02:57.8870265Z   always-auth: false
+build	Run actions/setup-node@v4	2026-08-31T17:02:57.8870706Z   check-latest: false
+build	Run actions/setup-node@v4	2026-08-31T17:02:57.8874734Z   token: ***
+build	Run actions/setup-node@v4	2026-08-31T17:02:57.8875155Z ##[endgroup]
+build	Run actions/setup-node@v4	2026-08-31T17:02:58.0295535Z Attempting to download 20...
+build	Run actions/setup-node@v4	2026-08-31T17:02:58.0404198Z (node:2241) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+build	Run actions/setup-node@v4	2026-08-31T17:02:58.0405823Z (Use `node --trace-deprecation ...` to show where the warning was created)
+build	Run actions/setup-node@v4	2026-08-31T17:02:58.5775147Z Acquiring 20.20.2 - x64 from https://github.com/actions/node-versions/releases/download/20.20.2-23521894959/node-20.20.2-linux-x64.tar.gz
+build	Run actions/setup-node@v4	2026-08-31T17:02:58.9686296Z Extracting ...
+build	Run actions/setup-node@v4	2026-08-31T17:02:58.9872392Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/5b136c93-2ef9-4694-be17-82db22bc35b5 -f /home/runner/work/_temp/1994efc7-b970-4113-a2e4-ef2b0961a517
+build	Run actions/setup-node@v4	2026-08-31T17:03:00.0229178Z Adding to the cache ...
+build	Run actions/setup-node@v4	2026-08-31T17:03:02.1698487Z ##[group]Environment details
+build	Run actions/setup-node@v4	2026-08-31T17:03:02.3977373Z node: v20.20.2
+build	Run actions/setup-node@v4	2026-08-31T17:03:02.3978323Z npm: 10.8.2
+build	Run actions/setup-node@v4	2026-08-31T17:03:02.3978791Z yarn: 1.22.22
+build	Run actions/setup-node@v4	2026-08-31T17:03:02.3979645Z ##[endgroup]
+build	Run npm ci	﻿2026-08-31T17:03:02.4162770Z ##[group]Run npm ci
+build	Run npm ci	2026-08-31T17:03:02.4163172Z ^[[36;1mnpm ci^[[0m
+build	Run npm ci	2026-08-31T17:03:02.4207913Z shell: /usr/bin/bash -e {0}
+build	Run npm ci	2026-08-31T17:03:02.4208265Z ##[endgroup]
+build	Run npm ci	2026-08-31T17:03:04.2964614Z 
+build	Run npm ci	2026-08-31T17:03:04.2975169Z added 2 packages, and audited 3 packages in 2s
+build	Run npm ci	2026-08-31T17:03:04.2975946Z 
+build	Run npm ci	2026-08-31T17:03:04.2976326Z 1 package is looking for funding
+build	Run npm ci	2026-08-31T17:03:04.2977001Z   run `npm fund` for details
+build	Run npm ci	2026-08-31T17:03:04.2977349Z 
+build	Run npm ci	2026-08-31T17:03:04.2977614Z found 0 vulnerabilities
+build	Type-check and build	﻿2026-08-31T17:03:04.3161438Z ##[group]Run npm run build
+build	Type-check and build	2026-08-31T17:03:04.3161925Z ^[[36;1mnpm run build^[[0m
+build	Type-check and build	2026-08-31T17:03:04.3202740Z shell: /usr/bin/bash -e {0}
+build	Type-check and build	2026-08-31T17:03:04.3203054Z ##[endgroup]
+build	Type-check and build	2026-08-31T17:03:04.4360802Z 
+build	Type-check and build	2026-08-31T17:03:04.4361502Z > taskkit@1.0.0 build
+build	Type-check and build	2026-08-31T17:03:04.4362307Z > tsc
+build	Type-check and build	2026-08-31T17:03:04.4362734Z 
+build	Type-check and build	2026-08-31T17:03:05.2037133Z ##[error]src/report.ts(10,22): error TS2304: Cannot find name 'usd'.
+build	Type-check and build	2026-08-31T17:03:05.2048209Z ##[error]src/report.ts(13,9): error TS6133: 'draftCount' is declared but its value is never read.
+build	Type-check and build	2026-08-31T17:03:05.2050393Z ##[error]src/report.ts(16,16): error TS2304: Cannot find name 'add'.
+build	Type-check and build	2026-08-31T17:03:05.2052262Z ##[error]src/report.ts(16,34): error TS2304: Cannot find name 'usd'.
+build	Type-check and build	2026-08-31T17:03:05.2054937Z ##[error]src/report.ts(17,28): error TS18048: 'top' is possibly 'undefined'.
+build	Type-check and build	2026-08-31T17:03:05.2057149Z ##[error]src/report.ts(17,43): error TS2552: Cannot find name 'format'. Did you mean 'FormData'?
+build	Type-check and build	2026-08-31T17:03:05.2183016Z ##[error]Process completed with exit code 2.
+build	Post Run actions/checkout@v4	﻿2026-08-31T17:03:05.2377176Z Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+build	Post Run actions/checkout@v4	2026-08-31T17:03:05.2378462Z Post job cleanup.
+build	Post Run actions/checkout@v4	2026-08-31T17:03:05.3296984Z [command]/usr/bin/git version
+build	Post Run actions/checkout@v4	2026-08-31T17:03:05.3344456Z git version 2.55.0
+build	Post Run actions/checkout@v4	2026-08-31T17:03:05.3392288Z Temporarily overriding HOME='/home/runner/work/_temp/d86c4106-865d-49f9-a1a1-71a4d7f02cbe' before making global git config changes
+build	Post Run actions/checkout@v4	2026-08-31T17:03:05.3408716Z Adding repository directory to the temporary git global config as a safe directory
+build	Post Run actions/checkout@v4	2026-08-31T17:03:05.3410575Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/ai-pr-build-fixer/ai-pr-build-fixer
+build	Post Run actions/checkout@v4	2026-08-31T17:03:05.3455430Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+build	Post Run actions/checkout@v4	2026-08-31T17:03:05.3497117Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+build	Post Run actions/checkout@v4	2026-08-31T17:03:05.3792626Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+build	Post Run actions/checkout@v4	2026-08-31T17:03:05.3829417Z http.https://github.com/.extraheader
+build	Post Run actions/checkout@v4	2026-08-31T17:03:05.3842779Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+build	Post Run actions/checkout@v4	2026-08-31T17:03:05.3886074Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+build	Post Run actions/checkout@v4	2026-08-31T17:03:05.4286297Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+build	Post Run actions/checkout@v4	2026-08-31T17:03:05.4383083Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+build	Complete job	﻿2026-08-31T17:03:05.4867711Z Cleaning up orphan processes
+build	Complete job	2026-08-31T17:03:05.5151453Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/checkout@v4, actions/setup-node@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
